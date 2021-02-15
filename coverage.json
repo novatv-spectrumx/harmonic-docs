@@ -1,0 +1,135 @@
+{
+  "coverage": "92.22%",
+  "expectCount": 489,
+  "actualCount": 451,
+  "files": {
+    "src/harmonic-font-face.js": {
+      "expectCount": 29,
+      "actualCount": 11,
+      "undocumentLines": [
+        203,
+        204,
+        205,
+        206,
+        207,
+        208,
+        209,
+        211,
+        212,
+        213,
+        214,
+        215,
+        216,
+        217,
+        220,
+        221,
+        222,
+        223
+      ]
+    },
+    "src/harmonic-socket.js": {
+      "expectCount": 27,
+      "actualCount": 27,
+      "undocumentLines": []
+    },
+    "src/harmonic-template.js": {
+      "expectCount": 82,
+      "actualCount": 80,
+      "undocumentLines": [
+        133,
+        980
+      ]
+    },
+    "src/hjs/hjs-init.js": {
+      "expectCount": 11,
+      "actualCount": 11,
+      "undocumentLines": []
+    },
+    "src/hjs/hjs-test.js": {
+      "expectCount": 22,
+      "actualCount": 19,
+      "undocumentLines": [
+        14,
+        284,
+        292
+      ]
+    },
+    "src/hjs/hjs.js": {
+      "expectCount": 58,
+      "actualCount": 58,
+      "undocumentLines": []
+    },
+    "src/widgets/harmonic-countdown.js": {
+      "expectCount": 21,
+      "actualCount": 21,
+      "undocumentLines": []
+    },
+    "src/widgets/harmonic-dve.js": {
+      "expectCount": 40,
+      "actualCount": 26,
+      "undocumentLines": [
+        515,
+        516,
+        517,
+        518,
+        519,
+        520,
+        521,
+        522,
+        524,
+        525,
+        526,
+        527,
+        528,
+        529
+      ]
+    },
+    "src/widgets/harmonic-label-scroll.js": {
+      "expectCount": 56,
+      "actualCount": 55,
+      "undocumentLines": [
+        562
+      ]
+    },
+    "src/widgets/harmonic-label.js": {
+      "expectCount": 16,
+      "actualCount": 16,
+      "undocumentLines": []
+    },
+    "src/widgets/harmonic-live-avo.js": {
+      "expectCount": 13,
+      "actualCount": 13,
+      "undocumentLines": []
+    },
+    "src/widgets/harmonic-movie-clip.js": {
+      "expectCount": 6,
+      "actualCount": 6,
+      "undocumentLines": []
+    },
+    "src/widgets/harmonic-text-field.js": {
+      "expectCount": 10,
+      "actualCount": 10,
+      "undocumentLines": []
+    },
+    "src/widgets/harmonic-text-scroll.js": {
+      "expectCount": 38,
+      "actualCount": 38,
+      "undocumentLines": []
+    },
+    "src/widgets/harmonic-video.js": {
+      "expectCount": 18,
+      "actualCount": 18,
+      "undocumentLines": []
+    },
+    "src/widgets/harmonic-widget.js": {
+      "expectCount": 24,
+      "actualCount": 24,
+      "undocumentLines": []
+    },
+    "src/widgets/harmonic-xmlhttprequest.js": {
+      "expectCount": 18,
+      "actualCount": 18,
+      "undocumentLines": []
+    }
+  }
+}

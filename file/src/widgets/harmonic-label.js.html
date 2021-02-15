@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">src/widgets/harmonic-label.js | Harmonic Template and Widget JavaScript Library</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./" style="display: flex; align-items: center;"><img src="./image/brand_logo.png" style="width:34px;"></a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/harmonic-font-face.js~HarmonicFontFace.html">HarmonicFontFace</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/harmonic-socket.js~HarmonicSocket.html">HarmonicSocket</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/harmonic-template.js~HarmonicTemplate.html">HarmonicTemplate</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#hjs">hjs</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/hjs/hjs-test.js~HarmonicTemplateTest.html">HarmonicTemplateTest</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/hjs/hjs.js~HJS.html">HJS</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-dve">dve</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-dve0">dve0</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-dve1">dve1</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-harmonicDVE">harmonicDVE</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-harmonicLiveAVO">harmonicLiveAVO</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-harmonicTemplate">harmonicTemplate</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-hjs">hjs</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-hjsConfig">hjsConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-liveAVO">liveAVO</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-liveAVO0">liveAVO0</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-liveAVO1">liveAVO1</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-hjstest">hjstest</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#widgets">widgets</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-countdown.js~HarmonicCountdown.html">HarmonicCountdown</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-dve.js~HarmonicDVE.html">HarmonicDVE</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-label-scroll.js~HarmonicLabelScroll.html">HarmonicLabelScroll</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-label.js~HarmonicLabel.html">HarmonicLabel</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-live-avo.js~HarmonicLiveAVO.html">HarmonicLiveAVO</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-movie-clip.js~HarmonicMovieClip.html">HarmonicMovieClip</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-text-field.js~HarmonicTextField.html">HarmonicTextField</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-text-scroll.js~HarmonicTextScroll.html">HarmonicTextScroll</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-video.js~HarmonicVideo.html">HarmonicVideo</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-widget.js~HarmonicWidget.html">HarmonicWidget</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-xmlhttprequest.js~HarmonicXMLHttpRequest.html">HarmonicXMLHttpRequest</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/widgets/harmonic-label.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/**
+ * File: harmonic-label.js
+ *
+ * Copyright (c) 2020 Harmonic, Inc.
+ */
+
+/**
+ * The HarmonicLabel widget provides a dynamic text field that can
+ * be controlled with the widget controls.  Unlike the HarmonicTextField widget,
+ * this widget uses the Label component so that customers can utilize CSS styling.
+ * The Label component is rendered using HTML rendering, not CreateJS canvas
+ * rendering.  This means that the label can only be placed above or below the
+ * canvas.
+ *
+ * This class implements the Harmonic Label Widget.  It derives from
+ * the {@link HarmonicWidget} class and implements necessary functions to meet the
+ * needs of this widget.
+ *
+ * The HarmonicLabel widget requires that the registered createdjs object have the
+ * following structure:
+ *
+ * - The createjsObj must be a createjs.MovieClip named correctly (reference
+ *   {@link HarmonicWidget}).
+ * - The createjs.MovieClip must contain a label component child named the same
+ *   as the createjsObj (for example, field2_label).  This is naming convention
+ *   is necessary to uniquely define the label in the DOM.
+ *
+ * Styling for the label should be done outside this class in a CSS file for the
+ * template.  The class name for the label is defined by the &apos;class&apos; property on
+ * the label component.
+ *
+ * This class defines functions for:
+ *
+ * - updateTextField - updates and renders the dynamic text field
+ * - appendTextField - appends text to the dynamic text field and renders
+ * - renderField - renders the text field
+ *
+ * To use this class, simply register the createjs object using the
+ * static register function.  The created HarmonicLabel object is
+ * returned from the register function.  If there is a error, then
+ * &apos;undefined&apos; is returned and an error will be logged.
+ *
+ * @example
+ * let label = HarmonicLabel.register(this, HarmonicLabel.LOCATION_ABOVE_CANVAS);
+ *
+ * // Calling label.updateTextField at this point will not work since additional
+ * // Adobe generated code for inserting the label into the DOM must run.
+ * // Use requestAnimationFrame to execute the updateTextField on the next
+ * // available screen repaint.
+ * requestAnimationFrame(() =&gt; {
+ *   label.updateTextField(&quot;Testing&quot;, true);
+ * });
+ */
+class HarmonicLabel extends HarmonicWidget {
+
+    /**
+     * Constructor
+     * - initializes all member variables
+     *
+     * @param {String} widgetType - reference HarmonicTemplate.WIDGET_TYPE_&lt;type&gt;
+     * @param {Number} fieldNum - field number used to uniquely identify the widget
+     * @param {String} name - the name of the widget
+     * @param {Object} createjsObj - the createjs object associated with this widget
+     * @param {Number} location - location of label relative to canvas
+     */
+    constructor(widgetType, fieldNum, name, createjsObj, location) {
+        super(widgetType, fieldNum, name, createjsObj, true);  // include in the template description
+
+        hjs.debug(&quot;HarmonicLabel.constructor&quot;);
+
+        /**
+         * The location of the label relative to the canvas.
+         * @type {Number} 0 = below, 1 = above
+         */
+        this._location = this._initLocation(location);
+
+        /**
+         * Flag indicating if the load processing is complete.
+         * @type {Boolean}
+         */
+        this._loadComplete = false;
+
+        /**
+         * Object representing the label element in the DOM.
+         */
+        this._label = undefined;
+
+        /**
+         * The text to be rendered to the label object.
+         * @type {String}
+         */
+        this._text = &quot;&quot;;
+
+        // The label should be present in the DOM by the next repaint.
+        requestAnimationFrame(() =&gt; {
+            let animation_container = document.getElementById(&quot;animation_container&quot;);
+            let dom_overlay_container = document.getElementById(&quot;dom_overlay_container&quot;);
+            let label = document.getElementById(this._createjsObj.name);
+
+            if (!animation_container) {
+                hjs.error(&quot;widget: &quot; + this._createjsObj.name + &quot; unable to locate &apos;animation_container&apos; in the DOM&quot;);
+                return;
+            }
+
+            if (!dom_overlay_container) {
+                hjs.error(&quot;widget: &quot; + this._createjsObj.name + &quot;unable to locate &apos;dom_overlay_container&apos; in the DOM&quot;);
+                return;
+            }
+
+            if (!label) {
+                hjs.error(&quot;widget: &quot; + this._createjsObj.name + &quot; - unable to locate the label element in the DOM&quot;);
+                return;
+            }
+
+            this._label = label;
+            this._text = this._label.innerHTML;
+
+            // Position the label in the DOM
+            if (this._location == HarmonicLabel.LOCATION_BELOW_CANVAS) {
+
+                // Remove the label added by Adobe
+                dom_overlay_container.removeChild(this._label);
+
+                // Create the div below the canvas if it doesn&apos;t already exist.
+                let node = document.getElementById(&quot;dom_overlay_container_below&quot;);
+                if (!node) {
+                    node = dom_overlay_container.cloneNode(false);
+                    node.id = node.id + &quot;_below&quot;;
+
+                    node = animation_container.insertBefore(node, animation_container.firstChild);
+                }
+
+                node.appendChild(this._label);
+            }
+
+            this._loadComplete = true;
+        });
+    }
+
+    /**
+     * Registers a createjs object with the widget.  A new
+     * HarmonicLabel will be created in this function.
+     *
+     * @param {Object} createjsObj - the createjs object to associate with this widget
+     * @param {Number} location - location of label relative to canvas
+     *
+     * @return {Object} the newly created HarmonicLabel instance, or undefined if there is an error
+     */
+    static register(createjsObj, location) {
+        let result = HarmonicWidget.validate(&quot;HarmonicLabel&quot;, createjsObj, true);
+        if (result) {
+            return new HarmonicLabel(HarmonicTemplate.WIDGET_TYPE_TEXT, result.fieldNum, result.name, createjsObj, location);
+        }
+        else {
+            return undefined;
+        }
+    }
+
+    /**
+     * Initializes the location of the label.
+     *
+     * @param {Number} location
+     *
+     * @return {Number} the verified location.
+     */
+    _initLocation(location) {
+        if ((location &gt;= 0) &amp;&amp; (location &lt; HarmonicLabel.LOCATION_MAX)) {
+            return location;
+        }
+        else {
+            hjs.error(&quot;widget: &quot; + this._createjsObj.name + &quot; - location is out of range: &quot; + location.toString() + &quot; defaulting to &quot; + this.defaultLocation);
+            return this.defaultLocation;
+        }
+    }
+
+    /**
+     * Queried by the Harmonic Template to verify that the widget is loaded
+     * before sending the load complete signal.  The requestAnimationFrame
+     * callback in the constructor will set the loadComplete flag to true.
+     *
+     * @returns {Boolean}
+     */
+    isLoaded() {
+        return this._loadComplete;
+    }
+
+    /**
+     * Handles the updateTextField request from the Harmonic Template.
+     *
+     * @param {String} text - the text to display
+     * @param {Boolean} render - flag indicating if the field should be rendered
+     */
+    updateTextField(text, render) {
+        this._text = text
+
+        if (render) {
+            this._renderNow();
+        }
+    }
+
+    /**
+     * Handles the appendTextField request from the Harmonic Template.
+     *
+     * @param {String} text - the text to append to the display
+     * @param {Boolean} render - flag indicating if the field should be rendered
+     */
+    appendTextField(text, render) {
+        this._text += text;
+
+        if (render) {
+            this._renderNow();
+        }
+    }
+
+    /**
+     * Handles the renderField request from the Harmonic Template.
+     */
+    renderField() {
+        this._renderNow();
+    }
+
+    //--------------------------------------------------------------------------
+    // Private Methods
+    //--------------------------------------------------------------------------
+
+    /**
+     * Renders the text to the label.
+     */
+    _renderNow() {
+        if (this._label) {
+            this._label.innerHTML = this._text;
+        }
+        else {
+            hjs.error(&quot;widget: &quot; + this._createjsObj.name + &quot; - render failed: this._label is undefined&quot;);
+        }
+    }
+
+    //--------------------------------------------------------------------------
+    // Properties
+    //--------------------------------------------------------------------------
+    /**
+     * Returns the default location.
+     * @return {Number}
+     */
+    get defaultLocation() {
+        return HarmonicLabel.LOCATION_ABOVE_CANVAS;
+    }
+
+    /**
+     * Returns the string that is waiting to be displayed.
+     */
+    get savedText() {
+        return this._text;
+    }
+
+    /**
+     * Returns the string that is currently being displayed.
+     */
+    get displayedText() {
+        if (this._label) {
+            return this._label.innerHTML;
+        }
+        else {
+            hjs.error(&quot;widget: &quot; + this._createjsObj.name + &quot; - this._label is undefined&quot;);
+            return &quot;&quot;;
+        }
+    }
+}
+
+//--------------------------------------------------------------------------
+// Constants
+//--------------------------------------------------------------------------
+HarmonicLabel.LOCATION_BELOW_CANVAS = 0;
+HarmonicLabel.LOCATION_ABOVE_CANVAS = 1;
+HarmonicLabel.LOCATION_MAX = 2;
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

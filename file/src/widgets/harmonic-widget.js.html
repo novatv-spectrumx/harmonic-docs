@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">src/widgets/harmonic-widget.js | Harmonic Template and Widget JavaScript Library</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./" style="display: flex; align-items: center;"><img src="./image/brand_logo.png" style="width:34px;"></a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/harmonic-font-face.js~HarmonicFontFace.html">HarmonicFontFace</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/harmonic-socket.js~HarmonicSocket.html">HarmonicSocket</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/harmonic-template.js~HarmonicTemplate.html">HarmonicTemplate</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#hjs">hjs</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/hjs/hjs-test.js~HarmonicTemplateTest.html">HarmonicTemplateTest</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/hjs/hjs.js~HJS.html">HJS</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-dve">dve</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-dve0">dve0</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-dve1">dve1</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-harmonicDVE">harmonicDVE</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-harmonicLiveAVO">harmonicLiveAVO</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-harmonicTemplate">harmonicTemplate</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-hjs">hjs</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-hjsConfig">hjsConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-liveAVO">liveAVO</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-liveAVO0">liveAVO0</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-liveAVO1">liveAVO1</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-hjstest">hjstest</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#widgets">widgets</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-countdown.js~HarmonicCountdown.html">HarmonicCountdown</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-dve.js~HarmonicDVE.html">HarmonicDVE</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-label-scroll.js~HarmonicLabelScroll.html">HarmonicLabelScroll</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-label.js~HarmonicLabel.html">HarmonicLabel</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-live-avo.js~HarmonicLiveAVO.html">HarmonicLiveAVO</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-movie-clip.js~HarmonicMovieClip.html">HarmonicMovieClip</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-text-field.js~HarmonicTextField.html">HarmonicTextField</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-text-scroll.js~HarmonicTextScroll.html">HarmonicTextScroll</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-video.js~HarmonicVideo.html">HarmonicVideo</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-widget.js~HarmonicWidget.html">HarmonicWidget</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-xmlhttprequest.js~HarmonicXMLHttpRequest.html">HarmonicXMLHttpRequest</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/widgets/harmonic-widget.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/**
+ * File:  harmonic-widget.js
+ *
+ * Copyright (c) 2018 Harmonic, Inc.
+ */
+
+/**
+ * This class is the base class for all Harmonic Widgets.  All widgets should
+ * be derived from this class.
+ *
+ * During construction, this class will:
+ * 1.  Add a listener to the document for the WIDGET_EVENT_&lt;fieldNum&gt; event.
+ *     The listener function is called &apos;_onWidgetEvent&apos;.  This function
+ *     will handle all communication from the Harmonic Template.  It is
+ *     the responsibility of the derived class to implement the functions
+ *     that they need.  Reference the list below.
+ * 2.  Dispatch the WIDGET_CREATED event.  This event will be received by
+ *     the Harmonic Template.  The Harmonic Template will maintain a list
+ *     of all created widgets.
+ *
+ * Functions that should be overridden by derived classes if needed:
+ * - updateTextField
+ * - appendTextField
+ * - updateImageField
+ * - renderField
+ * - restartFieldAnimation
+ * - stopFieldAnimation
+ *
+ * In Adobe Animate, a widget is a createjs.MovieClip.  The naming convention
+ * for widgets is &apos;field&lt;fieldNum&gt;_&lt;name&gt;&apos;.  Where &lt;fieldNum&gt; is a number from
+ * 0-254 and uniquely identifies the widget.  &lt;name&gt; is a string that will
+ * be included in the Template Description.
+ *
+ * Since a createjs.MovieClip is a container, it can contain children.  Widgets
+ * should validate that they contain their required children before allowing
+ * the register function to succeed.  Reference each widget to better understand
+ * their required children.
+ */
+class HarmonicWidget {
+
+    /**
+     * Constructor:
+     * - initializes all member variables
+     * - adds a listener on the document for the WIDGET_EVENT
+     * - dispatches the WIDGET_CREATED_EVENT
+     *
+     * @emits   {HarmonicTemplate.WIDGET_CREATED_EVENT} once this object is constructed, this event is dispatched.
+     * @listens {HarmonicTemplate.WIDGET_EVENT_&lt;fieldNum&gt;} listens for commands from the Harmonic Template
+     *
+     * @param {String} widgetType - reference HarmonicTemplate.WIDGET_TYPE_&lt;type&gt;
+     * @param {Number} fieldNum - field number used to uniquely identify the widget
+     * @param {String} name - the name of the widget
+     * @param {Object} createjsObj - the createjs object associated with this widget
+     * @param {Object} includeInTemplateDescription - if true, the Harmonic Template will include in the template description
+     */
+    constructor(widgetType, fieldNum, name, createjsObj, includeInTemplateDescription) {
+
+        /**
+         * The type of widget.
+         * @type {String}
+         */
+        this._widgetType = widgetType;
+
+        /**
+         * The field number for this widget.
+         * @type {Number}
+         */
+        this._fieldNum = fieldNum;
+
+        /**
+         * The name of this widget.
+         * @type {String}
+         */
+        this._name = name;
+
+        /**
+         * The createjs object associated with this widget.
+         * @type {Object}
+         */
+        this._createjsObj = createjsObj;
+
+        /**
+         * Whether or not this widget should be included in the template description.
+         * @type {Boolean}
+         */
+        this._includeInTemplateDescription = includeInTemplateDescription;
+
+        /**
+         * The name of the event this widget listens for.
+         * @type {String}
+         */
+        this._widgetEventName = HarmonicTemplate.WIDGET_EVENT + &quot;_&quot; + fieldNum;
+
+        // Listen for the WIDGET_EVENT + &quot;_&quot; + &lt;fieldNum&gt;
+        document.addEventListener(this._widgetEventName, (event) =&gt; {
+            this._onWidgetEvent(event);
+        });
+
+        // Dispatch the WIDGET_CREATED_EVENT
+        document.dispatchEvent(new CustomEvent(HarmonicTemplate.WIDGET_CREATED_EVENT, { detail : this } ));
+    }
+
+    /**
+     * Handler for the WIDGET_EVENT that is dispatched by Harmonic Template as
+     * functions are received.
+     *
+     * @param {CustomEvent} event - the event dispatched by the Harmonic Template
+     * @param {String} event.functionName - the function associated with the event
+     */
+    _onWidgetEvent(event) {
+        hjs.debug(this._widgetEventName + &quot; received: &quot; + JSON.stringify(event.detail));
+        switch (event.detail.functionName) {
+            case HarmonicTemplate.UPDATE_TEXT_FIELD:
+                this.updateTextField(event.detail.text, event.detail.render);
+                break;
+            case HarmonicTemplate.APPEND_TEXT_FIELD:
+                this.appendTextField(event.detail.text, event.detail.render);
+                break;
+            case HarmonicTemplate.UPDATE_IMAGE_FIELD:
+                this.updateImageField(event.detail.imagePath);
+                break;
+            case HarmonicTemplate.RENDER_FIELD:
+                this.renderField();
+                break;
+            case HarmonicTemplate.RESTART_FIELD_ANIMATION:
+                this.restartFieldAnimation(event.detail.fromBeginning);
+                break;
+            case HarmonicTemplate.STOP_FIELD_ANIMATION:
+                this.stopFieldAnimation(event.detail.immediate);
+                break;
+            default:
+                hjs.error(this._widgetEventName + &quot; received invalid functionName: &quot; + event.detail.functionName);
+                break;
+        }
+    }
+
+    /**
+     * Queried by the Harmonic Template to verify that the widget is loaded
+     * before sending the load complete signal.
+     *
+     * @abstract
+     *
+     * @returns {Boolean}
+     */
+    isLoaded() {
+        return true;
+    }
+
+    /**
+     * Updates the internal text field.
+     *
+     * This function should be overridden by the derived class if it
+     * needs this functionality.
+     *
+     * @abstract
+     *
+     * @param {String} text - text to render
+     * @param {render} render - if true, render now, otherwise wait for the renderField
+     */
+    updateTextField(text, render) {
+    }
+
+    /**
+     * Appends to the internal text field.
+     *
+     * This function should be overridden by the derived class if it
+     * needs this functionality.
+     *
+     * @abstract
+     *
+     * @param {String} text - text to add to the rendered text
+     * @param {render} render - if true, render now, otherwise wait for the renderField
+     */
+    appendTextField(text, render) {
+    }
+
+    /**
+     * Updates the internal image.
+     *
+     * This function should be overridden by the derived class if it
+     * needs this functionality.
+     *
+     * @abstract
+     *
+     * @param {String} imagePath - the path to the image
+     */
+    updateImageField(imagePath) {
+    }
+
+    /**
+     * Renders the field.
+     *
+     * This function should be overridden by the derived class if it
+     * needs this functionality.
+     *
+     * @abstract
+     */
+    renderField() {
+    }
+
+    /**
+     * Start/Restart the field animation.
+     *
+     * This function should be overridden by the derived class if it
+     * needs this functionality.
+     *
+     * @abstract
+     *
+     * @param {Boolean} fromBeginning - true = restart from beginning, otherwise restart from the current frame
+     */
+    restartFieldAnimation(fromBeginning) {
+    }
+
+    /**
+     * Stops the field animation.
+     *
+     * This function should be overridden by the derived class if it
+     * needs this functionality.
+     *
+     * @abstract
+     *
+     * @param {Boolean} immediate - true = stop immediately, otherwise, stop at the end of the animation
+     */
+    stopFieldAnimation(immediate) {
+    }
+
+    //--------------------------------------------------------------------------
+    // Static Methods
+    //--------------------------------------------------------------------------
+
+    /**
+     * Helper function for parsing the name of the createjs object.  The name
+     * should be structured like:  &apos;field&lt;fieldNum&gt;_&lt;name&gt;&apos;.
+     *
+     * @param {Object} createjsObj - the createjs object
+     *
+     * @return {Object} object with the following properties
+     * @property {Number} fieldNum - the field number parsed from the createjs object name
+     * @property {String} name - the name parsed from the createjs object name
+     */
+    static parseName(createjsObj) {
+
+        // Syntax &apos;field&lt;num&gt;_&lt;name&gt;&apos;
+
+        // The name must start with &apos;field&apos;
+        if (createjsObj.name.search(&quot;field&quot;) != 0) {
+            return undefined;
+        }
+
+        // Split at the underscore
+        let arr = createjsObj.name.split(&apos;_&apos;);
+        let fieldNum = parseInt(arr[0].replace(&quot;field&quot;, &quot;&quot;));
+
+        var pos = createjsObj.name.indexOf(&apos;_&apos;);
+        let name = createjsObj.name.slice(pos + 1);
+
+        // Return the field number and name
+        return {
+            fieldNum: fieldNum,
+            name: name
+        };
+    }
+
+    /**
+     * Attempts to discover the name of the createjs object by
+     * iterating through the parent&apos;s key/value pairs.  Once the
+     * value of the key matches the createobj, then the name is
+     * the key.
+     *
+     * This function was added to support the Adobe Animate v20
+     * generated JavaScript.  Adobe removed the &apos;name&apos; property
+     * on MovieClips, so now the name must be discovered.
+     *
+     * @param {Object} createjsObj
+     *
+     * @return {String}
+     */
+    static discoverName(createjsObj) {
+        if (createjsObj) {
+            if (createjsObj.parent) {
+                for (var key of Object.keys(createjsObj.parent)) {
+                    if (createjsObj.parent[key] === createjsObj) {
+                        return key;
+                    }
+                }
+            }
+        }
+
+        return null;
+    }
+
+    /**
+     * Validates that the createjs object is structured properly.
+     * Widgets should be composed of a createjs MovieClip and named
+     * correctly.  Also, if the MovieClip contains a TextField, it
+     * too must be named correctly.
+     *
+     * Proper naming:
+     * - MovieClip name:  &apos;field&lt;fieldNum&gt;_&lt;name&gt;&apos;
+     * - TextField name:  harmonicField
+     *
+     * @param {String} derivedClass - the name of the derived class.  This will be used for logging.
+     * @param {Object} createjsObj - the createjs object
+     * @param {Boolean} containsTextField - indicates if the MovieClip contains a TextField to be validated
+     *
+     * @return {Object} returns an object if validation passes; otherwise, undefined is returned
+     * @property {Number} fieldNum - the field number parsed from the createjs object name
+     * @property {String} name - the name parsed from the createjs object name
+     */
+    static validate(derivedClass, createjsObj, containsTextField) {
+        let result = undefined;
+
+        if (!createjsObj instanceof createjs.MovieClip) {           // Must be a movie clip
+            hjs.error(derivedClass + &quot;.register: createjsObj is not a container&quot;);
+            return undefined;
+        }
+
+        if ((!createjsObj.hasOwnProperty(&quot;name&quot;)) || (createjsObj.name == null)) { // The movie clip must have a name
+            let name = HarmonicWidget.discoverName(createjsObj);
+            if (name) {
+                createjsObj.name = name;
+            }
+            else {
+                hjs.error(derivedClass + &quot;.register: registered movie clip is not named&quot;);
+                return undefined;
+            }
+        }
+
+        if (createjsObj.name.search(&quot;field&quot;) != 0) {           // The name of the object must start with &apos;field&apos;
+            hjs.error(derivedClass + &quot;.register: registered text field is not named correctly: name: &quot; + createjsObj.name);
+            return undefined;
+        }
+
+        if (containsTextField) {
+            if ((derivedClass === &quot;HarmonicLabel&quot;) || (derivedClass === &quot;HarmonicLabelScroll&quot;)) {
+                if (!createjsObj.hasOwnProperty(createjsObj.name)) {     // Must have a property named the same as the parent to uniquely identify the label
+                    hjs.error(derivedClass + &quot;.register: the createjs object must contain a label named &quot; + createjsObj.name);
+                    return undefined;
+                }
+            }
+            else {
+                if (!createjsObj.hasOwnProperty(&quot;harmonicField&quot;)) {     // Must have a property called harmonicField that identifies the textField
+                    hjs.error(derivedClass + &quot;.register: the createjs object must contain a textfield named harmonicField&quot;);
+                    return undefined;
+                }
+
+                if (!createjsObj.harmonicField instanceof createjs.Text) {         // The property must be a createjs.Text object
+                    hjs.error(derivedClass + &quot;.register: the harmonicField must be a createjs.Text object&quot;);
+                    return undefined;
+                }
+            }
+        }
+
+        // Parse the name
+        result = HarmonicWidget.parseName(createjsObj);
+        if (result === undefined) {
+            hjs.error(derivedClass + &quot;.registered createjs object is not named correctly: name: &quot; + createjsObj.name);
+            return undefined;
+        }
+
+        // Only allow the widget to be registered once
+        if (harmonicTemplate.isWidgetdRegistered(result.fieldNum)) {
+            hjs.error(derivedClass + &quot;.register: the fieldNum: &quot; + result.fieldNum + &quot; + has already been registered&quot;);
+            return undefined;
+        }
+
+        return result;
+    }
+
+    //--------------------------------------------------------------------------
+    // Properties
+    //--------------------------------------------------------------------------
+    /**
+     * Returns the type of widget.
+     * @type {String}
+     */
+    get widgetType() { return this._widgetType; }
+
+    /**
+     * Returns the field number associated with this widget (derived from the name of the createjs object).
+     * @type {Number}
+     */
+    get fieldNum() { return this._fieldNum; }
+
+    /**
+     * Returns the name of the widget (derived from the name of the createjs object).
+     * @type {String}
+     */
+    get name() { return this._name; }
+
+    /**
+     * Returns the createjs object associated with this widget.
+     * @type {Object}
+     */
+    get createjsObj() { return this._createjsObj; }
+
+    /**
+     * Returns true if this widget should be included in the template description.
+     * @type {Boolean}
+     */
+    get includeInTemplateDescription() { return this._includeInTemplateDescription; }
+
+}
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

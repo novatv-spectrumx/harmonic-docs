@@ -1,0 +1,2049 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../">
+  <title data-ice="title">src/harmonic-template.js | Harmonic Template and Widget JavaScript Library</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./" style="display: flex; align-items: center;"><img src="./image/brand_logo.png" style="width:34px;"></a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/harmonic-font-face.js~HarmonicFontFace.html">HarmonicFontFace</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/harmonic-socket.js~HarmonicSocket.html">HarmonicSocket</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/harmonic-template.js~HarmonicTemplate.html">HarmonicTemplate</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#hjs">hjs</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/hjs/hjs-test.js~HarmonicTemplateTest.html">HarmonicTemplateTest</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/hjs/hjs.js~HJS.html">HJS</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-dve">dve</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-dve0">dve0</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-dve1">dve1</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-harmonicDVE">harmonicDVE</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-harmonicLiveAVO">harmonicLiveAVO</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-harmonicTemplate">harmonicTemplate</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-hjs">hjs</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-hjsConfig">hjsConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-liveAVO">liveAVO</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-liveAVO0">liveAVO0</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-liveAVO1">liveAVO1</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-hjstest">hjstest</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#widgets">widgets</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-countdown.js~HarmonicCountdown.html">HarmonicCountdown</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-dve.js~HarmonicDVE.html">HarmonicDVE</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-label-scroll.js~HarmonicLabelScroll.html">HarmonicLabelScroll</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-label.js~HarmonicLabel.html">HarmonicLabel</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-live-avo.js~HarmonicLiveAVO.html">HarmonicLiveAVO</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-movie-clip.js~HarmonicMovieClip.html">HarmonicMovieClip</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-text-field.js~HarmonicTextField.html">HarmonicTextField</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-text-scroll.js~HarmonicTextScroll.html">HarmonicTextScroll</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-video.js~HarmonicVideo.html">HarmonicVideo</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-widget.js~HarmonicWidget.html">HarmonicWidget</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-xmlhttprequest.js~HarmonicXMLHttpRequest.html">HarmonicXMLHttpRequest</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/harmonic-template.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/**
+ * File: harmonic-template.js
+ *
+ * Copyright (c) 2018 Harmonic, Inc.
+ */
+
+/**
+ * The Harmonic Template is the main controller of an HTML graphical template.
+ * It is responsible for controlling the timeline of the template, handling
+ * all incoming and outgoing Oxtel commands, and managing any create widgets.
+ *
+ * Before calling init() on the class, exportRoot, stage, and stage.canvas
+ * must all be valid objects.  These entities provide access to the global
+ * timeline (exportRoot) and information about the template (stage and stage.canvas).
+ *
+ * This class also provides access to all created widgets.  Use the
+ * getWidgetByFieldNum() method to get references to widgets.
+ *
+ * This class dispatches 3 important events:
+ * - LOAD_COMPLETE_EVENT - this event is dispatched immediately before sending
+ *   Load/Preload Complete signal.  At this point, all widgets have been created
+ *   and can be accessed using the getWidgetByFieldNum interface.
+ * - VISIBLE_EVENT - this event is dispatched when the template first becomes
+ *   visible.  After being loaded, this is the event that starts the template
+ *   playing.
+ * - FULLY_VISIBLE_EVENT - this event is dispatched when the alpha for the
+ *   layer become fully visible.  Although there is nothing significant about this
+ *   event internally, it can be useful for certain customers.
+ *
+ * Some of the public methods in this class can be overridden the template
+ * creator if they need to change or extend the functionality.  The methods
+ * that can be overridden are:
+ *
+ * - setVisible
+ * - fullyVisible
+ * - startTemplateAnimation
+ * - stopTemplateAnimation
+ * - restartTemplateAnimation
+ * - gotoFrame
+ * - updateTextField
+ * - appendTextField
+ * - updateImagePath
+ * - renderField
+ * - renderAllFields
+ * - restartFieldAnimation
+ * - stopFieldAnimation
+ *
+ * An example of this can be found in the news ticker sample template.
+ * A snippet is provided below.
+ *
+ * @example
+ * function updateTextFieldOverride(obj) {
+ *     hjs.info(&quot;updateTextFieldOverride:&quot;);
+ *     hjs.info(&quot;obj.tickid:   &quot; + obj.tickid);
+ *     hjs.info(&quot;obj.fieldNum: &quot; + obj.fieldNum);
+ *     hjs.info(&quot;obj.text:     &quot; + obj.text);
+ *     hjs.info(&quot;obj.render:   &quot; + obj.render);
+ *     switch (obj.fieldNum) {
+ *         case 1:
+ *             break;
+ *     }
+ *
+ *     // This is optional, but recommended.
+ *     harmonicTemplate.updateTextField(obj);
+ * }
+ *
+ * // Create the override object and register it with the harmonicTemplate
+ * let override = {
+ *     updateTextField: updateTextFieldOverride
+ * }
+ *
+ * harmonicTemplate.registerOverride(override);
+ */
+class HarmonicTemplate {
+
+    /**
+     * Constructor
+     */
+    constructor() {
+        hjs.debug(&quot;HarmonicTemplate.constructor&quot;);
+
+        /**
+         * Current state of the template (preloaded vs. loaded)
+         * @type {Number}
+         */
+        this._state = HarmonicTemplate.STATE_UNKNOWN;
+
+        /**
+         * Flag used to know if the first &apos;tickend&apos; event was received.  This event
+         * as well as the INIT command must be received before initialization can continue.
+         * @type {Boolean}
+         */
+        this._firstTickEndReceived = false;
+
+        /**
+         * Flag used to know if INIT command was received.  This event as well as the
+         * first &apos;tickend&apos; must be received before initialization can continue.
+         * @type {Boolean}
+         */
+        this._initCommandReceived = false;
+
+        // On the desktop, we don&apos;t need to wait for the INIT command.
+        if (hjs.isOnDesktop()) {
+            this._initCommandReceived = true;
+        }
+
+        /**
+         * The configuration from the HTML renderer.  On the desktop we use
+         * these values to emulate the INIT command being received.
+         * @type {Object}
+         */
+        this._config = {
+            isPreload: false,
+            alpha: HarmonicTemplate.MAX_ALPHA,  // alpha at load time
+            activeDimsW: 1920,
+            activeDimsH: 1080,
+            frameTime:  16.683,
+            isSecChannel: false,
+            priChannelW: 1920,
+            priChannelH: 1080,
+            channel: 0,
+            layer: 0,
+            scaleMode: HarmonicTemplate.SCALE_MODE_NONE,
+            anchor: HarmonicTemplate.ANCHOR_NONE,
+            oxtelTcpPort: 0,
+            oxtelSerialOverTcpPort: 0
+        }
+
+        /**
+         * The width of the loaded template.
+         * @type {Number}
+         */
+        this._templateWidth = 0;
+
+        /**
+         * The height of the loaded template.
+         * @type {Number}
+         */
+        this._templateHeight = 0;
+
+        /**
+         * The template description.  This is XML that contains a description
+         * of the text fields in the template.  The FXTool uses this information
+         * in its dynamic text dialog.
+         * @type {String}
+         */
+        this._templateDescription = &quot;&quot;;
+
+        /**
+         * A map of all registered widgets.  The key is the fieldNum and the
+         * value is the Widget itself.
+         * @type {Object}
+         */
+        this._widgets = new Map();
+
+        /**
+         * Flag that indicates if setVisible has been called.
+         * @type {Boolean}
+         */
+        this._setVisibleCalled = false;
+
+        /**
+         * Flag that indicates if fullyVisible has been called.
+         * @type {Boolean}
+         */
+        this._fullyVisibleCalled = false;
+
+        /**
+         * Object used to manage the main movie clip&apos;s timeline.
+         * @type {Object}
+         */
+        this._timeline = {
+            isPlaying: false,
+            action: HarmonicTemplate.TIMELINE_ACTION_NONE,
+            frame: 0,
+            continueToOutro: false,
+            isThreePointAnimation: false,
+            loopStartFrame: -1,
+            loopEndFrame: -1
+        };
+
+        /**
+         * Object used to communicate the location and size of the content.
+         * @type {Object}
+         */
+        this._contentRect = new createjs.Rectangle(0, 0, 0, 0);
+
+        /**
+         * An anchor widget will set the override and it will get applied
+         * once the template is loaded.
+         */
+        this._anchorOverride = HarmonicTemplate.ANCHOR_INVALID;
+
+        /**
+         * Object that is registered to override functions from this class.
+         * @type {Object}
+         */
+        this._override = undefined;
+
+        /**
+         * Flag that indicates that all widgets have loaded.
+         * @type {Boolean}
+         */
+        this._allWidgetsLoaded = false;
+
+        /**
+         * Count used to keep track of the number of ticks for widgets to load.
+         * @type {Number}
+         */
+        this._waitForAllWidgetsToLoadCount = 0;
+
+        /**
+         * Callback function used to poll the widget load status.  This is
+         * necessary for use in the add/remove listener functions.
+         * @type {Object}
+         */
+        this._waitForAllWidgetsToLoadCallback = this._waitForAllWidgetsToLoad.bind(this);
+
+        this._initializeDocumentEventHandlers();
+    }
+
+    /**
+     * Called from the Adobe-generated JavaScript after export root and the
+     * stage have been created.
+     */
+    init() {
+        hjs.debug(&quot;HarmonicTemplate.init&quot;);
+
+        if (!exportRoot) {      // exportRoot must exist before proceeding
+            hjs.error(&quot;HarmonicTemplate.init:  exportRoot is undefined&quot;);
+            return false;
+        }
+
+        if (!stage) {           // stage must exist before proceeding
+            hjs.error(&quot;HarmonicTemplate.init:  stage is undefined&quot;);
+            return false;
+        }
+
+        if (!stage.canvas) {    // stage.canvas must exist before proceeding
+            hjs.error(&quot;HarmonicTemplate.init:  stage.canvas is undefined&quot;);
+            return false;
+        }
+
+        // On the desktop, setup the config based on the stage size.
+        if (hjs.isOnDesktop()) {
+            this._config.activeDimsW = stage.canvas.width;
+            this._config.activeDimsH = stage.canvas.height;
+            this._config.priChannelW = stage.canvas.width;
+            this._config.priChannelH = stage.canvas.height;
+        }
+
+        // Save the template width and height
+        this._templateWidth = stage.canvas.width;
+        this._templateHeight = stage.canvas.height;
+
+        this._initializeStageEventHandlers();
+
+        return true;
+    }
+
+    /**
+     * This method allows a client to override many of the public methods
+     * in this class.  The most common use of this is overriding the
+     * updateTextField functionality.
+     *
+     * @param {Object} overrideObj - the override object
+     */
+    registerOverride(overrideObj) {
+        this._override = overrideObj;
+    }
+
+    //--------------------------------------------------------------------------
+    // Getters and Setters
+    //--------------------------------------------------------------------------
+
+    /**
+     * Returns the XML description of all text fields.
+     *
+     * @return {String}
+     */
+    get description() {
+        return this._templateDescription;
+    }
+
+    /**
+     * Returns the channel this template is running on.
+     *
+     * @return {Number}
+     */
+    get channel() {
+        return this._config.channel;
+    }
+
+    /**
+     * Returns the layer this template is running on.
+     *
+     * @return {Number}
+     */
+    get layer() {
+        return this._config.layer;
+    }
+
+    /**
+     * Returns the width of the primary video resolution.  For example, if
+     * the player is configured for 720p, then this function will return 1280.
+     *
+     * This value is only valid after the INIT message has been received.  Clients
+     * should wait until LOAD_COMPLETE to sample this data.
+     *
+     * @return {Number}
+     */
+    get primaryVideoWidth() {
+        if (this._config.isSecChannel) {
+            return this._config.priChannelW;
+        }
+        else {
+            return this._config.activeDimsW;
+        }
+    }
+
+    /**
+     * Returns the height of the primary video resolution.  For example, if
+     * the player is configured for 720p, then this function will return 720.
+     *
+     * This value is only valid after the INIT message has been received.  Clients
+     * should wait until LOAD_COMPLETE to sample this data.
+     *
+     * @return {Number}
+     */
+    get primaryVideoHeight() {
+        if (this._config.isSecChannel) {
+            return this._config.priChannelH;
+        }
+        else {
+            return this._config.activeDimsH;
+        }
+    }
+
+    /**
+     * Returns true when independent branding is enabled and the template is
+     * running in the secondary channel.
+     *
+     * This value is only valid after the INIT message has been received.  Clients
+     * should wait until LOAD_COMPLETE to sample this data.
+     *
+     * @return {Number}
+     */
+    get isSecondaryChannel() {
+        return this._config.isSecChannel;
+    }
+
+    /**
+     * Returns the width of the secondary video resolution.  This value will
+     * be valid when isSecondaryChannel() return true.
+     *
+     * This value is only valid after the INIT message has been received.  Clients
+     * should wait until LOAD_COMPLETE to sample this data.
+     *
+     * @return {Number}
+     */
+    get secondaryVideoWidth() {
+        if (this._config.isSecChannel) {
+            return this._config.activeDimsW;
+        }
+        else {
+            return 0;
+        }
+    }
+
+    /**
+     * Returns the height of the secondary video resolution.  This value will
+     * be valid when isSecondaryChannel() return true.
+     *
+     * This value is only valid after the INIT message has been received.  Clients
+     * should wait until LOAD_COMPLETE to sample this data.
+     *
+     * @return {Number}
+     */
+    get secondaryVideoHeight() {
+        if (this._config.isSecChannel) {
+            return this._config.activeDimsH;
+        }
+        else {
+            return 0;
+        }
+    }
+
+    /**
+     * Returns the Oxtel TCP port for the channel.
+     *
+     * This value is only valid after the INIT message has been received.  Clients
+     * should wait until LOAD_COMPLETE to sample this data.
+     *
+     * @return {Number}
+     */
+    get oxtelTcpPort() {
+        if (this._config.oxtelTcpPort) {
+            return this._config.oxtelTcpPort;
+        }
+        else {
+            return 0;
+        }
+    }
+
+    /**
+     * Returns the Oxtel Serial over TCP port for the channel.
+     *
+     * This value is only valid after the INIT message has been received.  Clients
+     * should wait until LOAD_COMPLETE to sample this data.
+     *
+     * @return {Number}
+     */
+    get oxtelSerialOverTcpPort() {
+        if (this._config.oxtelSerialOverTcpPort) {
+            return this._config.oxtelSerialOverTcpPort;
+        }
+        else {
+            return 0;
+        }
+    }
+
+    //--------------------------------------------------------------------------
+    // Public Methods
+    //--------------------------------------------------------------------------
+
+    //
+    // Template Animation Methods
+    //
+
+    /**
+     * Starts template animation.
+     *
+     * @param {Object} obj
+     * @return {Boolean}
+     */
+    startTemplateAnimation(obj) {
+        hjs.debug(&quot;HarmonicTemplate.startTemplateAnimation&quot;);
+
+        if (this._timeline.isPlaying) {
+            return true;
+        }
+
+        this._timeline.isPlaying = true;
+        this._timeline.action = HarmonicTemplate.TIMELINE_ACTION_PLAY;
+        this._timeline.continueToOutro = false;
+
+        hjs.signalTemplatePlaying(true);
+
+        return true;
+    }
+
+    /**
+     * Stops template animation.
+     *
+     * @param {Object} obj
+     * @param {Boolean} obj.immediate - true = stop immediately, false = stop at the end of the animation.
+     * @return {Boolean}
+     */
+    stopTemplateAnimation(obj) {
+        hjs.debug(&quot;HarmonicTemplate.stopTemplateAnimation&quot;);
+
+        if (!this._timeline.isPlaying) {
+            return true;
+        }
+
+        // If immediate or the timeline only contains a single frame,
+        // then stop now and signal not playing.
+        if (obj.immediate || (exportRoot.timeline.duration == 1)) {
+
+            this._timeline.isPlaying = false;
+            this._timeline.action = HarmonicTemplate.TIMELINE_ACTION_STOP;
+            hjs.signalTemplatePlaying(false);
+        }
+        else {
+            this._timeline.continueToOutro = true;
+        }
+
+        return true;
+    }
+
+    /**
+     * Restarts template animation.
+     *
+     * @param {Object} obj
+     * @return {Boolean}
+     */
+    restartTemplateAnimation(obj) {
+        hjs.debug(&quot;HarmonicTemplate.restartTemplateAnimation&quot;);
+
+        this._timeline.action = HarmonicTemplate.TIMELINE_ACTION_GOTO_AND_PLAY;
+        this._timeline.frame = 0;
+        this._timeline.continueToOutro = false;
+
+        if (!this._timeline.isPlaying) {
+            this._timeline.isPlaying = true;
+            hjs.signalTemplatePlaying(true);
+        }
+
+        return true;
+    }
+
+    /**
+     * Goto frame number and play.
+     *
+     * @param {Object} obj
+     * @param {Number} obj.frame - the frame number to goto
+     * @return {Boolean}
+     */
+    gotoFrame(obj) {
+        hjs.debug(&quot;HarmonicTemplate.gotoFrame&quot;);
+
+        if (this._timeline.isPlaying) {
+            this._timeline.action = HarmonicTemplate.TIMELINE_ACTION_GOTO_AND_PLAY;
+            this._timeline.frame = obj.frame;
+        }
+        else {
+            this._timeline.action = HarmonicTemplate.TIMELINE_ACTION_GOTO_AND_STOP;
+            this._timeline.frame = obj.frame;
+        }
+
+        return true;
+    }
+
+    /**
+     * This method is called internally.  It will be used to check for an
+     * override before calling the setVisible() function.
+     *
+     * This function should only perform processing if the template
+     * state is LOADED.
+     */
+    _setVisible() {
+        if (this._state == HarmonicTemplate.STATE_LOADED) {
+
+            let obj = {
+                functionName: HarmonicTemplate.SET_VISIBLE
+            }
+
+            this._checkForOverride(obj);
+        }
+    }
+
+    /**
+     * This function is required for the override mechanism to work.  The
+     * _setVisible call will perform the override check.  If no override
+     * is registered, then this function will be called.
+     *
+     * @param {Object} obj
+     */
+    setVisible(obj) {
+        hjs.debug(&quot;HarmonicTemplate.setVisible&quot;);
+
+        if (this._timeline.isPlaying) {
+            return true;
+        }
+
+        // Dispatch the VISIBLE_EVENT.
+        document.dispatchEvent(new Event(HarmonicTemplate.VISIBLE_EVENT));
+
+        this._timeline.action = HarmonicTemplate.TIMELINE_ACTION_PLAY_FROM_BEGINNING;
+        this._timeline.isPlaying = true;
+        hjs.signalTemplatePlaying(true);
+
+        // If just starting out, start all the field animations.
+        this.renderAllFields();
+
+        return true;
+    }
+
+    /**
+     * This method is called internally.  It will be used to check for an
+     * override before calling the fullyVisible() function.
+     *
+     * This function should only perform processing if the template
+     * state is LOADED.
+     */
+    _fullyVisible() {
+        if (this._state == HarmonicTemplate.STATE_LOADED) {
+            let obj = {
+                functionName: HarmonicTemplate.FULLY_VISIBLE
+            }
+
+            this._checkForOverride(obj);
+        }
+    }
+
+    /**
+     * This function is required for the override mechanism to work.  The
+     * _fullyVisible call will perform the override check.  If no override
+     * is registered, then this function will be called.
+     *
+     * @param {Object} obj
+     */
+    fullyVisible(obj) {
+        hjs.debug(&quot;HarmonicTemplate.fullyVisible&quot;);
+
+        if (this._timeline.isPlaying) {
+            return true;
+        }
+
+        document.dispatchEvent(new Event(HarmonicTemplate.FULLY_VISIBLE_EVENT));
+
+        this._timeline.action = HarmonicTemplate.TIMELINE_ACTION_PLAY;
+        this._timeline.isPlaying = true;
+        hjs.signalTemplatePlaying(true);
+
+        // If just starting out, start all the field animations.
+        this.renderAllFields();
+
+        return true;
+    }
+
+    //--------------------------------------------------------------------------
+    // Widget Methods
+    //--------------------------------------------------------------------------
+
+    /**
+     * Returns true if a widget has been registered with the Harmonic Template
+     * via the WIDGET_CREATED_EVENT.
+     *
+     * @param {Number} fieldNum
+     * @return {Boolean} true if widget is registered, false otherwise
+     */
+    isWidgetdRegistered(fieldNum) {
+        let widget = this._widgets.get(fieldNum);
+        return (widget !== undefined);
+    }
+
+    /**
+     * Returns the Harmonic Widget associated with the field number.
+     *
+     * @param {Number} fieldNum
+     * @return {Objet} Harmonic Widget or undefined if not registered
+     */
+    getWidgetByFieldNum(fieldNum) {
+        return this._widgets.get(fieldNum);
+    }
+
+    /**
+     * Oxtel command: Z0 - Update Text Field
+     *
+     * @param {Object} obj
+     * @param {String} obj.functionName - updateTextField
+     * @param {Number} obj.fieldNum - the field number identifier
+     * @param {String} obj.text - the text to render
+     * @param {Boolean} obj.render - flag indicating whether or not to render the text
+     * @return {Boolean}
+     */
+    updateTextField(obj) {
+        hjs.debug(&quot;HarmonicTemplate.updateTextField&quot;);
+        return this._dispatchWidgetEvent(obj);
+    }
+
+    /**
+     * Oxtel command: Z0 - Append Text Field
+     *
+     * @param {Object} obj
+     * @param {String} obj.functionName - appendTextField
+     * @param {Number} obj.fieldNum - the field number identifier
+     * @param {String} obj.text - the text to render
+     * @param {Boolean} obj.render - flag indicating whether or not to render the text
+     * @return {Boolean}
+     */
+    appendTextField(obj) {
+        hjs.debug(&quot;HarmonicTemplate.appendTextField&quot;);
+        return this._dispatchWidgetEvent(obj);
+    }
+
+    /**
+     * Updates the image path on a field.
+     *
+     * @param {Object} obj
+     * @param {String} obj.functionName - updateImageField
+     * @param {Number} obj.fieldNum - the field number identifier
+     * @param {String} obj.imagePath - the image path
+     * @return {Boolean}
+     */
+    updateImageField(obj) {
+        hjs.debug(&quot;HarmonicTemplate.updateImageField&quot;);
+        return this._dispatchWidgetEvent(obj);
+    }
+
+    /**
+     * Oxtel command: Z3 - Render Box
+     *
+     * @param {Object} obj
+     * @param {String} obj.functionName - renderField
+     * @param {Number} obj.fieldNum - the field number identifier
+     * @return {Boolean}
+     */
+    renderField(obj) {
+        hjs.debug(&quot;HarmonicTemplate.renderField&quot;);
+        return this._dispatchWidgetEvent(obj);
+    }
+
+    /**
+     * Renders all fields.
+     *
+     * @param {Object} obj
+     * @param {String} obj.functionName - renderAllFields
+     * @return {Boolean} - always true
+     */
+    renderAllFields(obj) {
+        hjs.debug(&quot;HarmonicTemplate.renderAllFields&quot;);
+        for (let widget of this._widgets.values()) {
+
+            const fieldNum = widget.fieldNum;
+
+            const obj = {
+                functionName: HarmonicTemplate.RENDER_FIELD,
+                fieldNum: fieldNum
+            }
+
+            this._dispatchWidgetEvent(obj);
+        }
+
+        return true;
+    }
+
+    //
+    // Field Animation commands
+    //
+
+    /**
+     * Stops animation on the specified field.
+     *
+     * @param {Object} obj
+     * @param {String} obj.functionName - stopFieldAnimation
+     * @param {Number} obj.fieldNum - the field number identifier
+     * @param {Boolean} obj.immediate - flag indicating whether to stop immediately or at the end of the animation.
+     * @return {Boolean}
+     */
+    stopFieldAnimation(obj) {
+        hjs.debug(&quot;HarmonicTemplate.stopFieldAnimation&quot;);
+        this._dispatchWidgetEvent(obj);
+    }
+
+    /**
+     * Restarts animation on the specified field.
+     *
+     * @param {Object} obj
+     * @param {String} obj.functionName - restartFieldAnimation
+     * @param {Number} obj.fieldNum - the field number identifier
+     * @param {Boolean} obj.fromBeginning - flag indicating whether to start from the beginning or at the current frame.
+     * @return {Boolean}
+     */
+    restartFieldAnimation(obj) {
+        hjs.debug(&quot;HarmonicTemplate.restartFieldAnimation&quot;);
+        this._dispatchWidgetEvent(obj);
+    }
+
+    /**
+     * Dispatches the WIDGET_EVENT event on the document.
+     *
+     * @emits {HarmonicTemplate.WIDGET_EVENT_&lt;fieldNum&gt;} to send the command to the widget
+     * @param {Object} obj - details of the event
+     */
+    _dispatchWidgetEvent(obj) {
+        let widget = this._widgets.get(obj.fieldNum);
+        if (widget) {
+            let event = new CustomEvent(HarmonicTemplate.WIDGET_EVENT + &quot;_&quot; + obj.fieldNum,
+                {
+                    detail : obj
+                }
+            );
+
+            document.dispatchEvent(event);
+
+            return true;
+        }
+        else {
+            hjs.error(&quot;HarmonicTemplate.&quot; + obj.functionName + &quot; failed: fieldNum &quot; + obj.fieldNum + &quot; has not been registered&quot;);
+            return false;
+        }
+    }
+
+    //--------------------------------------------------------------------------
+    // Private Methods
+    //--------------------------------------------------------------------------
+    /**
+     * This function will check to see if an override object has been registered.
+     * If it has, then it will call the override function.  It is the
+     * responsibility of the override to call the real function in the
+     * HarmonicTemplate instance.  Failure to do so will result in standard
+     * behavior not working.
+     *
+     * @param {Object} obj
+     * @param {String} obj.functionName - the name of the function
+     */
+    _checkForOverride(obj) {
+        // Delete the &apos;command&apos; property that is part of the received
+        // websocket message.
+        delete obj.command;
+        if (this._override) {
+            if (this._override.hasOwnProperty(obj.functionName)) {
+                return this._override[obj.functionName](obj);
+            }
+            else if (this._override.__proto__.hasOwnProperty(obj.functionName)) {
+                return this._override.__proto__[obj.functionName](obj);
+            }
+        }
+
+        return this[obj.functionName](obj);
+    }
+
+    /**
+     * Creates the XML template description and sends to HTML Renderer.
+     */
+    _initTemplateDescription() {
+        hjs.debug(&quot;HarmonicTemplate._initTemplateDescription: create template description&quot;);
+
+        this._templateDescription = &quot;&lt;harmonicTemplate&gt;&lt;version&gt;1.0.0&lt;/version&gt;&lt;components&gt;&quot;;
+        for (let widget of this._widgets.values()) {
+            if (widget.includeInTemplateDescription) {
+                this._templateDescription += &apos;&lt;component fieldType=\&quot;text&quot; id=\&quot;&apos; + widget.fieldNum.toString() + &apos;\&quot; label=\&quot;&apos; + widget.name + &apos;\&quot;&apos;;
+
+                if ((widget.createjsObj) &amp;&amp;
+                    (widget.createjsObj.harmonicField)) {
+                    this._templateDescription += &apos; value=\&quot;&apos; + widget.createjsObj.harmonicField.text + &apos;\&quot;&apos;;
+                }
+
+                this._templateDescription += &apos;/&gt;&apos;;
+            }
+        }
+        this._templateDescription += &quot;&lt;/components&gt;&lt;/harmonicTemplate&gt;&quot;;
+
+        hjs.debug(&quot;Template description: &quot; + this._templateDescription);
+
+        hjs.setTemplateDescription(this._templateDescription);
+    }
+
+    /**
+     * Detects if the template contains a 3-point animation.
+     * The code loops for a frame label called &apos;loop_start&apos; and
+     * &apos;loop_end&apos;.
+     *
+     * NOTE:  All reporting of errors will contain a +1 on the
+     *        label position to match the position in Adobe
+     *        Animate.
+     */
+    _detectThreePointAnimation() {
+        let isLoopStartValid = false;
+        let isLoopEndValid = false;
+        let labels = exportRoot.timeline.getLabels();
+        let length = labels.length;
+        for (let i = 0; i &lt; length; i++) {
+            let label = labels[i];
+            if (label.label == &quot;loop_start&quot;) {
+                if (this._timeline.loopStartFrame == -1) {
+                    this._timeline.loopStartFrame = label.position;
+                    isLoopStartValid = true;
+                }
+                else {
+                    hjs.error(&quot;Found duplicate &apos;loop_start&apos; label on frame: &quot; + (label.position + 1).toString());
+                    isLoopStartValid = false;
+                }
+            }
+            else if (label.label == &quot;loop_end&quot;) {
+                if (this._timeline.loopEndFrame == -1) {
+                    this._timeline.loopEndFrame = label.position;
+					isLoopEndValid = true;
+                }
+                else {
+					// Report +1 to match the view in Animate
+                    hjs.error(&quot;Found duplicate &apos;loop_end&apos; label on frame: &quot; + (label.position + 1).toString());
+                    isLoopEndValid = false;
+                }
+            }
+        }
+
+        if (isLoopStartValid &amp;&amp; isLoopEndValid) {
+			if (this._timeline.loopEndFrame &lt; this._timeline.loopStartFrame) {
+				hjs.error(&quot;&apos;loop_end&apos; must be after &apos;loop_start&apos;:  loop_start: &quot; + (this._timeline.loopStartFrame + 1).toString() + &quot; loop_end: &quot; + (this._timeline.loopEndFrame + 1).toString());
+				isLoopEndValid = false;
+			}
+			else {
+				hjs.info(&quot;3pt animation detected:  loop_start: &quot; + (this._timeline.loopStartFrame + 1).toString() + &quot; loop_end: &quot; + (this._timeline.loopEndFrame + 1).toString());
+
+				// Don&apos;t include the loop_end frame in the loop to allow for a 1 frame loop
+				this._timeline.loopEndFrame--;
+				this._timeline.isThreePointAnimation = true;
+			}
+        }
+    }
+
+    /**
+     * This method checks to see if the loading process is complete.
+     * The loading process is complete when:
+     * - the INIT command is received from the HTML renderer
+     * - the first &apos;tickend&apos; message is received
+     * - all widgets have reported a loaded status
+     */
+    _checkIfLoadComplete() {
+
+        if ((this._initCommandReceived) &amp;&amp;
+            (this._firstTickEndReceived) &amp;&amp;
+            (this._allWidgetsLoaded)) {
+
+            // Dispatch the LOAD_COMPLETE_EVENT -- this is directed
+            // at the document so that JavaScript clients can know this
+            // point in time.  All widgets should have been registered
+            // by this point.
+            document.dispatchEvent(new Event(HarmonicTemplate.LOAD_COMPLETE_EVENT));
+
+            // If on the desktop, just set the initial alpha to max.  This
+            // will trigger the play.
+            if (hjs.isOnDesktop()) {
+                this._config.alpha = HarmonicTemplate.MAX_ALPHA;
+            }
+
+            // Handle differences between preload and load
+            if (this._config.isPreload) {
+                this._handlePreloadComplete();
+            }
+            else {
+                this._handleLoadComplete(this._config.alpha);
+            }
+        }
+    }
+
+    /**
+     * Preload is now complete.  Update the state and signal
+     * Preload Complete back to the HTML renderer.  Once
+     * this is done, the template waits for Activate before
+     * continuing.  Activate is the transition from PRELOADED
+     * to LOADED.
+     */
+    _handlePreloadComplete() {
+        this._state = HarmonicTemplate.STATE_PRELOADED;
+
+        hjs.debug(&quot;HarmonicTemplate.signalPreloadComplete&quot;);
+        hjs.signalPreloadComplete(true);
+    }
+
+    /**
+     * Load is now complete.  Perform the following:
+     * - update the state to LOADED
+     * - set IsLive to true on the shared surface
+     * - signal Load Complete to the HTML renderer
+     * - handle the alpha based on the alpha parameter.
+     *
+     * @param {Number} alpha - the alpha at the time of the event
+     */
+    _handleLoadComplete(alpha) {
+        this._state = HarmonicTemplate.STATE_LOADED;
+
+        // If a widget has overridden the anchor, then apply it here.
+        if (this._anchorOverride != HarmonicTemplate.ANCHOR_INVALID) {
+            hjs.info(&quot;Anchor override detected in &quot; + hjs.templateName + &quot; - anchoring to &quot; + this._getAnchorStr(this._anchorOverride));
+            this._config.anchor = this._anchorOverride;
+        }
+
+        // Set the transform on the stage based on the scale mode and anchor
+        this._setTransform(this._config.scaleMode, this._config.anchor);
+
+        // Output warning if the canvas resolution doesn&apos;t match
+        // the configured active resolution.
+        let width = this._config.activeDimsW;
+        let height = this._config.activeDimsH;
+        if (((width != this._templateWidth) || (height != this._templateHeight)) &amp;&amp;
+            (this._config.scaleMode == HarmonicTemplate.SCALE_MODE_NONE) &amp;&amp;
+            (this._config.anchor == HarmonicTemplate.ANCHOR_NONE))
+        {
+            let cmd = &quot;Loaded&quot;;
+            if (this._config.isPreload) {
+                cmd = &quot;Preloaded&quot;;
+            }
+
+            hjs.warning(&quot;HarmonicTemplate: &quot; + cmd + &quot; template: &quot; + hjs.templateName + &quot; dimensions [&quot; + this._templateWidth + &quot;x&quot; + this._templateHeight + &quot;] do not match expected dimensions [&quot; + width + &quot;x&quot; + height + &quot;]&quot;);
+        }
+
+        hjs.debug(&quot;HarmonicTemplate.setIsLive(true)&quot;);
+        hjs.setIsLive(true);
+
+        hjs.debug(&quot;HarmonicTemplate.signalLoadComplete&quot;);
+        hjs.signalLoadComplete(true);
+
+        this._handleAlpha(alpha);
+    }
+
+    _printConfig() {
+        hjs.debug(&quot;config:&quot;);
+        hjs.debug(&quot;- isPreload:              &quot; + this._config.isPreload.toString());
+        hjs.debug(&quot;- alpha:                  &quot; + this._config.alpha.toString());
+        hjs.debug(&quot;- activeDimsW:            &quot; + this._config.activeDimsW.toString());
+        hjs.debug(&quot;- activeDimsH:            &quot; + this._config.activeDimsH.toString());
+        hjs.debug(&quot;- frameTime:              &quot; + this._config.frameTime.toString());
+        hjs.debug(&quot;- isSecChannel:           &quot; + this._config.isSecChannel.toString());
+        hjs.debug(&quot;- priChannelW:            &quot; + this._config.priChannelW.toString());
+        hjs.debug(&quot;- priChannelH:            &quot; + this._config.priChannelH.toString());
+        hjs.debug(&quot;- channel:                &quot; + this._config.channel.toString());
+        hjs.debug(&quot;- layer:                  &quot; + this._config.layer.toString());
+        hjs.debug(&quot;- scaleMode:              &quot; + this._config.scaleMode.toString() + &quot; = &quot; + this._getScaleModeStr(this._config.scaleMode));
+        hjs.debug(&quot;- anchor:                 &quot; + this._config.anchor.toString() + &quot; = &quot; + this._getAnchorStr(this._config.anchor));
+        if (this._config.oxtelTcpPort) {
+            hjs.debug(&quot;- oxtelTcpPort:           &quot; + this._config.oxtelTcpPort.toString());
+        }
+        if (this._config.oxtelSerialOverTcpPort) {
+            hjs.debug(&quot;- oxtelSerialOverTcpPort: &quot; + this._config.oxtelSerialOverTcpPort.toString());
+        }
+    }
+
+    /**
+     * This function analyzes the alpha parameter and
+     * calls the _setVisible and _fullyVisible functions
+     * if necessary.
+     *
+     * @param {Number} alpha
+     */
+    _handleAlpha(alpha) {
+        if (alpha &gt; 0) {
+            this._setVisible();
+        }
+
+        if (alpha == HarmonicTemplate.MAX_ALPHA) {
+            this._fullyVisible();
+        }
+    }
+
+    /**
+     * This function is invoked every tick until all widgets have returned
+     * a loaded status.  If the widgets don&apos;t load in time, continue to allow
+     * load complete to occur and output a warning.
+     * @param {Object} event
+     */
+    _waitForAllWidgetsToLoad(event) {
+
+        this._waitForAllWidgetsToLoadCount++;
+
+        if (this._waitForAllWidgetsToLoadCount &lt; HarmonicTemplate.MAX_WAIT_FOR_ALL_WIDGETS_TO_LOAD) {
+            for (let widget of this._widgets.values()) {
+                if (!widget.isLoaded()) {
+                    return;
+                }
+            }
+        }
+        else {
+            hjs.warning(&quot;Widgets did not load in &quot; + HarmonicTemplate.MAX_WAIT_FOR_ALL_WIDGETS_TO_LOAD.toString() + &quot; ticks - continuing to loaded state&quot;);
+            for (let widget of this._widgets.values()) {
+                hjs.warning(&quot;widget: fieldNum: &quot; + widget.fieldNum + &quot; name: &quot; + widget.name + &quot; loaded: &quot; + widget.isLoaded());
+            }
+        }
+
+        stage.removeEventListener(&quot;tick&quot;, this._waitForAllWidgetsToLoadCallback);
+        this._allWidgetsLoaded = true;
+        this._checkIfLoadComplete();
+    }
+
+
+    /**
+     * The stage is not available until the init() call is made.  At that time,
+     * add event handlers for the stage events.
+     *
+     * @listens {&apos;tickend&apos;} - listen for the first tickend to trigger load complete processing
+     * @listens {&apos;tick&apos;} - listen for every tick
+     */
+    _initializeStageEventHandlers() {
+
+        //----------------------------------------------------------------------
+        // stage.tickend handler - handles load complete processing
+        //----------------------------------------------------------------------
+        stage.on(&quot;tickend&quot;, (event) =&gt; {
+
+            // Only perform processing on frame 0
+            if (this._firstTickEndReceived == false) {
+                this._firstTickEndReceived = true;
+
+                // Initialize the template description
+                this._initTemplateDescription();
+
+                // Detect 3-pt animation
+                this._detectThreePointAnimation();
+
+                // Stop all movie clips
+                this._timeline.isPlaying = false;
+                this._stopAll();
+
+                hjs.debug(&quot;HarmonicTemplate: stage.tickend: currentFrame: &quot; + exportRoot.currentFrame);
+                this._checkIfLoadComplete();
+            }
+        },
+        this,
+        true);
+
+        //----------------------------------------------------------------------
+        // tick handler - waits for widgets to load
+        //----------------------------------------------------------------------
+        stage.addEventListener(&quot;tick&quot;, this._waitForAllWidgetsToLoadCallback);
+
+        //----------------------------------------------------------------------
+        // tick handler - handles timeline and 3 point animation
+        //----------------------------------------------------------------------
+        stage.addEventListener(&quot;tick&quot;, (event) =&gt; {
+            this._processTimelineActions();
+
+            if (!this._timeline.isPlaying) {
+                return;
+            }
+
+            // If this template contains a 3 point animation.
+            if (this._timeline.isThreePointAnimation) {
+                const currentFrame = exportRoot.currentFrame;
+                const totalFrames = exportRoot.totalFrames;
+
+                // If we reached the end frame and we need to loop then goto
+                // the start frame.
+                if (currentFrame == this._timeline.loopEndFrame) {
+                    if (!this._timeline.continueToOutro) {
+                        this._timeline.action = HarmonicTemplate.TIMELINE_ACTION_GOTO_AND_PLAY;
+                        this._timeline.frame = this._timeline.loopStartFrame;
+                    }
+                }
+
+                // If we reached the last frame and we got here from continueToOutro,
+                // then stop playing.
+                if (currentFrame == (totalFrames - 1) &amp;&amp; this._timeline.continueToOutro) {
+                    this._timeline.isPlaying = false;
+                    this._timeline.action = HarmonicTemplate.TIMELINE_ACTION_STOP;
+                    hjs.signalTemplatePlaying(false);
+                }
+            }
+        });
+    }
+
+    /**
+     * Initializes event handlers associated with the document.
+     *
+     * @listens {HJS.COMMAND_RECEIVED_EVENT} - sent when a websocket command is received in HJS
+     * @listens {HarmonicTemplate.WIDGET_CREATED_EVENT} - sent when a widget is created
+     */
+    _initializeDocumentEventHandlers() {
+
+        //----------------------------------------------------------------------
+        // Commands from the HTML renderer
+        //----------------------------------------------------------------------
+        document.addEventListener(HJS.COMMAND_RECEIVED_EVENT, (event) =&gt; {
+            switch (event.detail.command) {
+                case HJS.INIT_COMMAND:
+                    this._config = event.detail;
+                    this._initCommandReceived = true;
+                    this._printConfig();
+                    this._checkIfLoadComplete();
+                    break;
+                case HJS.START_TEMPLATE_ANIMATION_COMMAND:
+                    event.detail.functionName = HarmonicTemplate.START_TEMPLATE_ANIMATION;
+                    this._checkForOverride(event.detail);
+                    break;
+                case HJS.STOP_TEMPLATE_ANIMATION_COMMAND:
+                    event.detail.functionName = HarmonicTemplate.STOP_TEMPLATE_ANIMATION;
+                    this._checkForOverride(event.detail);
+                    break;
+                case HJS.RESTART_TEMPLATE_ANIMATION_COMMAND:
+                    event.detail.functionName = HarmonicTemplate.RESTART_TEMPLATE_ANIMATION;
+                    this._checkForOverride(event.detail);
+                    break;
+                case HJS.GOTO_FRAME_COMMAND:
+                    event.detail.functionName = HarmonicTemplate.GOTO_FRAME;
+                    this._checkForOverride(event.detail);
+                    break;
+                case HJS.UPDATE_TEXT_FIELD_COMMAND:
+                    event.detail.functionName = HarmonicTemplate.UPDATE_TEXT_FIELD;
+                    this._checkForOverride(event.detail);
+                    break;
+                case HJS.APPEND_TEXT_FIELD_COMMAND:
+                    event.detail.functionName = HarmonicTemplate.APPEND_TEXT_FIELD;
+                    this._checkForOverride(event.detail);
+                    break;
+                case HJS.UPDATE_IMAGE_FIELD_COMMAND:
+                    event.detail.functionName = HarmonicTemplate.UPDATE_IMAGE_FIELD;
+                    this._checkForOverride(event.detail);
+                    break;
+                case HJS.RENDER_FIELD_COMMAND:
+                    event.detail.functionName = HarmonicTemplate.RENDER_FIELD;
+                    this._checkForOverride(event.detail);
+                    break;
+                case HJS.RENDER_ALL_FIELDS_COMMAND:
+                    event.detail.functionName = HarmonicTemplate.RENDER_ALL_FIELDS;
+                    this._checkForOverride(event.detail);
+                    break;
+                case HJS.STOP_FIELD_ANIMATION_COMMAND:
+                    event.detail.functionName = HarmonicTemplate.STOP_FIELD_ANIMATION;
+                    this._checkForOverride(event.detail);
+                    break;
+                case HJS.RESTART_FIELD_ANIMATION_COMMAND:
+                    event.detail.functionName = HarmonicTemplate.RESTART_FIELD_ANIMATION;
+                    this._checkForOverride(event.detail);
+                    break;
+                case HJS.ALPHA_NOT_ZERO_COMMAND:
+                    this._alphaNotZero();
+                    break;
+                case HJS.ALPHA_AT_MAX_COMMAND:
+                    this._alphaAtMax();
+                    break;
+                case HJS.ACTIVATE_COMMAND:
+                    this._activate(event.detail);
+                    break;
+                case HJS.SOCKET_CONNECTED_COMMAND:
+                case HJS.SOCKET_DISCONNECTED_COMMAND:
+                case HJS.SOCKET_DATA_COMMAND:
+                case HJS.SOCKET_ERROR_COMMAND:
+                    // Handled by the Harmonic Socket class
+                    break;
+                case HJS.PING_COMMAND:
+                    // Just send pong - used for determining websocket performance
+                    hjs.pong();
+                    break;
+                default:
+                    hjs.error(&quot;HarmonicTemplate: invalid command received: &quot; + event.detail.command);
+                    break;
+            }
+        });
+
+        //----------------------------------------------------------------------
+        // Handler for the WIDGET_CREATED_EVENT
+        //----------------------------------------------------------------------
+        document.addEventListener(HarmonicTemplate.WIDGET_CREATED_EVENT, (event) =&gt; {
+            if (!this._widgets.has(event.detail.fieldNum)) {
+                hjs.debug(&quot;HarmonicTemplate: event: &quot; + HarmonicTemplate.WIDGET_CREATED_EVENT + &quot; fieldNum: &quot; + event.detail.fieldNum + &quot; name: &quot; + event.detail.name);
+                this._widgets.set(event.detail.fieldNum, event.detail);
+            }
+            else {
+                hjs.error(&quot;HarmonicTemplate: TextField &quot; + event.detail.fieldNum + &quot; already exists - duplicate detected&quot;);
+            }
+        });
+    }
+
+    //--------------------------------------------------------------------------
+    // Timeline Methods
+    //--------------------------------------------------------------------------
+
+    /**
+     * Processes timeline actions on the tick.
+     */
+    _processTimelineActions() {
+        switch (this._timeline.action) {
+            case HarmonicTemplate.TIMELINE_ACTION_NONE:
+                return;
+            case HarmonicTemplate.TIMELINE_ACTION_PLAY:
+                this._playAll(false);
+                break;
+            case HarmonicTemplate.TIMELINE_ACTION_PLAY_FROM_BEGINNING:
+                this._playAll(true);
+                break;
+            case HarmonicTemplate.TIMELINE_ACTION_STOP:
+                this._stopAll();
+                break;
+            case HarmonicTemplate.TIMELINE_ACTION_GOTO_AND_PLAY:
+                this._gotoAndPlayAll(this._timeline.frame);
+                break;
+            case HarmonicTemplate.TIMELINE_ACTION_GOTO_AND_STOP:
+                this._gotoAndStopAll(this._timeline.frame);
+                break;
+        }
+
+        this._timeline.action = HarmonicTemplate.TIMELINE_ACTION_NONE;
+    }
+
+    /**
+     * Calls play() on all movie clips on the display list.
+     *
+     * @param {Boolean} fromBeginning - play from beginning or from the current frame
+     */
+    _playAll(fromBeginning) {
+        let movieClips = this._findAllMovieClips();
+        let length = movieClips.length;
+
+        for (let i = 0; i &lt; length; i++) {
+            movieClips[i].play();
+        }
+
+        exportRoot.play();
+
+        // Restart all field animations
+        this._restartAllFieldAnimations(fromBeginning);
+    }
+
+    /**
+     * Dispatches the WIDGET_EVENT to all registered widgets.  The
+     * function is RESTART_FIELD_ANIMATION.
+     *
+     * @param {Boolean} fromBeginning - true = start animation from beginning, false = play from current frame
+     */
+    _restartAllFieldAnimations(fromBeginning) {
+        hjs.debug(&quot;HarmonicTemplate._restartAllFieldAnimations&quot;);
+
+        for (let widget of this._widgets.values()) {
+
+            const fieldNum = widget.fieldNum;
+
+            const obj = {
+                functionName: HarmonicTemplate.RESTART_FIELD_ANIMATION,
+                fieldNum: fieldNum,
+                fromBeginning: fromBeginning
+            };
+
+            this._dispatchWidgetEvent(obj);
+        }
+
+        return true;
+    }
+
+    /**
+     * Dispatches the WIDGET_EVENT to all registered widgets.  The
+     * function is STOP_FIELD_ANIMATION.
+     *
+     * @param {Boolean} immediate - true = stop immediately, false = stop at the end of the animation.
+     */
+    _stopAllFieldAnimations(immediate) {
+        hjs.debug(&quot;HarmonicTemplate._stopAllFieldAnimations&quot;);
+
+        for (let widget of this._widgets.values()) {
+
+            const fieldNum = widget.fieldNum;
+
+            const obj = {
+                functionName: HarmonicTemplate.STOP_FIELD_ANIMATION,
+                fieldNum: fieldNum,
+                immediate: immediate
+            };
+
+            this._dispatchWidgetEvent(obj);
+        }
+
+        return true;
+    }
+
+    /**
+     * Calls stop() on all movie clips on the display list.
+     */
+    _stopAll() {
+        let movieClips = this._findAllMovieClips();
+        let length = movieClips.length;
+
+        for (let i = 0; i &lt; length; i++) {
+            movieClips[i].stop();
+        }
+
+        exportRoot.stop();
+
+        // Stop all field animations
+        this._stopAllFieldAnimations(true);
+    }
+
+    /**
+     * Calls gotoAndPlay() on all movie clips on the display list.
+     *
+     * @param {Number} frame - the frame to go to.
+     */
+    _gotoAndPlayAll(frame) {
+        let movieClips = this._findAllMovieClips();
+        let length = movieClips.length;
+
+        for (let i = 0; i &lt; length; i++) {
+            movieClips[i].gotoAndPlay(frame);
+        }
+
+        exportRoot.gotoAndPlay(frame);
+    }
+
+    /**
+     * Calls gotoAndStop() on all movie clips on the display list.true
+     *
+     * @param {Number} frame - the frame to go to.
+     */
+    _gotoAndStopAll(frame) {
+        let movieClips = this._findAllMovieClips();
+        let length = movieClips.length;
+
+        for (let i = 0; i &lt; length; i++) {
+            movieClips[i].gotoAndStop(frame);
+        }
+
+        exportRoot.gotoAndStop(frame);
+    }
+
+    /**
+     * Finds all movie clips on the display list.
+     *
+     * @return {createjs.MovieClip[]} array of movie clips
+     */
+    _findAllMovieClips() {
+        let movieClips = new Array();
+        this._locateMovieClips(exportRoot, movieClips);
+        return movieClips;
+    }
+
+    /**
+     * Recursive function used to locate all movie clips on the display list.
+     *
+     * @param {Object} root
+     * @param {createjs.MovieClip[]} movieClips
+     */
+    _locateMovieClips(root, movieClips) {
+        let i;
+        let length = root.length;
+        for (i = 0; i &lt; root.numChildren; i++) {
+            let child = root.children[i];
+            if (child instanceof createjs.MovieClip) {
+                movieClips.push(child);
+                this._locateMovieClips(child, movieClips);
+            }
+            else if (child instanceof createjs.Container) {
+                this._locateMovieClips(child, movieClips);
+            }
+        }
+    }
+
+    //--------------------------------------------------------------------------
+    // Alpha Management
+    //--------------------------------------------------------------------------
+    /**
+     * Handles the case when alpha is no longer zero.
+     */
+    _alphaNotZero() {
+        hjs.debug(&quot;HarmonicTemplate._alphaNotZero&quot;);
+        if (!this._setVisibleCalled) {
+            this._setVisibleCalled = true;
+            this._setVisible();     // call the internal method
+        }
+    }
+
+    /**
+     * Handles the case when alpha reaches its maximum.
+     */
+    _alphaAtMax() {
+        hjs.debug(&quot;HarmonicTemplate._alphaAtMax&quot;);
+        if (!this._fullyVisibleCalled) {
+            this._fullyVisibleCalled = true;
+            this._fullyVisible();   // call the internal method
+        }
+    }
+
+    /**
+     * Handles activation from Preload to Load.
+     *
+     * @param {Object} obj
+     * @param {Number} obj.alpha - alpha at time of activate
+     */
+    _activate(obj) {
+
+        // From the Fade Manager in the Bootswf:
+        //
+        // addEventListener (ENTER FRAME) --- start animation a few frames later
+
+        this._handleLoadComplete(obj.alpha);
+    }
+
+    /**
+     * This function will downscale the primary graphic template when in
+     * independent branding mode and the secondary template is not present.
+     * @param {Number} scaleMode - the scale mode to apply
+     * @param {Number} anchor - the anchor to apply
+     */
+    _setTransform(scaleMode, anchor) {
+
+        let ssActiveWidth = this._config.activeDimsW;
+        let ssActiveHeight = this._config.activeDimsH;
+
+        this._contentRect.x = 0;
+        this._contentRect.y = 0;
+        this._contentRect.width = this._templateWidth;
+        this._contentRect.height = this._templateHeight;
+
+        // If the template dimensions match the stage dimension then there is nothing to do
+        // other than set the content rect.
+        if ((ssActiveWidth == this._templateWidth) &amp;&amp; (ssActiveHeight == this._templateHeight))
+        {
+            // Set the content rect and return
+            hjs.setContentRect(this._contentRect.x,  this._contentRect.y,  this._contentRect.width,  this._contentRect.height);
+            return;
+        }
+
+        //
+        // Useful constants
+        //
+        // NOTE:  The calculation for stage height as extra logic to round to
+        //        the nearest even number.
+        //
+        const ssActiveWidth16x9  = ssActiveHeight * 16 / 9;
+        const ssActiveHeight16x9 = ((ssActiveWidth  * 9 / 16) + 1) &amp; ~0x1;
+
+        const ssActiveWidth14x9  = ((ssActiveWidth * 16 / 14) + 1) &amp; ~0x1;
+        const ssActiveHeight14x9 = ((ssActiveWidth  * 9 / 14) + 1) &amp; ~0x1;
+
+        //
+        // Determine if the stage is 4x3
+        //
+        let isStage4x3 = false;
+        if ((ssActiveWidth * 3 / 4) == ssActiveHeight)
+        {
+            isStage4x3 = true;
+        }
+
+        //
+        // If the scale mode is not NONE and the stage and template are
+        // both 16x9, then force anamorphic to scale correctly.  Position
+        // at 0,0.
+        //
+        if (scaleMode != HarmonicTemplate.SCALE_MODE_NONE)
+        {
+            if ((ssActiveWidth * 9 / 16) == ssActiveHeight)
+            {
+                hjs.info(&quot;Both stage and template are 16:9 - using anamorphic scale mode&quot;);
+                scaleMode = HarmonicTemplate.SCALE_MODE_ANAMORPHIC;
+            }
+        }
+
+        //
+        // Get the primary channel resolution from the shared surface
+        //
+        let primaryWidth  = this._config.priChannelW;
+        let primaryHeight = this._config.priChannelH;
+
+        //
+        // Common variables
+        //
+        let scaled_active_rect_x = 0;
+        let scaled_active_rect_y = 0;
+        let scaled_active_rect_width = 0;
+        let scaled_active_rect_height = 0;
+
+        let scaled_template_width  = this._templateWidth;
+        let scaled_template_height = this._templateHeight;
+
+        let x = 0;
+        let y = 0;
+
+        let scaleX = 0;
+        let scaleY = 0;
+
+        switch (scaleMode)
+        {
+            case HarmonicTemplate.SCALE_MODE_NONE:
+                scaled_active_rect_x      = 0;
+                scaled_active_rect_y      = 0;
+                scaled_active_rect_width  = ssActiveWidth;
+                scaled_active_rect_height = ssActiveHeight;
+
+                scaled_template_width  = this._templateWidth;
+                scaled_template_height = this._templateHeight;
+                break;
+
+            case HarmonicTemplate.SCALE_MODE_ANAMORPHIC:
+                scaled_active_rect_x      = 0;
+                scaled_active_rect_y      = 0;
+                scaled_active_rect_width  = ssActiveWidth;
+                scaled_active_rect_height = ssActiveHeight;
+
+                scaled_template_width  = (this._templateWidth  * scaled_active_rect_width)  / primaryWidth;
+                scaled_template_height = (this._templateHeight * scaled_active_rect_height) / primaryHeight;
+                break;
+
+            case HarmonicTemplate.SCALE_MODE_CROP:
+                scaled_active_rect_x      = (ssActiveWidth  - ssActiveWidth14x9)  / 2;
+                scaled_active_rect_y      = (ssActiveHeight - ssActiveHeight14x9) / 2;
+                scaled_active_rect_width  = ssActiveWidth14x9;
+                scaled_active_rect_height = ssActiveHeight14x9;
+
+                scaled_template_width  = (this._templateWidth  * scaled_active_rect_width)  / primaryWidth;
+                scaled_template_height = (this._templateHeight * scaled_active_rect_height) / primaryHeight;
+
+                // ALERT - PAL Adjustment
+                if ((ssActiveWidth == 768) &amp;&amp; (ssActiveHeight == 576))
+                {
+                    scaled_active_rect_y -= 1;
+                }
+                break;
+
+            case HarmonicTemplate.SCALE_MODE_FULL:
+                scaled_active_rect_x      = (ssActiveWidth - ssActiveWidth16x9) / 2;
+                scaled_active_rect_y      = 0;
+                scaled_active_rect_width  = ssActiveWidth16x9;
+                scaled_active_rect_height = ssActiveHeight;
+
+                scaled_template_width  = (this._templateWidth  * scaled_active_rect_width)  / primaryWidth;
+                scaled_template_height = (this._templateHeight * scaled_active_rect_height) / primaryHeight;
+                break;
+
+            case HarmonicTemplate.SCALE_MODE_LETTERBOX:
+                scaled_active_rect_x      = 0;
+                scaled_active_rect_y      = (ssActiveHeight - ssActiveHeight16x9) / 2;
+                scaled_active_rect_width  = ssActiveWidth;
+                scaled_active_rect_height = ssActiveHeight16x9;
+
+                scaled_template_width  = (this._templateWidth  * scaled_active_rect_width)  / primaryWidth;
+                scaled_template_height = (this._templateHeight * scaled_active_rect_height) / primaryHeight;
+
+                // ALERT - PAL Adjustment
+                if ((ssActiveWidth == 768) &amp;&amp; (ssActiveHeight == 576))
+                {
+                    scaled_active_rect_y -= 2;
+                }
+                break;
+
+            default:
+                hjs.error(&quot;Error: invalid scale mode: &quot; + scaleMode);
+                break;
+        }
+
+        if (scaleMode == HarmonicTemplate.SCALE_MODE_NONE)
+        {
+            scaleX = 1;
+            scaleY = 1;
+        }
+        else
+        {
+            if (anchor == HarmonicTemplate.ANCHOR_NONE)
+            {
+                scaled_template_width = scaled_active_rect_width;
+                scaled_template_height = scaled_active_rect_height;
+
+                scaleX = scaled_active_rect_width / this._templateWidth;
+                scaleY = scaled_active_rect_height / this._templateHeight;
+            }
+            else
+            {
+                scaleX = scaled_template_width  / this._templateWidth;
+                scaleY = scaled_template_height / this._templateHeight;
+            }
+        }
+
+        switch (anchor)
+        {
+            case HarmonicTemplate.ANCHOR_NONE:
+            case HarmonicTemplate.ANCHOR_TOP_LEFT:
+            case HarmonicTemplate.ANCHOR_MIDDLE_LEFT:
+            case HarmonicTemplate.ANCHOR_BOTTOM_LEFT:
+                x = scaled_active_rect_x;
+                break;
+            case HarmonicTemplate.ANCHOR_MIDDLE:
+            case HarmonicTemplate.ANCHOR_TOP_MIDDLE:
+            case HarmonicTemplate.ANCHOR_BOTTOM_MIDDLE:
+                x = ((scaled_active_rect_width - scaled_template_width) / 2) + scaled_active_rect_x;
+                break;
+            case HarmonicTemplate.ANCHOR_TOP_RIGHT:
+            case HarmonicTemplate.ANCHOR_MIDDLE_RIGHT:
+            case HarmonicTemplate.ANCHOR_BOTTOM_RIGHT:
+                x = (scaled_active_rect_width - scaled_template_width) + scaled_active_rect_x;
+                break;
+            default:
+                x = scaled_active_rect_x;
+                hjs.error(&quot;Error: invalid anchor: &quot; + anchor);
+                break;
+        }
+
+        switch (anchor)
+        {
+            case HarmonicTemplate.ANCHOR_NONE:
+            case HarmonicTemplate.ANCHOR_TOP_LEFT:
+            case HarmonicTemplate.ANCHOR_TOP_MIDDLE:
+            case HarmonicTemplate.ANCHOR_TOP_RIGHT:
+                y = scaled_active_rect_y;
+                break;
+            case HarmonicTemplate.ANCHOR_MIDDLE_LEFT:
+            case HarmonicTemplate.ANCHOR_MIDDLE:
+            case HarmonicTemplate.ANCHOR_MIDDLE_RIGHT:
+                y = ((scaled_active_rect_height - scaled_template_height) / 2) + scaled_active_rect_y;
+                break;
+            case HarmonicTemplate.ANCHOR_BOTTOM_LEFT:
+            case HarmonicTemplate.ANCHOR_BOTTOM_MIDDLE:
+            case HarmonicTemplate.ANCHOR_BOTTOM_RIGHT:
+                y = (scaled_active_rect_height - scaled_template_height) + scaled_active_rect_y;
+                break;
+            default:
+                y = scaled_active_rect_y;
+                hjs.error(&quot;Error: invalid anchor: &quot; + anchor);
+                break;
+        }
+
+        x = Math.floor(x);
+        y = Math.floor(y);
+
+        // Set the content rect using the information found above.
+        this._contentRect.x = x;
+        this._contentRect.y = y;
+        this._contentRect.width = Math.ceil(scaled_template_width);
+        this._contentRect.height = Math.ceil(scaled_template_height);
+
+        // Create a rectangle that represents the shared surface active area.
+        let ssRect = new createjs.Rectangle(0, 0, this._config.activeDimsW, this._config.activeDimsH);
+
+        // Useful for debugging scaling/anchoring
+        hjs.debug(&quot;scaleMode: &quot; + this._getScaleModeStr(scaleMode) + &quot; (&quot; + scaleMode + &quot;)&quot; + &quot; anchor: &quot; + this._getAnchorStr(anchor) + &quot; (&quot; + anchor + &quot;)&quot; +
+                 &quot; ssActive: &quot; + ssActiveWidth + &quot;x&quot; + ssActiveHeight +
+                 &quot; template: &quot; + this._templateWidth + &quot;x&quot; + this._templateHeight +
+                 &quot; x: &quot; + x + &quot; y: &quot; + y + &quot; scaleX: &quot; + scaleX.toFixed(3) + &quot; scaleY: &quot; + scaleY.toFixed(3) +
+                 &quot; contentRect: &quot; + this._contentRect.width + &quot;x&quot; + this._contentRect.height + &quot; @ &quot; + this._contentRect.x + &quot;,&quot; + this._contentRect.y +
+                 &quot; scaled_template_width: &quot; + scaled_template_width + &quot; scaled_template_height: &quot; + scaled_template_height +
+                 &quot; scaled_active_rect: &quot; + scaled_active_rect_width + &quot;x&quot; + scaled_active_rect_height + &quot; @ &quot; + scaled_active_rect_x + &quot;,&quot; + scaled_active_rect_y);
+
+        // Configure the stage based on where the
+        stage.canvas.style.position = &quot;fixed&quot;;
+        stage.canvas.style.width = scaled_template_width.toString() + &quot;px&quot;;
+        stage.canvas.width = scaled_template_width;
+        stage.canvas.style.height = scaled_template_height.toString() + &quot;px&quot;;
+        stage.canvas.height = scaled_template_height;
+        stage.canvas.style.left = x.toString() + &quot;px&quot;;
+        stage.canvas.style.top = y.toString() + &quot;px&quot;;
+        stage.scaleX = scaleX;
+        stage.scaleY = scaleY;
+
+        hjs.debug(&quot;stage:  scaleX: &quot; + scaleX.toFixed(3) + &quot; scaleY: &quot; + scaleY.toFixed(3) +
+                 &quot; stage.canvas: &quot; + stage.canvas.width + &quot;x&quot; + stage.canvas.height + &quot; css: &quot; + stage.canvas.style.cssText);
+
+        // Configure the animation container based on the content rect
+        let animation_container = document.getElementById(&quot;animation_container&quot;);
+        if (animation_container) {
+            animation_container.style.position = &quot;fixed&quot;;
+            animation_container.style.width = this._contentRect.width.toString() + &quot;px&quot;;
+            animation_container.style.height = this._contentRect.height.toString() + &quot;px&quot;;
+            animation_container.style.left = this._contentRect.x.toString() + &quot;px&quot;;
+            animation_container.style.top = this._contentRect.y.toString() + &quot;px&quot;;
+
+            hjs.debug(&quot;animation_container: css: &quot; + animation_container.style.cssText);
+        }
+        else {
+            hjs.error(&quot;unable to get the animation_container&quot;);
+        }
+
+        // Create a rectangle representing the shared surface active area
+        let ssActiveRect = new createjs.Rectangle();
+        ssActiveRect.x = 0;
+        ssActiveRect.y = 0;
+        ssActiveRect.width = ssActiveWidth;
+        ssActiveRect.height = ssActiveHeight;
+
+        // Create the mask relative to the stage
+        let mask = new createjs.Rectangle();
+        mask.x = x;
+        mask.y = y;
+        mask.width = stage.canvas.width;
+        mask.height = stage.canvas.height;
+        mask = mask.intersection(ssActiveRect);
+
+        if (mask) {
+            // Position the mask relative to the stage.
+            (x &lt; 0) ? mask.x = Math.abs(x) : mask.x = 0;
+            (y &lt; 0) ? mask.y = Math.abs(y) : mask.y = 0;
+
+            hjs.debug(&quot;mask: &quot; + mask.width + &quot;x&quot; + mask.height + &quot; @ &quot; + mask.x + &quot;,&quot; + mask.y);
+
+            var graphics = new createjs.Graphics().beginFill(&quot;#000000&quot;).drawRect(mask.x, mask.y, mask.width, mask.height);
+            stage.mask = new createjs.Shape(graphics);
+        }
+
+        // Adjust the content rect so that it lies in the shared surface active rect.
+        let ssContentRect = this._contentRect.intersection(ssActiveRect);
+        if (!ssContentRect) {
+            ssContentRect = new createjs.Rectangle();
+        }
+
+        this._contentRect = ssContentRect;
+
+        hjs.debug(&quot;ssContentRect: &quot; + this._contentRect.width + &quot;x&quot; + this._contentRect.height + &quot; @ &quot; + this._contentRect.x + &quot;,&quot; + this._contentRect.y);
+        hjs.setContentRect(this._contentRect.x,  this._contentRect.y,  this._contentRect.width,  this._contentRect.height);
+    }
+
+    /**
+     * Gets the anchor.
+     * @return {Number}
+     */
+    get anchor() {
+        return this._config.anchor;
+    }
+
+    /**
+     * Sets the anchor.
+     * @param {Number} anchor
+     */
+    set anchor(val) {
+        if ((val &gt;= 0) &amp;&amp; (val &lt; HarmonicTemplate.ANCHOR_MAX)) {
+            this._config.anchor = val;
+            this._setTransform(this._config.scaleMode, this._config.anchor);
+        }
+        else {
+            hjs.error(&quot;Anchor out of range: &quot; + val.toString() + &quot; valid range: 0 - &quot; + (HarmonicTemplate.ANCHOR_MAX - 1).toString());
+        }
+    }
+
+    /**
+     * Sets the anchor override.  The achor override will be applied just
+     * before the LOAD_COMPLETE_EVENT is dispatched.
+     * @param {Number} anchor override.
+     */
+    set anchorOverride(val) {
+        if ((val &gt;= 0) &amp;&amp; (val &lt; HarmonicTemplate.ANCHOR_MAX)) {
+            this._anchorOverride = val;
+        }
+        else {
+            hjs.error(&quot;Anchor override out of range: &quot; + val.toString() + &quot; valid range: 0 - &quot; + (HarmonicTemplate.ANCHOR_MAX - 1).toString());
+        }
+    }
+
+    /**
+     * Gets the anchor override.
+     * @param {Number} anchor override
+     */
+    get anchorOverride() {
+        return this._anchorOverride;
+    }
+
+    /**
+     * Gets the scale mode.
+     * @return {Number} scale mode
+     */
+    get scaleMode() {
+        return this._config.scaleMode;
+    }
+
+    /**
+     * Sets the scale mode.
+     * @param {Number} scale mode
+     */
+    set scaleMode(val) {
+        if ((val &gt;=0) &amp;&amp; (val &lt; HarmonicTemplate.SCALE_MODE_MAX)) {
+            this._config.scaleMode = val;
+            this._setTransform(this._config.scaleMode, this._config.anchor);
+        }
+        else {
+            hjs.error(&quot;Scale mode out of range: &quot; + val.toString() + &quot; valid range: 0 - &quot; + (HarmonicTemplate.SCALE_MODE_MAX - 1).toString());
+        }
+    }
+
+    /**
+     * Returns the text representation of the anchor value.
+     * @param {Number} anchor - the anchor value to lookup
+     * @return {String} - the text representation of the anchor value
+     */
+    _getAnchorStr(anchor)
+    {
+        switch (anchor)
+        {
+            case HarmonicTemplate.ANCHOR_NONE:          return &quot;None&quot;;
+            case HarmonicTemplate.ANCHOR_TOP_LEFT:      return &quot;TopLeft&quot;;
+            case HarmonicTemplate.ANCHOR_TOP_MIDDLE:    return &quot;TopMiddle&quot;;
+            case HarmonicTemplate.ANCHOR_TOP_RIGHT:     return &quot;TopRight&quot;;
+            case HarmonicTemplate.ANCHOR_MIDDLE_LEFT:   return &quot;MiddleLeft&quot;;
+            case HarmonicTemplate.ANCHOR_MIDDLE:        return &quot;Middle&quot;;
+            case HarmonicTemplate.ANCHOR_MIDDLE_RIGHT:  return &quot;MiddleRight&quot;;
+            case HarmonicTemplate.ANCHOR_BOTTOM_LEFT:   return &quot;BottomLeft&quot;;
+            case HarmonicTemplate.ANCHOR_BOTTOM_MIDDLE: return &quot;BottomMiddle&quot;;
+            case HarmonicTemplate.ANCHOR_BOTTOM_RIGHT:  return &quot;BottomRight&quot;;
+            default:                                    return &quot;Unknown&quot;;
+        }
+    }
+
+    /**
+     * Returns the text representation of the scale mode value.
+     * @param {Number} scaleMode - the scale mode value to lookup
+     * @return {String} - the text representation of the scale mode value
+     */
+    _getScaleModeStr(scaleMode)
+    {
+        switch (scaleMode)
+        {
+            case HarmonicTemplate.SCALE_MODE_NONE:        return &quot;None&quot;;
+            case HarmonicTemplate.SCALE_MODE_ANAMORPHIC:  return &quot;Anamorphic&quot;;
+            case HarmonicTemplate.SCALE_MODE_CROP:        return &quot;Crop&quot;;
+            case HarmonicTemplate.SCALE_MODE_FULL:        return &quot;Full&quot;;
+            case HarmonicTemplate.SCALE_MODE_LETTERBOX:   return &quot;Letter&quot;;
+            default:                                      return &quot;Unknown&quot;;
+        }
+    }
+
+    /**
+     * Enables primary to secondary downscale mode for testing on the
+     * desktop.
+     * @param {Number} priChannelW - primary channel width
+     * @param {Number} priChannelH - primary channel height
+     * @param {Number} secChannelW - secondary channel width
+     * @param {Number} secChannelH - secondary channel height
+     */
+    enableP2S(priChannelW, priChannelH, secChannelW, secChannelH) {
+        if (hjs.isOnDesktop()) {
+            this._config.isSecChannel = true;
+            this._config.priChannelW = priChannelW;
+            this._config.priChannelH = priChannelH;
+            this._config.activeDimsW = secChannelW;
+            this._config.activeDimsH = secChannelH;
+
+            this._setTransform(this._config.scaleMode, this._config.anchor);
+        }
+        else {
+            hjs.error(&quot;enableP2S is only available in the desktop environment&quot;);
+        }
+    }
+}
+
+//------------------------------------------------------------------------------
+// Events
+//------------------------------------------------------------------------------
+HarmonicTemplate.LOAD_COMPLETE_EVENT = &quot;LoadCompleteEvent&quot;;   // all widgets should be registered at this time
+HarmonicTemplate.VISIBLE_EVENT = &quot;VisibleEvent&quot;;
+HarmonicTemplate.FULLY_VISIBLE_EVENT = &quot;FullyVisible&quot;;
+
+//------------------------------------------------------------------------------
+// Constants
+//------------------------------------------------------------------------------
+// State
+HarmonicTemplate.STATE_UNKNOWN = 0;
+HarmonicTemplate.STATE_PRELOADED = 1;
+HarmonicTemplate.STATE_LOADED = 2;
+
+HarmonicTemplate.MAX_WAIT_FOR_ALL_WIDGETS_TO_LOAD = 600;
+HarmonicTemplate.MAX_ALPHA = 65536;
+
+// Scale Mode
+HarmonicTemplate.SCALE_MODE_NONE       = 0;
+HarmonicTemplate.SCALE_MODE_ANAMORPHIC = 1;
+HarmonicTemplate.SCALE_MODE_CROP       = 2;
+HarmonicTemplate.SCALE_MODE_FULL       = 3;
+HarmonicTemplate.SCALE_MODE_LETTERBOX  = 4;
+HarmonicTemplate.SCALE_MODE_MAX        = 5;
+
+HarmonicTemplate.ANCHOR_INVALID       = -1;
+HarmonicTemplate.ANCHOR_NONE          = 0;
+HarmonicTemplate.ANCHOR_TOP_LEFT      = 1;
+HarmonicTemplate.ANCHOR_TOP_MIDDLE    = 2;
+HarmonicTemplate.ANCHOR_TOP_RIGHT     = 3;
+HarmonicTemplate.ANCHOR_MIDDLE_LEFT   = 4;
+HarmonicTemplate.ANCHOR_MIDDLE        = 5;
+HarmonicTemplate.ANCHOR_MIDDLE_RIGHT  = 6;
+HarmonicTemplate.ANCHOR_BOTTOM_LEFT   = 7;
+HarmonicTemplate.ANCHOR_BOTTOM_MIDDLE = 8;
+HarmonicTemplate.ANCHOR_BOTTOM_RIGHT  = 9;
+HarmonicTemplate.ANCHOR_MAX           = 10;
+
+//------------------------------------------------------------------------------
+// Timeline Constants
+//------------------------------------------------------------------------------
+HarmonicTemplate.TIMELINE_ACTION_NONE = 0;
+HarmonicTemplate.TIMELINE_ACTION_PLAY = 1;
+HarmonicTemplate.TIMELINE_ACTION_PLAY_FROM_BEGINNING = 2;
+HarmonicTemplate.TIMELINE_ACTION_STOP = 3;
+HarmonicTemplate.TIMELINE_ACTION_GOTO_AND_PLAY = 4;
+HarmonicTemplate.TIMELINE_ACTION_GOTO_AND_STOP = 5;
+
+//------------------------------------------------------------------------------
+// Widget Constants
+//------------------------------------------------------------------------------
+// Events
+HarmonicTemplate.WIDGET_CREATED_EVENT = &quot;WidgetCreatedEvent&quot;;
+HarmonicTemplate.WIDGET_EVENT = &quot;WidgetEvent&quot;;
+
+// Types
+HarmonicTemplate.WIDGET_TYPE_TEXT = &quot;text&quot;;
+HarmonicTemplate.WIDGET_TYPE_MOVIE_CLIP = &quot;movie clip&quot;;
+HarmonicTemplate.WIDGET_TYPE_COUNTDOWN = &quot;countdown&quot;;
+HarmonicTemplate.WIDGET_TYPE_VIDEO = &quot;video&quot;;
+
+//------------------------------------------------------------------------------
+// Functions that can be overridden.  Also, these constants are used in the
+// WIDGET_EVENT to inform the widget of the specific function to take.
+//------------------------------------------------------------------------------
+HarmonicTemplate.START_TEMPLATE_ANIMATION = &quot;startTemplateAnimation&quot;;
+HarmonicTemplate.STOP_TEMPLATE_ANIMATION = &quot;stopTemplateAnimation&quot;;
+HarmonicTemplate.RESTART_TEMPLATE_ANIMATION = &quot;restartTemplateAnimation&quot;;
+HarmonicTemplate.GOTO_FRAME = &quot;gotoFrame&quot;;
+HarmonicTemplate.RENDER_ALL_FIELDS = &quot;renderAllFields&quot;;
+HarmonicTemplate.SET_VISIBLE = &quot;setVisible&quot;;
+HarmonicTemplate.FULLY_VISIBLE = &quot;fullyVisible&quot;;
+
+// Functions that are sent directly to the widgets
+HarmonicTemplate.UPDATE_TEXT_FIELD = &quot;updateTextField&quot;;
+HarmonicTemplate.APPEND_TEXT_FIELD = &quot;appendTextField&quot;;
+HarmonicTemplate.UPDATE_IMAGE_FIELD = &quot;updateImageField&quot;;
+HarmonicTemplate.RENDER_FIELD = &quot;renderField&quot;;
+HarmonicTemplate.STOP_FIELD_ANIMATION = &quot;stopFieldAnimation&quot;;
+HarmonicTemplate.RESTART_FIELD_ANIMATION = &quot;restartFieldAnimation&quot;;
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

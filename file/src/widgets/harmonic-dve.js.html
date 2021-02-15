@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">src/widgets/harmonic-dve.js | Harmonic Template and Widget JavaScript Library</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./" style="display: flex; align-items: center;"><img src="./image/brand_logo.png" style="width:34px;"></a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/harmonic-font-face.js~HarmonicFontFace.html">HarmonicFontFace</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/harmonic-socket.js~HarmonicSocket.html">HarmonicSocket</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/harmonic-template.js~HarmonicTemplate.html">HarmonicTemplate</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#hjs">hjs</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/hjs/hjs-test.js~HarmonicTemplateTest.html">HarmonicTemplateTest</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/hjs/hjs.js~HJS.html">HJS</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-dve">dve</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-dve0">dve0</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-dve1">dve1</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-harmonicDVE">harmonicDVE</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-harmonicLiveAVO">harmonicLiveAVO</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-harmonicTemplate">harmonicTemplate</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-hjs">hjs</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-hjsConfig">hjsConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-liveAVO">liveAVO</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-liveAVO0">liveAVO0</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-liveAVO1">liveAVO1</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-hjstest">hjstest</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#widgets">widgets</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-countdown.js~HarmonicCountdown.html">HarmonicCountdown</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-dve.js~HarmonicDVE.html">HarmonicDVE</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-label-scroll.js~HarmonicLabelScroll.html">HarmonicLabelScroll</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-label.js~HarmonicLabel.html">HarmonicLabel</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-live-avo.js~HarmonicLiveAVO.html">HarmonicLiveAVO</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-movie-clip.js~HarmonicMovieClip.html">HarmonicMovieClip</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-text-field.js~HarmonicTextField.html">HarmonicTextField</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-text-scroll.js~HarmonicTextScroll.html">HarmonicTextScroll</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-video.js~HarmonicVideo.html">HarmonicVideo</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-widget.js~HarmonicWidget.html">HarmonicWidget</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-xmlhttprequest.js~HarmonicXMLHttpRequest.html">HarmonicXMLHttpRequest</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/widgets/harmonic-dve.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/**
+ * File: harmonic-dve.js
+ *
+ * Copyright (c) 2018 Harmonic, Inc.
+ */
+
+ /**
+ * The HarmonicDVE widget provides control of the system&apos;s DVE.
+ *
+ * The HarmonicDVE widget requires 5 createjs.MovieClips.  Each movie clip
+ * represents a different portion of the DVE control.  The DVE widgets in
+ * the Harmonic Template Widget Library have already been defined for your
+ * convenience.  This class just needs access to them.
+ *
+ * The 5 widgets that are needed are:
+ * - SrcPreview - used to preview the DVE in the desktop environment
+ * - SrcRegion - provides crop functionality
+ * - DstRegion - provides down-scale and position functionality
+ * - AudioDuckLevel - provides duck control on the audio voice-over unit
+ * - AudioMixLevel - provides mix control on the audio voice-over unit
+ *
+ * In order to properly use this class, it is highly-recommended to simply
+ * start with one of the blank dve templates.  These template were created
+ * to allow users to get up-and-running quickly.
+ *
+ * There are many properties associated with the DVE.  These properties are:
+ * - enable - enables/disable the DVE
+ * - enableHPT - enables/disables the hole punch technology
+ * - srcSelect - the DVE source
+ * - blendMode - blend with graphics vs. blend with video
+ * - stackPosition - top vs. bottom
+ * - relativePosition - DVE0 on top vs. DVE1 on top (dual DVE only)
+ */
+class HarmonicDVE {
+
+    /**
+     * Constructor
+     *
+     * @param {Number} unit - DVE unit number (0-1)
+     */
+    constructor(unit) {
+        hjs.debug(&quot;HarmonicDVE.constructor: unit: &quot; + unit);
+
+        /**
+         * DVE unit number
+         * @type {Number}
+         */
+        this._unit = unit;
+
+        /**
+         * Flag indicating if the DVE is valid.
+         * @type {Boolean}
+         */
+        this._isValidDve = false;
+
+        //----------------------------------------------------------------------
+        // DVE properties
+        //----------------------------------------------------------------------
+
+        /**
+         * Flag indicating if the DVE is live.
+         * @type {Boolean}
+         */
+        this._isLive = false;
+
+        /**
+         * Flag indicating if the DVE is enabled.
+         * @type {Boolean}
+         */
+        this._enable = true;
+
+        /**
+         * Flag indicating if the DVE Hole Punch Technology is enabled.
+         * @type {Boolean}
+         */
+        this._enableHPT = true;
+
+        /**
+         * DVE&apos;s source selection.
+         * @type {Number}
+         */
+        this._srcSelect = HarmonicDVE.SRC_UNSPECIFIED;
+
+        /**
+         * DVE&apos;s blend mode.
+         * @type {Number}
+         */
+        this._blendMode = HarmonicDVE.BLEND_WITH_VIDEO;
+
+        /**
+         * DVE&apos;s stack position.
+         * @type {Number}
+         */
+        this._stackPosition = HarmonicDVE.TOP_MOST_STACK_POSITION;
+
+        /**
+         * DVE&apos;s relative position (for enhanced channel).
+         * @type {Number}
+         */
+        this._relativePosition = HarmonicDVE.RELATIVE_POSITION_0;
+
+        //----------------------------------------------------------------------
+        // Variables to hold the createjs objects.
+        //----------------------------------------------------------------------
+
+        /**
+         * Src Preview object
+         * @type {Object}
+         */
+        this._srcPreview = undefined;
+
+        /**
+         * Src Region object
+         * @type {Object}
+         */
+        this._srcRegion = undefined;
+
+        /**
+         * Dst Region object
+         * @type {Object}
+         */
+        this._dstRegion = undefined;
+
+        /**
+         * Audio Duck object
+         * @type {Object}
+         */
+        this._audioDuckLevel = undefined;
+
+        /**
+         * Audio Mix object
+         * @type {Object}
+         */
+
+        this._audioMixLevel = undefined;
+
+        //----------------------------------------------------------------------
+        // Initialize the elements that reside in the srcPreview MovieClip
+        //----------------------------------------------------------------------
+        /**
+         * The object that represents the Src Preview.
+         * @type {createjs.MovieClip}
+         */
+        this._srcPreviewMovieClip = new createjs.MovieClip();
+
+        /**
+         * The Src Preview bitmap object.
+         * @type {Object}
+         */
+        this._srcPreviewBitmap = undefined;
+
+        /**
+         * The Src Preview Red X object.
+         * @type {Object}
+         */
+        this._srcPreviewX = undefined;
+
+        /**
+         * DVE parameters for the shared surface.
+         * @type {Object}
+         */
+        this._params = {
+            command: HJS.SET_DVE_PARAMS_COMMAND,
+            unit: unit,
+            isLive: 0,
+            srcSelect: HarmonicDVE.SRC_UNSPECIFIED,
+            relativePosition: 0,
+            flags: 0,
+            isDirty: 0,
+            alpha: 0.0,
+            srcRectX: 0,
+            srcRectY: 0,
+            srcRectW: 0,
+            srcRectH: 0,
+            dstRectX: 0,
+            dstRectY: 0,
+            dstRectW: 0,
+            dstRectH: 0,
+            audioDuckLevel: 0.0,
+            audioMixLevel: 1.0
+        };
+    }
+
+    /**
+     * Register the objects that represent the DVE objects.
+     * These objects must be MovieClips for the rest of the code to work properly.
+     *
+     * @param {Object} dstRegion - createjs object that represents the dst region
+     * @param {Object} srcRegion - createjs object that represents the src region
+     * @param {Object} srcPreview - createjs object that represents the src preview
+     * @param {Object} audioDuckLevel - createjs object that represents the audio duck level
+     * @param {Object} audioMixLevel - createjs object that represents the audio mix level
+     *
+     * @return {Boolean} - true if registration was successful, false otherwise.
+     */
+    register(dstRegion, srcRegion, srcPreview, audioDuckLevel, audioMixLevel) {
+        if ((this._dstRegion === undefined) &amp;&amp;
+            (this._srcRegion === undefined) &amp;&amp;
+            (this._srcPreview === undefined) &amp;&amp;
+            (this._audioDuckLevel === undefined) &amp;&amp;
+            (this._audioMixLevel === undefined)) {
+
+            hjs.debug(&quot;HarmonicDVE.register: unit: &quot; + this._unit);
+
+            if (!(dstRegion instanceof createjs.MovieClip)) {
+                hjs.error(&quot;HarmonicDVE.register: DstRegion is not a container&quot;);
+                return false;
+            }
+
+            if (!(srcRegion instanceof createjs.MovieClip)) {
+                hjs.error(&quot;HarmonicDVE.register: SrcRegion is not a container&quot;);
+                return false;
+            }
+
+            if (!(srcPreview instanceof createjs.MovieClip)) {
+                hjs.error(&quot;HarmonicDVE.register: SrcPreview is not a container&quot;);
+                return false;
+            }
+
+            if (!(audioDuckLevel instanceof createjs.MovieClip)) {
+                hjs.error(&quot;HarmonicDVE.register: AudioDuckLevel is not a container&quot;);
+                return false;
+            }
+
+            if (!(audioMixLevel instanceof createjs.MovieClip)) {
+                hjs.error(&quot;HarmonicDVE.register: AudioMixLevel is not a container&quot;);
+                return false;
+            }
+
+            this._dstRegion = dstRegion;
+            this._srcRegion = srcRegion;
+            this._srcPreview = srcPreview;
+            this._audioDuckLevel = audioDuckLevel;
+            this._audioMixLevel = audioMixLevel;
+
+            this._init();
+
+            return true;
+        }
+
+        return false;
+    }
+
+    /**
+     * After successful registration, this method will initialize everything
+     * necessary for the DVE to function.
+     *
+     * @listens {HarmonicTemplate.VISIBLE_EVENT} when the template is visible
+     * @listens {&apos;tickend&apos;} when the tick ends its processing
+     */
+    _init() {
+        this._isValidDve = true;
+
+        // Make all objects invisible.
+        this._dstRegion.visible = false;
+        this._srcRegion.visible = false;
+        this._srcPreview.visible = false;
+
+        if (hjs.showDveSrcPreview) {
+            this._desktopCreateSrcPreviewMovieClip();
+        }
+
+        // Listen for the VISIBLE_EVENT.  This will set the visible flag to
+        // true.
+        document.addEventListener(HarmonicTemplate.VISIBLE_EVENT, (event) =&gt; {
+            if (this._isValidDve) {
+                this._isLive = true;
+            }
+        });
+
+        // Only listen for &apos;tickend&apos; when all components have been registered.
+        stage.addEventListener(&apos;tickend&apos;, (event) =&gt; {
+            this._onTickEnd();
+        });
+    }
+
+    /**
+     * This method is called when the stage dispatches the &apos;tickend&apos; event.
+     * At this time, the DVE logic needs to be run.  There are slightly
+     * different implementations between the platform and the desktop.
+     */
+    _onTickEnd() {
+        if (hjs.showDveSrcPreview) {
+            this._onTickEndShowDveSrcPreview();
+        }
+        else {
+            if (hjs.isOnPlatform()) {
+                this._tickEndOnPlatform();
+            }
+        }
+    }
+
+    //--------------------------------------------------------------------------
+    // Platform Methods
+    //--------------------------------------------------------------------------
+
+    /**
+     * This method provides the platform DVE functionality.  All DVE data is
+     * packed into an object and sent to the HTML renderer via websockets.
+     */
+    _tickEndOnPlatform() {
+
+        let srcRegionBounds = this._srcRegion.getTransformedBounds();
+        let dstRegionBounds = this._dstRegion.getTransformedBounds();
+        let flags = 0x00;
+
+        if (!srcRegionBounds) {
+            hjs.error(&quot;HarmonicDVE._tickCompleteOnPlatform: srcRegion bounds is null&quot;);
+            return;
+        }
+
+        if (!dstRegionBounds) {
+            hjs.error(&quot;HarmonicDVE._tickCompleteOnPlatform: dstRegion bounds is null&quot;);
+            return;
+        }
+
+        // Initialize a local params - need command and unit.  Copy them from the
+        // member variable.
+        let params = {
+            command: this._params.command,
+            unit: this._params.unit
+        };
+
+        params.isLive = (this.isLive) ? 1 : 0;
+        params.srcSelect = this.srcSelect;
+        params.relativePosition = this.relativePosition;
+        params.isDirty = 1;
+
+        // Set the proper flags.
+        if (this.enable) {
+            flags |= HarmonicDVE.FLAG_ENABLE;
+        }
+
+        if (this.enableHPT) {
+            flags |= HarmonicDVE.FLAG_ENABLE_HOLEPUNCH;
+        }
+
+        if (this.blendMode == HarmonicDVE.BLEND_WITH_GRAPHICS) {
+            flags |= HarmonicDVE.FLAG_BLEND_MODE_WITH_GRAPHICS;
+        }
+
+        if (this.stackPosition == HarmonicDVE.TOP_MOST_STACK_POSITION) {
+            flags |= HarmonicDVE.FLAG_STACK_POS_TOP_MOST;
+        }
+
+        params.flags = flags;
+
+        // SrcRegion properties
+        params.srcRectX = Math.round(srcRegionBounds.x);
+        params.srcRectY = Math.round(srcRegionBounds.y);
+        params.srcRectW = Math.round(srcRegionBounds.width);
+        params.srcRectH = Math.round(srcRegionBounds.height);
+
+        if (params.srcRectW &lt;= 1) {
+            params.srcRectW = 1;
+        }
+
+        if (params.srcRectH &lt;= 1) {
+            params.srcRectH = 1;
+        }
+
+        // DstRegion properties
+        params.alpha = this._dstRegion.alpha;
+        params.dstRectX = Math.round(dstRegionBounds.x);
+        params.dstRectY = Math.round(dstRegionBounds.y);
+        params.dstRectW = Math.round(dstRegionBounds.width);
+        params.dstRectH = Math.round(dstRegionBounds.height);
+
+        if (params.dstRectW &lt;= 1) {
+            params.dstRectW = 1;
+        }
+
+        if (params.dstRectH &lt;= 1) {
+            params.dstRectH = 1;
+        }
+
+        // Audio levels are determined by the alpha on the createjs objects.
+        params.audioDuckLevel = this._audioDuckLevel.alpha;
+        params.audioMixLevel = this._audioMixLevel.alpha;
+
+        // Only send the DVE params if differences are found.
+        let differenceFound = false;
+        for (const key in this._params) {
+            if (this._params[key] != params[key]) {
+                this._params[key] = params[key];
+                differenceFound = true;
+            }
+        }
+
+        if (differenceFound) {
+            // hjs.debug(JSON.stringify(this._params));
+
+            hjs.setDVEParams(this._params);
+        }
+    }
+
+    //--------------------------------------------------------------------------
+    // Desktop Methods
+    //--------------------------------------------------------------------------
+
+    /**
+     * This method provides the functionality required to show the DVE
+     * Src Preview.
+     */
+    _onTickEndShowDveSrcPreview() {
+
+        // Get the bounds of the src and dst regions.  Round the widths and heights.
+        let srcRegionBounds = this._srcRegion.getTransformedBounds();
+        let dstRegionBounds = this._dstRegion.getTransformedBounds();
+
+        srcRegionBounds.width = Math.round(srcRegionBounds.width);
+        srcRegionBounds.height = Math.round(srcRegionBounds.height);
+        dstRegionBounds.width = Math.round(dstRegionBounds.width);
+        dstRegionBounds.height = Math.round(dstRegionBounds.height);
+
+        // Crop
+        // - The crop is done by setting the sourceRect on the bitmap.  The source
+        //   rect is defined by the srcRegionBounds.
+        this._srcPreviewBitmap.sourceRect = new createjs.Rectangle(srcRegionBounds.x, srcRegionBounds.y, srcRegionBounds.width, srcRegionBounds.height);
+
+        // Position and Scale
+        // - Position and scale the bitmap by setting a transform on the bitmpa.
+        //   Use the dst region and src region to determine the scale ratio.
+        let x = dstRegionBounds.x;
+        let y = dstRegionBounds.y;
+        let scaleX = dstRegionBounds.width / srcRegionBounds.width;
+        let scaleY = dstRegionBounds.height / srcRegionBounds.height;
+
+        // If the scale is &gt; 1 in any direction, then display the X
+        if ((scaleX &gt; 1) || (scaleY &gt; 1)) {
+            hjs.error(&quot;HarmonicDVE: unit: &quot; + this._unit + &quot; frame: &quot; + exportRoot.currentFrame + &quot; dstRegion (&quot; + dstRegionBounds.width + &quot;x&quot; + dstRegionBounds.height + &quot;) must be less than or equal to the srcRegion (&quot; + srcRegionBounds.width + &quot;x&quot; + srcRegionBounds.height + &quot;)&quot;);
+
+            let srcPreviewBounds = this._srcPreviewMovieClip.getTransformedBounds();
+            this._srcPreviewX.scaleX = dstRegionBounds.width / srcPreviewBounds.width;
+            this._srcPreviewX.scaleY = dstRegionBounds.height / srcPreviewBounds.height;
+            this._srcPreviewX.visible = true;
+        }
+        else {
+            this._srcPreviewX.visible = false;
+        }
+
+        this._srcPreviewMovieClip.setTransform(x, y, scaleX, scaleY);
+
+        // Update properties based on the DVE parameters.
+        this._srcPreviewMovieClip.alpha = this._dstRegion.alpha;
+        this._srcPreviewMovieClip.visible = this.enable;
+
+        // Add the preview to the stage based on the stack position.
+        stage.removeChild(this._srcPreviewMovieClip);
+        if (this.stackPosition == HarmonicDVE.TOP_MOST_STACK_POSITION) {
+            stage.addChild(this._srcPreviewMovieClip);
+        }
+        else {
+            stage.addChildAt(this._srcPreviewMovieClip, 0);
+        }
+    }
+
+    /**
+     * Creates all necessary elements needed to emulate the DVE in the desktop
+     * environment.  It will create a src preview bitmap (full size) and
+     * a red X that will be used to show invalid configurations.
+     */
+    _desktopCreateSrcPreviewMovieClip() {
+        let srcPreview = this._srcPreview;
+        let bounds = srcPreview.getBounds();
+        if (bounds) {
+
+            // Cache the source preview
+            srcPreview.cache(bounds.x, bounds.y, bounds.width, bounds.height, srcPreview.scaleX);
+
+            if (srcPreview.cacheCanvas) {
+                // CreateJS 1.0.0
+                // - Use the srcPreview&apos;s cacheCanvas object to create the srcPreview bitmap.
+                this._srcPreviewBitmap = new createjs.Bitmap(srcPreview.cacheCanvas);
+            }
+            else {
+                // CreateJS 0.8.2
+                // - Get an URL to the cached data and then use the URL to create the
+                //   srcPreview bitmap.
+                let url = srcPreview.getCacheDataURL();
+                this._srcPreviewBitmap = new createjs.Bitmap(url);
+            }
+
+            bounds.width = srcPreview.cacheCanvas.width;
+            bounds.height = srcPreview.cacheCanvas.height;
+            this._srcPreviewBitmap.setBounds(bounds.x, bounds.y, bounds.width, bounds.height); // bounds.width * srcPreview.scaleX, bounds.height * srcPreview.scaleY);
+
+            //
+            // Create the X
+            //
+            this._srcPreviewX = new createjs.Shape();
+            const thickness = 32;
+            const halfThickness = thickness / 2;
+
+            this._srcPreviewX.graphics.setStrokeStyle(32);
+            this._srcPreviewX.graphics.beginStroke(&quot;rgba(255,0,0,1.0)&quot;).beginFill(&quot;rgba(255,0,0,0.5)&quot;).drawRect(halfThickness, halfThickness, bounds.width - thickness, bounds.height - thickness);
+            this._srcPreviewX.graphics.moveTo(0,0).lineTo(bounds.width - halfThickness, bounds.height - halfThickness);
+            this._srcPreviewX.graphics.moveTo(0,bounds.height - halfThickness).lineTo(bounds.width - halfThickness, 0);
+            this._srcPreviewX.cache(bounds.x, bounds.y, srcPreview.cacheCanvas.width, srcPreview.cacheCanvas.height);
+
+            //
+            // Add new objects to the movie clip
+            //
+            this._srcPreviewMovieClip.addChild(this._srcPreviewBitmap);
+            this._srcPreviewMovieClip.addChild(this._srcPreviewX);
+        }
+        else {
+            hjs.error(&quot;HarmonicDVE - srcPreview.getBounds() returned null&quot;);
+        }
+    }
+
+    //--------------------------------------------------------------------------
+    // Getters and Setters
+    //--------------------------------------------------------------------------
+    get unit() { return this._unit; }
+    get isLive() { return this._isLive; }
+    get enable() { return this._enable; }
+    get enableHPT() { return this._enableHPT; }
+    get srcSelect() { return this._srcSelect; }
+    get blendMode() { return this._blendMode; }
+    get stackPosition() { return this._stackPosition; }
+    get relativePosition() { return this._relativePosition; }
+
+    set enable(value) { this._enable = value; }
+    set enableHPT(value) { this._enableHPT = value; }
+    set srcSelect(value) { this._srcSelect = value; }
+    set blendMode(value) { this._blendMode = value; }
+    set stackPosition(value) { this._stackPosition = value; }
+    set relativePosition(value) { this._relativePosition = value; }
+}
+
+//------------------------------------------------------------------------------
+// Constants
+//------------------------------------------------------------------------------
+
+// DVE Sources
+HarmonicDVE.SRC_UNSPECIFIED   = 0;
+HarmonicDVE.SRC_PLAYER        = 1;
+HarmonicDVE.SRC_PLAYER_A      = 1;
+HarmonicDVE.SRC_EXTERNAL_IN   = 2;
+HarmonicDVE.SRC_EXTERNAL_IN_1 = 2;
+HarmonicDVE.SRC_MIXER_OUTPUT  = 3;
+HarmonicDVE.SRC_PLAYER_B      = 4;
+HarmonicDVE.SRC_EXTERNAL_IN_2 = 5;
+HarmonicDVE.SRC_EXTERNAL_IN_3 = 6;
+HarmonicDVE.SRC_EXTERNAL_IN_4 = 7;
+HarmonicDVE.SRC_EXTERNAL_IN_5 = 8;
+HarmonicDVE.SRC_EXTERNAL_IN_6 = 9;
+
+// Blend Modes
+HarmonicDVE.BLEND_WITH_VIDEO    = 0;
+HarmonicDVE.BLEND_WITH_GRAPHICS = 1;
+
+// Stack Positions
+HarmonicDVE.AUTO_STACK_POSITION        = 0;
+HarmonicDVE.BOTTOM_MOST_STACK_POSITION = 1;
+HarmonicDVE.TOP_MOST_STACK_POSITION    = 2;
+
+// Relative Positioning
+HarmonicDVE.AUTO_RELATIVE_POSITION = -1;
+HarmonicDVE.RELATIVE_POSITION_0    = 0;         // Top
+HarmonicDVE.RELATIVE_POSITION_1    = 1;
+
+// Flags - for internal use only
+HarmonicDVE.FLAG_ENABLE = 0x01;
+HarmonicDVE.FLAG_ENABLE_HOLEPUNCH = 0x02;
+
+HarmonicDVE.FLAG_BLEND_MODE_WITH_VIDEO = 0x00;
+HarmonicDVE.FLAG_BLEND_MODE_WITH_GRAPHICS = 0x04;
+
+HarmonicDVE.FLAG_STACK_POS_BOTTOM_MOST = 0x00;
+HarmonicDVE.FLAG_STACK_POS_TOP_MOST = 0x08;
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

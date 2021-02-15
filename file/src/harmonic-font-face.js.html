@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../">
+  <title data-ice="title">src/harmonic-font-face.js | Harmonic Template and Widget JavaScript Library</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./" style="display: flex; align-items: center;"><img src="./image/brand_logo.png" style="width:34px;"></a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/harmonic-font-face.js~HarmonicFontFace.html">HarmonicFontFace</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/harmonic-socket.js~HarmonicSocket.html">HarmonicSocket</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/harmonic-template.js~HarmonicTemplate.html">HarmonicTemplate</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#hjs">hjs</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/hjs/hjs-test.js~HarmonicTemplateTest.html">HarmonicTemplateTest</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/hjs/hjs.js~HJS.html">HJS</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-dve">dve</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-dve0">dve0</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-dve1">dve1</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-harmonicDVE">harmonicDVE</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-harmonicLiveAVO">harmonicLiveAVO</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-harmonicTemplate">harmonicTemplate</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-hjs">hjs</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-hjsConfig">hjsConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-liveAVO">liveAVO</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-liveAVO0">liveAVO0</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-liveAVO1">liveAVO1</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-hjstest">hjstest</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#widgets">widgets</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-countdown.js~HarmonicCountdown.html">HarmonicCountdown</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-dve.js~HarmonicDVE.html">HarmonicDVE</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-label-scroll.js~HarmonicLabelScroll.html">HarmonicLabelScroll</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-label.js~HarmonicLabel.html">HarmonicLabel</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-live-avo.js~HarmonicLiveAVO.html">HarmonicLiveAVO</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-movie-clip.js~HarmonicMovieClip.html">HarmonicMovieClip</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-text-field.js~HarmonicTextField.html">HarmonicTextField</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-text-scroll.js~HarmonicTextScroll.html">HarmonicTextScroll</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-video.js~HarmonicVideo.html">HarmonicVideo</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-widget.js~HarmonicWidget.html">HarmonicWidget</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-xmlhttprequest.js~HarmonicXMLHttpRequest.html">HarmonicXMLHttpRequest</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/harmonic-font-face.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/**
+ * File: harmonic-font-face.js
+ *
+ * Copyright (c) 2018 Harmonic, Inc.
+ */
+
+/**
+ * The Harmonic FontFace class is a utility for loading fonts that reside
+ * near the Harmonic Template on the webserver.  This class is a thin wrapper
+ * around the FontFace class defined in the CSS Font Loading API.
+ *
+ * Once a font is successfully loaded it is added to the document.fonts
+ * FontFaceSet.  Fonts are loaded synchronously so that they are
+ * guaranteed to be loaded before Load Complete is signaled.
+ *
+ * This class dispatches 2 events:
+ * - HarmonicFontFace.FONT_LOADED_EVENT - this event is dispatched when the
+ *   requested font file has been loaded.
+ * - HarmonicFontFace.FONT_LOAD_FAILED_EVENT - this event is dispatched when
+ *   the requested font file failed to load.
+ *
+ * If a font fails to load, then an error will be logged and the
+ * FONT_LOAD_FAILED_EVENT will be dispatched.
+ *
+ * If the font is not being displayed correctly, verify that the font
+ * name in the Adobe generated JavaScript matches the family parameter passed
+ * to this class.
+ *
+ * For best performance, use woff2, then woff, then ttf, then otf.  Woff2 offers
+ * a 30% average compression gain over woff.  Woff is basically ttf or otf
+ * with metadata and compression for smaller font files.
+ *
+ * @example
+ * // To use this class, add the following to your template&apos;s Global Script.
+ * // Modify the font family and font files for your specific font.
+ * let notable = new HarmonicFontFace(&quot;Notable&quot;, &quot;Notable-Regular.woff2&quot;);
+ * // Use notable.addFile(&lt;file 2&gt;) if multiple files are necessary
+ * // Set descriptors before calling load:
+ * // Example notable.unicodeRange = &quot;U+0000-00FF&quot;;
+ * notable.load();
+ *
+ * @see https://drafts.csswg.org/css-font-loading/#FontFace-interface
+ * @see https://developer.mozilla.org/en-US/docs/Web/API/CSS_Font_Loading_API
+ * @see https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/webfont-optimization
+ */
+class HarmonicFontFace {
+
+    /**
+     * Constructor
+     *
+     * @param {String} family - must be the name used in the Adobe-generated JavaScript
+     * @param {String} file - the name of the font file.  Use addFile if you have more than one.
+     */
+    constructor(family, file) {
+        /**
+         * The font family.  This name must match the name used in the Adobe-generated JavaScript
+         * @type {String}
+         */
+        this._family = family;
+
+        /**
+         * The source string passed to the FontFace constructor.  Useful for debugging.
+         * @type {String}
+         */
+        this._source = &quot;&quot;;
+
+        /**
+         * An array of files to include in the source string.  The first file is added
+         * in the constructor.  Additional files can be added using the &apos;addFile&apos; method.
+         * @type {Array}
+         */
+        this._files = [ file ];
+
+        /**
+         * The descriptors that can be passed to the FontFace constructor.
+         * @type {Object}
+         */
+        this._descriptors = {
+            display: HarmonicFontFace.DISPLAY_BLOCK,
+            style: HarmonicFontFace.STYLE_NORMAL,
+            weight: HarmonicFontFace.WEIGHT_NORMAL,
+            stretch: HarmonicFontFace.STRETCH_NORMAL,
+            unicodeRange: HarmonicFontFace.UNICODE_RANGE_ALL,
+            variant: HarmonicFontFace.VARIANT_NORMAL,
+            featureSettings: HarmonicFontFace.FEATURE_SETTINGS_NORMAL
+        };
+
+        /**
+         * The FontFace object.  It will be created in the load function.
+         * @type {Object}
+         */
+        this._fontFace = undefined;
+    }
+
+    /**
+     * Loads the font.  This method:
+     * - creates the FontFace object
+     * - performs a synchronous load
+     * - dispatches the appropriate event
+     * - on success, adds the loaded FontFace to the document.fonts FontFaceSet.
+     */
+    load() {
+        this._source = this._getSource();
+
+        if (this._source) {
+
+            this._fontFace = new FontFace(this._family, this._source, this._descriptors);
+
+            try {
+
+                this._fontFace.load();
+
+                document.fonts.add(this._fontFace);
+
+                document.dispatchEvent(new CustomEvent(HarmonicFontFace.FONT_LOADED_EVENT, {
+                    detail: this
+                }));
+
+                hjs.info(&quot;Font loaded: &quot; + this._family);
+            }
+            catch(err) {
+                hjs.error(&quot;Font load failed: file: &quot; + this._files[0] + &quot; code: &quot; + err.code + &quot; name: &quot; + err.name + &quot; msg: &quot; + err.message);
+                document.dispatchEvent(new CustomEvent(HarmonicFontFace.FONT_LOAD_FAILED_EVENT, {
+                    detail: this
+                }));
+            }
+        }
+        else {
+            document.dispatchEvent(new CustomEvent(HarmonicFontFace.FONT_LOAD_FAILED_EVENT, {
+                detail: this
+            }));
+        }
+    }
+
+    /**
+     * Adds a file to the internal list of font files.  This method
+     * is useful if multiple font files are used.
+     * @param {String} file
+     */
+    addFile(file) {
+        this._files.push(file);
+    }
+
+    /**
+     * Returns the format of the specified file.  The format is based
+     * on the extension of the file.
+     * @param {String} file
+     * @return {String} format of the file.  Undefined if not supported by the switch statement.  This is not an error.
+     */
+    _getFormat(file) {
+        let extension = file.split(&apos;.&apos;).pop();
+        switch (extension) {
+            case &quot;woff2&quot;:
+                return &quot;woff2&quot;;
+            case &quot;woff&quot;:
+                return &quot;woff&quot;;
+            case &quot;ttf&quot;:
+                return &quot;truetype&quot;;
+            case &quot;otf&quot;:
+                return &quot;opentype&quot;;
+            case &quot;svg&quot;:
+            case &quot;eot&quot;:
+                // SVG and EOT are not supported by Chrome.
+            default:
+                hjs.error(&quot;Font load error: font file format is not supported: file: &quot; + file);
+                return undefined;
+        }
+    }
+
+    /**
+     * Returns the source string to include in the FontFace constructor.
+     * The Source is composed of the &apos;local&apos; font as well as &apos;url&apos;s to
+     * the font files.
+     *
+     * @return {String} the source string or undefined if there is an error
+     */
+    _getSource() {
+        let src = &quot;&quot;;
+
+        src = &quot;local(&apos;&quot; + this._family + &quot;&apos;)&quot;;
+
+        let length = this._files.length;
+        for (let i = 0; i &lt; length; i++) {
+            src += &quot;, &quot;;
+            src += &quot;url(&apos;&quot; + this._files[i] + &quot;&apos;)&quot;;
+            let format = this._getFormat(this._files[i]);
+            if (format) {
+                src += &quot; format(&apos;&quot; + format + &quot;&apos;)&quot;;
+            }
+            else {
+                return undefined;
+            }
+        }
+
+        return src;
+    }
+
+    //--------------------------------------------------------------------------
+    // Properties
+    //--------------------------------------------------------------------------
+
+    // Descriptors
+    set display(value) { this._descriptors.display = value; }
+    set style(value) { this._descriptors.style = value; }
+    set weight(value) { this._descriptors.weight = value; }
+    set stretch(value) { this._descriptors.stretch = value; }
+    set unicodeRange(value) { this._descriptors.unicodeRange = value; }
+    set variant(value) { this._descriptors.variant = value; }
+    set featureSettings(value) { this._descriptors.featureSettings = value; }
+
+    get display() { return this._descriptors.display; }
+    get style() { return this._descriptors.style; }
+    get weight() { return this._descriptors.weight; }
+    get stretch() { return this._descriptors.stretch; }
+    get unicodeRange() { return this._descriptors.unicodeRange; }
+    get variant() { return this._descriptors.variant; }
+    get featureSettings() { return this._descriptors.featureSettings; }
+
+    // Useful for debugging
+    get family() { return this._family; }
+    get files() { return this._files; }
+    get source() { return this._source; }
+    get fontFace() { return this._fontFace; }
+}
+
+//------------------------------------------------------------------------------
+// Events
+//------------------------------------------------------------------------------
+HarmonicFontFace.FONT_LOADED_EVENT = &quot;FontLoadedEvent&quot;;
+HarmonicFontFace.FONT_LOAD_FAILED_EVENT = &quot;FontLoadFailedEvent&quot;;
+
+//------------------------------------------------------------------------------
+// Constants
+//------------------------------------------------------------------------------
+HarmonicFontFace.DISPLAY_AUTO = &quot;auto&quot;;
+HarmonicFontFace.DISPLAY_BLOCK = &quot;block&quot;;
+HarmonicFontFace.DISPLAY_SWAP = &quot;swap&quot;;
+HarmonicFontFace.DISPLAY_FALLBACK = &quot;fallback&quot;;
+HarmonicFontFace.DISPLAY_OPTIONAL = &quot;optional&quot;;
+
+HarmonicFontFace.STYLE_NORMAL = &quot;normal&quot;;
+
+HarmonicFontFace.WEIGHT_NORMAL = &quot;normal&quot;;
+
+HarmonicFontFace.STRETCH_NORMAL = &quot;normal&quot;;
+
+HarmonicFontFace.UNICODE_RANGE_ALL = &quot;U+0-10FFFF&quot;;
+
+HarmonicFontFace.VARIANT_NORMAL = &quot;normal&quot;;
+
+HarmonicFontFace.FEATURE_SETTINGS_NORMAL = &quot;normal&quot;;
+
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

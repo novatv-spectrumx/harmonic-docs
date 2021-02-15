@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../">
+  <title data-ice="title">src/harmonic-socket.js | Harmonic Template and Widget JavaScript Library</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./" style="display: flex; align-items: center;"><img src="./image/brand_logo.png" style="width:34px;"></a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/harmonic-font-face.js~HarmonicFontFace.html">HarmonicFontFace</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/harmonic-socket.js~HarmonicSocket.html">HarmonicSocket</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/harmonic-template.js~HarmonicTemplate.html">HarmonicTemplate</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#hjs">hjs</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/hjs/hjs-test.js~HarmonicTemplateTest.html">HarmonicTemplateTest</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/hjs/hjs.js~HJS.html">HJS</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-dve">dve</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-dve0">dve0</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-dve1">dve1</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-harmonicDVE">harmonicDVE</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-harmonicLiveAVO">harmonicLiveAVO</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-harmonicTemplate">harmonicTemplate</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-hjs">hjs</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-hjsConfig">hjsConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-liveAVO">liveAVO</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-liveAVO0">liveAVO0</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-liveAVO1">liveAVO1</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-hjstest">hjstest</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#widgets">widgets</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-countdown.js~HarmonicCountdown.html">HarmonicCountdown</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-dve.js~HarmonicDVE.html">HarmonicDVE</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-label-scroll.js~HarmonicLabelScroll.html">HarmonicLabelScroll</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-label.js~HarmonicLabel.html">HarmonicLabel</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-live-avo.js~HarmonicLiveAVO.html">HarmonicLiveAVO</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-movie-clip.js~HarmonicMovieClip.html">HarmonicMovieClip</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-text-field.js~HarmonicTextField.html">HarmonicTextField</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-text-scroll.js~HarmonicTextScroll.html">HarmonicTextScroll</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-video.js~HarmonicVideo.html">HarmonicVideo</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-widget.js~HarmonicWidget.html">HarmonicWidget</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-xmlhttprequest.js~HarmonicXMLHttpRequest.html">HarmonicXMLHttpRequest</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/harmonic-socket.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/**
+ * File: harmonic-socket.js
+ *
+ * Copyright (c) 2020 Harmonic, Inc.
+ */
+
+ /**
+ * The Harmonic Socket class is a utility for connecting to a
+ * TCP or UDP socket using the HTML renderer as the proxy.  Since
+ * browsers cannot open sockets directly due to security concerns,
+ * the HTML renderer is used as a proxy for handling the socket connection.
+ *
+ * Before calling connect() on the socket, wait for the LOAD_COMPLETE event.
+ * This is required because the websocket communication to the HTML renderer
+ * must be established before the proxy can be used.
+ *
+ * This class dispatches 4 events:
+ * - HarmonicSocket.CONNECTED_EVENT - this event is dispatched once the
+ *   HTML renderer establishes a socket connection.
+ * - HarmonicSocket.DISCONNECTED_EVENT - this event is dispatched once the
+ *   HTML renderer disconnects from the socket.
+ * - HarmonicSocket.DATA_EVENT - this event is dispatched when data is
+ *   received on the socket from the server.
+ * - HarmonicSocket.ERROR_EVENT = this event is dispatched when an error
+ *   occurs during the socket functionality.
+ *
+ * Below is example code that connects to an Oxtel server and loads a graphic
+ * template.
+ *
+ * @example
+ * // To use this class, add the following to your template&apos;s Global Script.
+ * var socket = new HarmonicSocket();
+ * socket.ipAddress = &quot;10.10.55.149&quot;;
+ * socket.port = 9100;
+ * socket.socketType = 0;
+ * socket.timeoutInSec = 2;
+ *
+ * // Listen for socket events
+ * document.addEventListener(HarmonicTemplate.LOAD_COMPLETE_EVENT, onLoadComplete.bind(this));
+ * document.addEventListener(HarmonicSocket.CONNECTED_EVENT, onConnect.bind(this));
+ * document.addEventListener(HarmonicSocket.DISCONNECTED_EVENT, onDisconnect.bind(this));
+ * document.addEventListener(HarmonicSocket.DATA_EVENT, onData.bind(this));
+ * document.addEventListener(HarmonicSocket.ERROR_EVENT, onError.bind(this));
+ *
+ * function onLoadComplete(obj) {
+ *     hjs.info(&quot;LOAD_COMPLETE_EVENT received&quot;);
+ *
+ *     // Since the Harmonic Socket uses the websocket interface to the HTML
+ *     // renderer, we must wait for LOAD_COMPLETE before trying to connect.
+ *     socket.connect();
+ * }
+ *
+ * // Socket event handlers
+ * function onConnect(event) {
+ *     hjs.info(&quot;Socket Connected&quot;);
+ *
+ *     // Load template
+ *     socket.write(&quot;R001080p60-cc/1080p60-cc.html:&quot;);
+ * }
+ *
+ * function onDisconnect(event) {
+ *     hjs.info(&quot;Socket disconnected&quot;);
+ * }
+ *
+ * function onData(event) {
+ *     hjs.info(&quot;Socket Data received: &quot; + event.detail.data);
+ * }
+ *
+ * function onError(event) {
+ *     hjs.error(&quot;Socket error&quot;);
+ * }
+ *
+ */
+class HarmonicSocket {
+
+    /**
+     * Constructor
+     */
+    constructor() {
+
+        /**
+         * The IP address.
+         * @type {String}
+         */
+        this._ipAddress = &quot;&quot;;
+
+        /**
+         * The port number.
+         * @type {Number}
+         */
+        this._port = 0;
+
+        /**
+         * The socket type being connected to.
+         * @type {Number}
+         */
+        this._socketType = HJS.SOCKET_TYPE_INVALID;
+
+        /**
+         * The connect timeout in seconds.
+         * @type {Number}
+         */
+        this._timeoutInSec = 1;
+
+        /**
+         * Once the socket is connected, the socket ID is returned.
+         * This socket ID is used in further interaction with the class.
+         * @type {Number}
+         */
+        this._socketId = 0;
+
+        /**
+         * Callback function used to receive commands from the HTML renderer.
+         * This is necessary for use in the add/remove listener functions.
+         * @type {Object}
+         */
+        this._commandReceivedCallback = this._onCommandReceived.bind(this);
+    }
+
+    /**
+     * Connects to the socket.
+     *
+     * @param {String} ipAddress - the IP address to connect to
+     * @param {Number} port - the port number
+     * @param {Number} socketType - TCP vs UDP (reference HJS)
+     * @param {Number} timeoutInSec - connect timeout in seconds
+     *
+     * @return {Boolean} true = success, false = fail
+     */
+    connectWith(ipAddress, port, socketType, timeoutInSec) {
+        if (!this.isConnected()) {
+
+            if ((socketType &lt; 0) || (socketType &gt;= HJS.SOCKET_TYPE_MAX)) {
+                return false;
+            }
+
+            this._ipAddress = ipAddress;
+            this._port = port;
+            this._socketType = socketType;
+            this._timeoutInSec = timeoutInSec;
+
+            document.addEventListener(HJS.COMMAND_RECEIVED_EVENT, this._commandReceivedCallback);
+            hjs.connectSocket(this._ipAddress, this._port, this._socketType, this._timeoutInSec);
+
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
+    /**
+     * Connects to the socket using the member variable values.
+     *
+     * @return {Boolean} true = success, false = fail
+     */
+    connect() {
+        return this.connectWith(this._ipAddress, this._port, this._socketType, this._timeoutInSec);
+    }
+
+    /**
+     * Disconnects from the socket.
+     *
+     * @return {Boolean} true = success, false = fail
+     */
+    disconnect() {
+        if (this.isConnected()) {
+            hjs.disconnectSocket(this._socketId);
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
+    /**
+     * Writes data to the socket.  This currently only supports ASCII data.
+     *
+     * @param {String} data - the data to write to the socket
+     *
+     * @return {Boolean} true = success, false = fail
+     */
+    write(data) {
+        if (this.isConnected()) {
+            hjs.writeSocket(this._socketId, data);
+            return true;
+        }
+    }
+
+    /**
+     * Returns true if connected to the socket, false otherwise.
+     *
+     * @return {Boolean} true = connected, false = disconnected
+     */
+    isConnected() {
+        return this._socketId != 0;
+    }
+
+    //--------------------------------------------------------------------------
+    // Properties
+    //--------------------------------------------------------------------------
+
+    /**
+     * Returns the IP address.
+     *
+     * @return {String}
+     */
+    get ipAddress() {
+        return this._ipAddress;
+    }
+
+    /**
+     * Sets the IP address.
+     *
+     * @param {String} val
+     */
+    set ipAddress(val) {
+        this._ipAddress = val;
+    }
+
+    /**
+     * Returns the port.
+     *
+     * @return {Number}
+     */
+    get port() {
+        return this._port;
+    }
+
+    /**
+     * Sets the port.
+     *
+     * @param {Number} val
+     */
+    set port(val) {
+        this._port = val;
+    }
+
+    /**
+     * Returns the socket type.
+     *
+     * @return {Number}
+     */
+    get socketType() {
+        return this._socketType;
+    }
+
+    /**
+     * Sets the socket type.
+     *
+     * @param {Number} val
+     */
+    set socketType(val) {
+        this._socketType = val;
+    }
+
+    /**
+     * Returns the socket ID.
+     *
+     * @return {Number}
+     */
+    get socketId() {
+        return this._socketId;
+    }
+
+    /**
+     * Sets the connect timeout in seconds.
+     *
+     * @param {Number} val
+     */
+    set timeoutInSec(val) {
+        this._timeoutInSec = val;
+    }
+
+    /**
+     * Returns the connect timeout in seconds.
+     *
+     * @return {Number}
+     */
+    get timeoutInSec() {
+        return this._timeoutInSec;
+    }
+
+    //--------------------------------------------------------------------------
+    // Private Methods
+    //--------------------------------------------------------------------------
+
+    /**
+     * Handles socket commands received from the HTML renderer.
+     *
+     * @param {Object} event
+     * @param {Object} event.detail - the detail for the event
+     */
+    _onCommandReceived(event) {
+        switch (event.detail.command) {
+            case HJS.SOCKET_CONNECT_COMMAND:
+                if ((event.detail.ipAddress == this._ipAddress) &amp;&amp;
+                    (event.detail.port == this._port) &amp;&amp;
+                    (event.detail.socketType == this._socketType)) {
+                    this._onConnected(event.detail);
+                }
+                break;
+            case HJS.SOCKET_DISCONNECTED_COMMAND:
+                if (event.detail.socketId == this._socketId) {
+                    this._onDisconnected(event.detail);
+                }
+                break;
+            case HJS.SOCKET_DATA_COMMAND:
+                if (event.detail.socketId == this._socketId) {
+                    this._onData(event.detail);
+                }
+                break;
+            case HJS.SOCKET_ERROR_COMMAND:
+                this._onError(event.detail);
+                break;
+            default:
+                break;
+        }
+    }
+
+    /**
+     * Handles the CONNECTED event from HJS.
+     *
+     * @param {Object} obj
+     * @param {String} obj.ipAddress - the IP address
+     * @param {Number} obj.port - the port number
+     * @param {Number} obj.socketType - 0 = TCP, 1 = UDP
+     * @param {Number} obj.socketId - the socket identifier
+     */
+    _onConnected(obj) {
+        this._socketId = obj.socketId;
+
+        document.dispatchEvent(new CustomEvent(HarmonicSocket.CONNECTED_EVENT, {
+            detail: this
+        }));
+    }
+
+    /**
+     * Handles the DISCONNECTED event from HJS.
+     *
+     * @param {Object} obj
+     * @param {String} obj.ipAddress - the IP address
+     * @param {Number} obj.port - the port number
+     * @param {Number} obj.socketType - 0 = TCP, 1 = UDP
+     * @param {Number} obj.socketId - the socket identifier
+     */
+    _onDisconnected(obj) {
+        this._socketId = 0;
+
+        document.removeEventListener(HJS.COMMAND_RECEIVED_EVENT, this._commandReceivedCallback);
+
+        document.dispatchEvent(new CustomEvent(HarmonicSocket.DISCONNECTED_EVENT, {
+            detail: this
+        }));
+    }
+
+    /**
+     * Handles the DATA event from HJS.
+     *
+     * @param {Object} obj
+     * @param {String} obj.ipAddress - the IP address
+     * @param {Number} obj.port - the port number
+     * @param {Number} obj.socketType - 0 = TCP, 1 = UDP
+     * @param {Number} obj.socketId - the socket identifier
+     */
+    _onData(obj) {
+        document.dispatchEvent(new CustomEvent(HarmonicSocket.DATA_EVENT, {
+            detail: {
+                this: this,
+                data: obj.data
+            }
+        }));
+    }
+
+    /**
+     * Handles the ERROR event from HJS.
+     *
+     * @param {Object} obj
+     * @param {String} obj.ipAddress - the IP address
+     * @param {Number} obj.port - the port number
+     * @param {Number} obj.socketType - 0 = TCP, 1 = UDP
+     * @param {Number} obj.socketId - the socket identifier
+     */
+    _onError(obj) {
+        document.dispatchEvent(new CustomEvent(HarmonicSocket.ERROR_EVENT, {
+            detail: {
+                this: this,
+                errorCode: obj.errorCode
+            }
+        }));
+    }
+}
+
+//------------------------------------------------------------------------------
+// Events
+//------------------------------------------------------------------------------
+HarmonicSocket.CONNECTED_EVENT = &quot;ConnectedEvent&quot;;
+HarmonicSocket.DISCONNECTED_EVENT = &quot;DisconnectedEvent&quot;;
+HarmonicSocket.DATA_EVENT = &quot;DataEvent&quot;;
+HarmonicSocket.ERROR_EVENT = &quot;ErrorEvent&quot;;
+
+//------------------------------------------------------------------------------
+// Error Codes
+//------------------------------------------------------------------------------
+HarmonicSocket.CONNECT_ERROR = 1;
+HarmonicSocket.READ_ERROR = 2;
+HarmonicSocket.WRITE_ERROR = 3;
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

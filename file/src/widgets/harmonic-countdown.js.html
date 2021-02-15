@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">src/widgets/harmonic-countdown.js | Harmonic Template and Widget JavaScript Library</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./" style="display: flex; align-items: center;"><img src="./image/brand_logo.png" style="width:34px;"></a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/harmonic-font-face.js~HarmonicFontFace.html">HarmonicFontFace</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/harmonic-socket.js~HarmonicSocket.html">HarmonicSocket</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/harmonic-template.js~HarmonicTemplate.html">HarmonicTemplate</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#hjs">hjs</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/hjs/hjs-test.js~HarmonicTemplateTest.html">HarmonicTemplateTest</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/hjs/hjs.js~HJS.html">HJS</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-dve">dve</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-dve0">dve0</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-dve1">dve1</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-harmonicDVE">harmonicDVE</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-harmonicLiveAVO">harmonicLiveAVO</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-harmonicTemplate">harmonicTemplate</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-hjs">hjs</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-hjsConfig">hjsConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-liveAVO">liveAVO</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-liveAVO0">liveAVO0</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-liveAVO1">liveAVO1</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-hjstest">hjstest</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#widgets">widgets</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-countdown.js~HarmonicCountdown.html">HarmonicCountdown</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-dve.js~HarmonicDVE.html">HarmonicDVE</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-label-scroll.js~HarmonicLabelScroll.html">HarmonicLabelScroll</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-label.js~HarmonicLabel.html">HarmonicLabel</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-live-avo.js~HarmonicLiveAVO.html">HarmonicLiveAVO</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-movie-clip.js~HarmonicMovieClip.html">HarmonicMovieClip</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-text-field.js~HarmonicTextField.html">HarmonicTextField</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-text-scroll.js~HarmonicTextScroll.html">HarmonicTextScroll</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-video.js~HarmonicVideo.html">HarmonicVideo</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-widget.js~HarmonicWidget.html">HarmonicWidget</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-xmlhttprequest.js~HarmonicXMLHttpRequest.html">HarmonicXMLHttpRequest</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/widgets/harmonic-countdown.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/**
+ * File:  harmonic-countdown.js
+ *
+ * Copyright (c) 2018 Harmonic, Inc.
+ */
+
+/**
+ * The HarmonicCountdown widget provides a countdown text field that can
+ * be controlled with the widget controls.
+ *
+ * This class implements the Harmonic Countdown Widget.  It derives from
+ * the {@link HarmonicWidget} class and implements necessary functions to meet the
+ * needs of this widget.
+ *
+ * The HarmonicCountdown widget requires that the registered createdjs
+ * object have the following structure:
+ *
+ * - The createjsObj must be a createjs.MovieClip named correctly (reference
+ *   {@link HarmonicWidget}).
+ * - The createjs.MovieClip must contain a createjs.Text child named &apos;harmonicField&apos;.
+ *   This text object represents the dynamic text field.
+ *
+ * This class defines functions for:
+ *
+ * - updateTextField - converts the text to a number and updates the countdown
+ * - restartFieldAnimation - restarts the countdown
+ * - stopFieldAnimation - stops the countdown
+ *
+ * To use this class, simply register the createjs object using the
+ * static register function.  The created HarmonicCountdown object is
+ * returned from the register function.  If there is a error, then
+ * &apos;undefined&apos; is returned and an error will be logged.
+ *
+ * The &apos;countdownFrom&apos; can be specified in the register function or it
+ * can be set using the &apos;countdownFrom&apos; property on the object returned from
+ * the call to register.
+ *
+ * When the countdown reaches zero, the widget will dispatch the
+ * HarmonicCountdown.COUNTDOWN_COMPLETE_EVENT event on the document.
+ *
+ * The manualControl property allows the countdown to manually controlled
+ * independently from the start/stop field animation controls.  This may
+ * be useful for countdown timers that need to start in the middle of an
+ * animation.
+ *
+ * @example
+ * 1. When the createjs object is registered with the class in the first frame of the movie clip:
+ * let countdown = HarmonicCountdown.register(this, 20, false);  // set countdown to 20 seconds with no manual control
+ *
+ * 2. Or set the &apos;countdownFrom&apos; property from the returned object:
+ * let countdown = HarmonicCountdown.register(this);
+ * countdown.countdownFrom = 20;
+ *
+ * document.addEventListener(HarmonicCountdown.COUNTDOWN_COMPLETE_EVENT, (event) =&gt; {
+ *     hjs.info(&quot;The countdown has completed&quot;);
+ * });
+ */
+class HarmonicCountdown extends HarmonicWidget {
+
+    /**
+     * Constructor
+     * - initializes all member variables
+     * - adds a listener to the &apos;tick&apos; event so that the count can be updated
+     *
+     * @listens {&apos;tick&apos;} the countdown is updated every tick
+     *
+     * @param {String} widgetType - reference HarmonicTemplate.WIDGET_TYPE_&lt;type&gt;
+     * @param {Number} fieldNum - field number used to uniquely identify the widget
+     * @param {String} name - the name of the widget
+     * @param {Object} createjsObj - the createjs object associated with this widget
+     * @param {Object} includeInTemplateDescription - if true, the Harmonic Template will include in the template description
+     * @param {Number} countdownFrom - number in seconds to countdown from
+     * @param {Boolean} manualControl - manual control of the countdown
+     */
+    constructor(widgetType, fieldNum, name, createjsObj, countdownFrom, manualControl) {
+        super(widgetType, fieldNum, name, createjsObj, true);
+
+        hjs.debug(&quot;HarmonicCountdown.constructor&quot;);
+
+        /**
+         * Flag indicating if the countdown is started.
+         * @type {Boolean}
+         */
+        this._isStarted = false;
+
+        /**
+         * Flag indicating if the countdown is manually controlled.  If manually
+         * controlled, then the widget will not respond to the start and stop animation
+         * events.
+         * @type {Boolean}
+         */
+        this._manualControl = manualControl;
+
+        /**
+         * The countdownFrom property.
+         * @type {Number}
+         */
+		this._countdownFrom = countdownFrom;
+
+        /**
+         * Current value of the countdown (in seconds).
+         * @type {Number}
+         */
+        this._countdown = countdownFrom;
+
+        /**
+         * Milliseconds per tick event.
+         * @type {Number}
+         */
+        this._msPerTick = 0;
+
+        // Determine the milliseconds per tick based on the frame rate
+        const fps = createjs.Ticker.framerate;
+        if ((fps &gt;= 59.8) &amp;&amp; (fps &lt;= 60.2)) {
+            this._msPerTick = 1001/60000;
+        }
+        else {
+            this._msPerTick = 1/fps;
+        }
+
+        // Listen for the &apos;tick&apos; event on the object
+        createjsObj.addEventListener(&quot;tick&quot;, (event) =&gt; {
+            this._onTick();
+        });
+    }
+
+    /**
+     * Registers a createjs object with the widget.  A new
+     * HarmonicCountdown will be created in this function.
+     *
+     * @param {Object} createjsObj - the createjs object to associate with the countdown
+     * @param {Number} countdownFrom - number of seconds to countdown from
+     * @param {Boolean} manualControl - true = manually control the countdown
+     *
+     * @return {Object} the newly created HarmonicCountdown instance, or undefined if there is an error
+     */
+    static register(createjsObj, countdownFrom = 0, manualControl = false) {
+        let result = HarmonicWidget.validate(&quot;HarmonicCountdown&quot;, createjsObj, true);
+        if (result) {
+            return new HarmonicCountdown(HarmonicTemplate.WIDGET_TYPE_COUNTDOWN, result.fieldNum, result.name, createjsObj, countdownFrom, manualControl);
+        }
+        else {
+            return undefined;
+        }
+    }
+
+    //--------------------------------------------------------------------------
+    // Public Methods and Properties
+    //--------------------------------------------------------------------------
+    /**
+     * Starts the countdown from the countdownFrom value.
+     */
+    start() {
+        this._isStarted = true;
+        this._countdown = this._countdownFrom;
+    }
+
+    /**
+     * Resumes the countdown.
+     */
+    resume() {
+        this._isStarted = true;
+    }
+
+    /**
+     * Stops the countdown.
+     */
+    stop() {
+        this._isStarted = false;
+    }
+
+    /**
+     * Sets the countdownFrom value.
+     * @param {Number} value - the number of seconds to countdown from
+     */
+    set countdownFrom(value) {
+        this._countdownFrom = value;
+    }
+
+    /**
+     * Gets the countdownFrom value.
+     * @return {Number}
+     */
+    get countdownFrom() {
+        return this._countdownFrom;
+    }
+
+    /**
+     * Gets the current value of the countdown.
+     * @return {Number}
+     */
+    get countdown() {
+        return this._countdown;
+    }
+
+    /**
+     * Set the manualControl value.
+     * @param {Boolean} value - true = enable, false = disable
+     */
+    set manualControl(value) {
+        this._manualControl = value;
+    }
+
+    /**
+     * Gets the manualControl value.
+     * @return {Boolean}
+     */
+    get manualControl() {
+        return this._manualControl;
+    }
+
+    //--------------------------------------------------------------------------
+    // Private Methods
+    //--------------------------------------------------------------------------
+
+    /**
+     * Handles the updateTextField request from the Harmonic Template.
+     *
+     * @param {String} text - a string representation of the number to set the countdown to
+     * @param {Boolean} render - flag indicating if the field should be rendered
+     */
+    updateTextField(text, render) {
+        this._countdownFrom = parseInt(text);
+        this._countdown = this._countdownFrom;
+    }
+
+    /**
+     * Handles the restartFieldAnimation request from the Harmonic Template.
+     *
+     * @param {Boolean} fromBeginning - flag indicating if the widget should restart animation from the beginning
+     */
+    restartFieldAnimation(fromBeginning) {
+        if (this._manualControl) {
+            return;
+        }
+
+        if (fromBeginning) {
+            this._countdown = this._countdownFrom;
+        }
+
+        this._isStarted = true;
+    }
+
+    /**
+     * Handles the stopFieldAnimation request from the Harmonic Template.
+     *
+     * @param {Boolean} immediate - flag indicating if the widget should stop immediately or at the end of the animation
+     */
+    stopFieldAnimation(immediate) {
+        if (this._manualControl) {
+            return;
+        }
+
+        if (immediate) {
+            this._isStarted = false;
+        }
+    }
+
+    /**
+     * &apos;tick&apos; handler that updates the countdown
+     *
+     * @emits {HarmonicCountdown.COUNTDOWN_COMPLETE_EVENT} dispatched when the countdown to zero completes
+     */
+    _onTick() {
+        if (this._isStarted) {
+            if (this._countdown &lt; 0) {
+                this._isStarted = false;
+
+                // Dispatch the complete event when the countdown finishes.
+                let event = new CustomEvent(HarmonicCountdown.COUNTDOWN_COMPLETE_EVENT,
+                    {
+                        detail : this
+                    }
+                );
+
+                document.dispatchEvent(event);
+            }
+            else {
+                this._countdown -= this._msPerTick;
+            }
+
+            this._updateCountdown(this._countdown);
+        }
+    }
+
+    /**
+     * Updates the createjs object&apos;s text with the value from countdown.
+     *
+     * @param {Number} countdown - the count value to display
+     */
+    _updateCountdown(countdown) {
+        if (countdown &gt;= 0) {
+            const hours = Math.floor(countdown / 3600);
+            const minutes = Math.floor((countdown % 3600) / 60);
+            const seconds = Math.floor(countdown % 60);
+            let text = &quot;&quot;;
+
+            if (hours &gt; 0) {
+                text += hours.toString() + &quot;:&quot;;
+            }
+
+            if (minutes == 0) {
+                if (hours &gt; 0) {
+                    text += &quot;00&quot;;
+                }
+
+                text += &quot;:&quot;;
+            }
+            else if (minutes &lt; 10) {
+                if (hours &gt; 0) {
+                    text += &quot;0&quot; + minutes.toString() + &quot;:&quot;;
+                }
+                else {
+                    text += minutes + &quot;:&quot;;
+                }
+            }
+            else {
+                text += minutes + &quot;:&quot;;
+            }
+
+            if (seconds &lt; 10) {
+                text += &quot;0&quot; + seconds;
+            }
+            else {
+                text += seconds;
+            }
+
+            this._createjsObj.harmonicField.text = text;
+        }
+        else {
+            this._createjsObj.harmonicField.text = &quot;&quot;;
+        }
+    }
+}
+
+//------------------------------------------------------------------------------
+// Events
+//------------------------------------------------------------------------------
+HarmonicCountdown.COUNTDOWN_COMPLETE_EVENT = &quot;CountdownCompleteEvent&quot;;
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

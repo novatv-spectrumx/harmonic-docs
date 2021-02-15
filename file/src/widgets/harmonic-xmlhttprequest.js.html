@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">src/widgets/harmonic-xmlhttprequest.js | Harmonic Template and Widget JavaScript Library</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./" style="display: flex; align-items: center;"><img src="./image/brand_logo.png" style="width:34px;"></a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/harmonic-font-face.js~HarmonicFontFace.html">HarmonicFontFace</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/harmonic-socket.js~HarmonicSocket.html">HarmonicSocket</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/harmonic-template.js~HarmonicTemplate.html">HarmonicTemplate</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#hjs">hjs</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/hjs/hjs-test.js~HarmonicTemplateTest.html">HarmonicTemplateTest</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/hjs/hjs.js~HJS.html">HJS</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-dve">dve</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-dve0">dve0</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-dve1">dve1</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-harmonicDVE">harmonicDVE</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-harmonicLiveAVO">harmonicLiveAVO</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-harmonicTemplate">harmonicTemplate</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-hjs">hjs</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-hjsConfig">hjsConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-liveAVO">liveAVO</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-liveAVO0">liveAVO0</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-liveAVO1">liveAVO1</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-hjstest">hjstest</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#widgets">widgets</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-countdown.js~HarmonicCountdown.html">HarmonicCountdown</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-dve.js~HarmonicDVE.html">HarmonicDVE</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-label-scroll.js~HarmonicLabelScroll.html">HarmonicLabelScroll</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-label.js~HarmonicLabel.html">HarmonicLabel</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-live-avo.js~HarmonicLiveAVO.html">HarmonicLiveAVO</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-movie-clip.js~HarmonicMovieClip.html">HarmonicMovieClip</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-text-field.js~HarmonicTextField.html">HarmonicTextField</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-text-scroll.js~HarmonicTextScroll.html">HarmonicTextScroll</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-video.js~HarmonicVideo.html">HarmonicVideo</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-widget.js~HarmonicWidget.html">HarmonicWidget</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-xmlhttprequest.js~HarmonicXMLHttpRequest.html">HarmonicXMLHttpRequest</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/widgets/harmonic-xmlhttprequest.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/**
+ * File: harmonic-xmlhttprequest.js
+ *
+ * Copyright (c) 2018 Harmonic, Inc.
+ */
+
+/**
+ * The HarmonicXMLHttpRequest widget provides a mechanism to read data from
+ * a webserver.  It contains a dynamic text field that can be used to load
+ * the URL.
+ *
+ * This class implements the Harmonic XMLHttpRequest Widget.  It derives from
+ * the {@link HarmonicWidget} class and implements necessary functions to meet the
+ * needs of this widget.
+ *
+ * The XMLHttpRequest widget requires that the registered createdjs
+ * object have the following structure:
+ *
+ * - The createjsObj must be a createjs.MovieClip named correctly (reference
+ *   {@link HarmonicWidget}).
+ * - The createjs.MovieClip must contain a createjs.Text child named &apos;harmonicField&apos;.
+ *   This text object represents the dynamic text field.
+ *
+ * This class defines a function for:
+ *
+ * - updateTextField - the text defines the URL to load from
+ *
+ * To use this class, simply register the createjs object using the
+ * static register function.  The created HarmonicXMLHttpRequest object is
+ * returned from the register function.  If there is a error, then
+ * &apos;undefined&apos; is returned and an error will be logged.
+ *
+ * The &apos;url&apos; can be specified in the register function or it
+ * can be set using the &apos;url&apos; property on the object returned from
+ * the call to register.
+ *
+ * After a load is request, the widget will dispatch the
+ * HarmonicXMLHttpRequest.XML_HTTP_REQUEST_COMPLETE_EVENT event on the document or
+ * the HarmonicXMLHttpRequest.XML_HTTP_REQUEST_TIMEOUT_EVENT event if the
+ * asynchronous request has timed out
+ *
+ * @example
+ * 1. When the createjs object is registered with the class in the first frame of the movie clip:
+ * let xhr = HarmonicXMLHttpRequest.register(this, &quot;test.xml&quot;);
+ *
+ * 2. Or set the &apos;url&apos; property from the returned object:
+ * let xhr = HarmonicXMLHttpRequest.register(this);
+ * xhr.url = &quot;test.xml&quot;;
+ *
+ * document.addEventListener(HarmonicXMLHttpRequest.XML_HTTP_REQUEST_COMPLETE_EVENT, (event) =&gt; {
+ *     hjs.info(&quot;Your data is loaded: &quot; + event.detail);
+ * });
+ *
+ * document.addEventListener(HarmonicXMLHttpRequest.XML_HTTP_REQUEST_TIMEOUT_EVENT, (event) =&gt; {
+ *     hjs.error(&quot;Your load timed out&quot;);
+ * });
+ *
+ * xhr.load();
+ */
+class HarmonicXMLHttpRequest extends HarmonicWidget {
+
+    /**
+     * Constructor
+     * - initializes all member variables
+     *
+     * @param {String} widgetType - reference HarmonicTemplate.WIDGET_TYPE_&lt;type&gt;
+     * @param {Number} fieldNum - field number used to uniquely identify the widget
+     * @param {String} name - the name of the widget
+     * @param {Object} createjsObj - the createjs object associated with this widget
+     */
+    constructor(widgetType, fieldNum, name, createjsObj) {
+        super(widgetType, fieldNum, name, createjsObj, true);  // include in the template description
+
+        hjs.debug(&quot;HarmonicXMLHttpRequest.constructor&quot;);
+
+        /**
+         * The URL to send the request to.
+         * @type {String}
+         */
+        this._url = &quot;&quot;;
+
+        /**
+         * Flag to indicate if the request should be asynchronous or synchronous.
+         * @type {Boolean}
+         */
+        this._async = true;
+
+        /**
+         * The timeout property of the XMLHttpRequest.stringify
+         * @type {Number}
+         */
+        this._timeout = 0;
+
+        /**
+         * Flag that indicates if the load should occur when the URL changes.
+         * @type {Boolean}
+         */
+        this._loadWhenUrlChanges = true;
+
+        /**
+         * The XMLHttpRequest object.
+         * @type {Object}
+         */
+        this._xhttp = undefined;
+    }
+
+    /**
+     * Registers a createjs object with the widget.  A new
+     * HarmonicXMLHttpRequest will be created in this function.
+     *
+     * @param {Object} createjsObj - the createjs object to associate with this widget
+     * @param {String} url - the url to send the request to
+     *
+     * @return {Object} the newly created HarmonicXMLHttpRequest instance, or undefined if there is an error
+     */
+    static register(createjsObj, url) {
+        let result = HarmonicWidget.validate(&quot;HarmonicXMLHttpRequest&quot;, createjsObj, true);
+        if (result) {
+            return new HarmonicXMLHttpRequest(HarmonicTemplate.WIDGET_TYPE_TEXT, result.fieldNum, result.name, createjsObj, url);
+        }
+        else {
+            return undefined;
+        }
+    }
+
+    /**
+     * Handles the updateTextField request from the Harmonic Template.
+     *
+     * @param {String} text - the text to display
+     * @param {Boolean} render - flag indicating if the field should be rendered
+     */
+    updateTextField(text, render) {
+        this._url = text;
+        if (this._loadWhenUrlChanges) {
+            this.load();
+        }
+    }
+
+    /**
+     * Loads the contents from the url.  The XML_HTTP_REQUEST_COMPLETE_EVENT will
+     * be dispatched when completed.
+     *
+     * @emits {HarmonicXMLHttpRequest.XML_HTTP_REQUEST_COMPLETE_EVENT} is dispatched when the request completes
+     */
+    load() {
+        if (this._url) {
+            this._xhttp = new XMLHttpRequest();
+            this._xhttp.open(&quot;GET&quot;, this._url, this._async);
+
+            if (this._async) {
+                this._xhttp.timeout = this._timeout;
+            }
+
+            this._xhttp.onreadystatechange = function() {
+                // hjs.debug(&quot;readyState: &quot; + this._xhttp.readyState + &quot; status: &quot; + this._xhttp.status + &quot; statusText: &quot; + this._xhttp.statusText);
+                if (this._xhttp.readyState == XMLHttpRequest.DONE) {
+                    let obj = {};
+                    if (this._xhttp.status == 200) {
+                        obj.status = true;
+                        obj.httpStatusCode = this._xhttp.status;
+                        obj.text = this._xhttp.responseText;
+
+                        // hjs.debug(&quot;HarmonicXMLHttpRequest.load success: url &quot; + this._url + &quot; text: &quot; + obj.text);
+                    }
+                    else {
+                        obj.status = false;
+                        obj.httpStatusCode = this._xhttp.status;
+                        obj.text = this._xhttp.statusText;
+
+                        hjs.error(&quot;HarmonicXMLHttpRequest.load failed: url &quot; + this._url + &quot; statusText: &quot; + obj.text);
+                    }
+
+                    let event = new CustomEvent(HarmonicXMLHttpRequest.XML_HTTP_REQUEST_COMPLETE_EVENT,
+                        {
+                            detail : obj
+                        }
+                    );
+
+                    document.dispatchEvent(event);
+                }
+            }.bind(this);
+
+            this._xhttp.ontimeout = function() {
+                let event = new CustomEvent(HarmonicXMLHttpRequest.XML_HTTP_REQUEST_TIMEOUT_EVENT);
+                document.dispatchEvent(event);
+            }
+
+            this._xhttp.send();
+        }
+        else {
+            hjs.error(&quot;HarmonicXMLHttpRequest.load: invalid url: &quot; + this._url);
+        }
+    }
+
+    //--------------------------------------------------------------------------
+    // Properties
+    //--------------------------------------------------------------------------
+
+    /**
+     * Sets the URL.
+     * @param {String} value - the URL to send the request to.
+     */
+    set url(value) {
+        this._url = value;
+    }
+
+    /**
+     * Gets the URL.
+     */
+    get url() {
+        return this._url;
+    }
+
+    /**
+     * Sets the asynchronous flag on the request.
+     * @param {Boolean} value - true = asynchronous, false = synchronous (deprecated)
+     */
+    set async(value) {
+        this._async = value;
+    }
+
+    /**
+     * Gets the asynchronous flag.
+     */
+    get async() {
+        return this._async;
+    }
+
+    /**
+     * Sets the timeout (milliseconds) on the request.
+     * @param {Number} value - 0 = no timeout, &gt; 0 = milliseconds
+     */
+    set timeout(value) {
+        this._timeout = value;
+    }
+
+    /**
+     * Gets the timeout (milliseconds)
+     */
+    get timeout() {
+        return this._timeout;
+    }
+
+    /**
+     * Sets the flag that indicates to load when the URL changes.
+     * @param {Boolean} value - true = load when URL changes, false otherwise
+     */
+    set loadWhenUrlChanges(value) {
+        this._loadWhenUrlChanges = value;
+    }
+
+    /**
+     * Gets the value of that indicates whether or not to load when the URL changes.
+     */
+    get loadWhenUrlChanges() {
+        return this._loadWhenUrlChanges;
+    }
+}
+
+//------------------------------------------------------------------------------
+// Events
+//------------------------------------------------------------------------------
+HarmonicXMLHttpRequest.XML_HTTP_REQUEST_COMPLETE_EVENT = &quot;XMLHttpRequestCompleteEvent&quot;;
+HarmonicXMLHttpRequest.XML_HTTP_REQUEST_TIMEOUT_EVENT = &quot;XMLHttpRequestTimeoutEvent&quot;;
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">src/hjs/hjs-test.js | Harmonic Template and Widget JavaScript Library</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./" style="display: flex; align-items: center;"><img src="./image/brand_logo.png" style="width:34px;"></a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/harmonic-font-face.js~HarmonicFontFace.html">HarmonicFontFace</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/harmonic-socket.js~HarmonicSocket.html">HarmonicSocket</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/harmonic-template.js~HarmonicTemplate.html">HarmonicTemplate</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#hjs">hjs</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/hjs/hjs-test.js~HarmonicTemplateTest.html">HarmonicTemplateTest</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/hjs/hjs.js~HJS.html">HJS</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-dve">dve</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-dve0">dve0</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-dve1">dve1</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-harmonicDVE">harmonicDVE</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-harmonicLiveAVO">harmonicLiveAVO</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-harmonicTemplate">harmonicTemplate</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-hjs">hjs</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-hjsConfig">hjsConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-liveAVO">liveAVO</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-liveAVO0">liveAVO0</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-liveAVO1">liveAVO1</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-hjstest">hjstest</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#widgets">widgets</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-countdown.js~HarmonicCountdown.html">HarmonicCountdown</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-dve.js~HarmonicDVE.html">HarmonicDVE</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-label-scroll.js~HarmonicLabelScroll.html">HarmonicLabelScroll</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-label.js~HarmonicLabel.html">HarmonicLabel</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-live-avo.js~HarmonicLiveAVO.html">HarmonicLiveAVO</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-movie-clip.js~HarmonicMovieClip.html">HarmonicMovieClip</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-text-field.js~HarmonicTextField.html">HarmonicTextField</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-text-scroll.js~HarmonicTextScroll.html">HarmonicTextScroll</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-video.js~HarmonicVideo.html">HarmonicVideo</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-widget.js~HarmonicWidget.html">HarmonicWidget</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-xmlhttprequest.js~HarmonicXMLHttpRequest.html">HarmonicXMLHttpRequest</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/hjs/hjs-test.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/**
+ * File: hjs-test.js
+ * 
+ * Copyright (c) 2018 Harmonic, Inc.
+ */   
+
+ /**
+  * Creates a global test object called &apos;hjstest&apos;.  This object can be used
+  * to inject websocket commands into the Harmonic JavaScript code.  This
+  * functionality allows clients to test and debug issues.
+  */
+class HarmonicTemplateTest {
+
+    constructor() {
+        hjs.debug(&quot;HarmonicTemplateTest.constructor&quot;);
+    }
+
+    /**
+     * Emulates the Oxtel Start Animation (S0) command.
+     */
+    startTemplateAnimation() {
+        const obj = { 
+            command: HJS.START_TEMPLATE_ANIMATION_COMMAND,
+            tickid: 0 
+        };
+
+        hjs._onWebSocketMessage(JSON.stringify(obj));
+    }
+
+    /**
+     * Emulates the Oxtel Stop Animation (S1) command.
+     * @param {Boolean} immediate - false = complete cycle then stop, true = stop immediately
+     */
+    stopTemplateAnimation(immediate) {
+        const obj = { 
+            command: HJS.STOP_TEMPLATE_ANIMATION_COMMAND,
+            tickid: 0,
+            immediate: immediate 
+        };                    
+
+        hjs._onWebSocketMessage(JSON.stringify(obj));
+    }
+
+    /**
+     * Emulates the Oxtel Select Animation Frame (S2) command.
+     * @param {Number} frame 
+     */
+    gotoFrame(frame) {
+        const obj = { 
+            command: HJS.GOTO_FRAME_COMMAND,
+            tickid: 0,
+            frame: frame 
+        };
+
+        hjs._onWebSocketMessage(JSON.stringify(obj));
+    }
+
+    /**
+     * Emulates the Oxtel Restart Animation (S4) command.
+     */
+    restartTemplateAnimation() {
+        const obj = { 
+            command: HJS.RESTART_TEMPLATE_ANIMATION_COMMAND,
+            tickid: 0 
+        };
+
+        hjs._onWebSocketMessage(JSON.stringify(obj));
+    }
+
+    /**
+     * Emulates the Oxtel Update Text Field (Z0) command 
+     * with the Append flag not set.
+     * @param {Number} fieldNum 
+     * @param {String} text 
+     * @param {Boolean} render - true = render now
+     */
+    updateTextField(fieldNum, text, render) {
+        const obj = {
+            command: HJS.UPDATE_TEXT_FIELD_COMMAND,
+            tickid: 0,
+            fieldNum: fieldNum,
+            text: text,
+            render: render
+        };
+
+        hjs._onWebSocketMessage(JSON.stringify(obj));
+    }
+
+    /**
+     * Emulates the Oxtel Update Text Field (Z0) command 
+     * with the Append flag set.
+     * @param {Number} fieldNum 
+     * @param {String} text 
+     * @param {Boolean} render - true = render now
+     */    
+    appendTextField(fieldNum, text, render) {
+        const obj = {
+            command: HJS.APPEND_TEXT_FIELD_COMMAND,
+            tickid: 0,
+            fieldNum: fieldNum,
+            text: text,
+            render: render
+        };
+
+        hjs._onWebSocketMessage(JSON.stringify(obj));
+    }
+
+    /**
+     * Emulates the Oxtel Render Box (Z3) command.
+     * @param {Number} fieldNum 
+     */
+    renderField(fieldNum) {
+        const obj = {
+            command: HJS.RENDER_FIELD_COMMAND,
+            tickid: 0,
+            fieldNum: fieldNum
+        };
+
+        hjs._onWebSocketMessage(JSON.stringify(obj));
+    }     
+    
+    /**
+     * Emulates the Oxtel Render Box (Z3) command and
+     * renders all text fields.
+     */
+    renderAllFields() {
+        const obj = {
+            command: HJS.RENDER_ALL_FIELDS_COMMAND,
+            tickid: 0
+        };
+
+        hjs._onWebSocketMessage(JSON.stringify(obj));
+    }         
+
+    /**
+     * Emulates the Oxtel Change Image (Z4) command.
+     * @param {Number} fieldNum 
+     * @param {String} imagePath 
+     */
+    updateImageField(fieldNum, imagePath) {
+        const obj = {
+            command: HJS.UPDATE_IMAGE_FIELD_COMMAND,
+            tickid: 0,
+            fieldNum: fieldNum,
+            imagePath: imagePath
+        };
+
+        hjs._onWebSocketMessage(JSON.stringify(obj));
+    }   
+
+    /**
+     * Emulates the Oxtel Stop Animation (Zf) command.
+     * @param {Number} fieldNum 
+     * @param {Boolean} immediate - false = complete cycle then stop, true = stop immediately
+     */
+    stopFieldAnimation(fieldNum, immediate) {
+        const obj = {
+            command: HJS.STOP_FIELD_ANIMATION_COMMAND,
+            tickid: 0,
+            fieldNum: fieldNum,
+            immediate: immediate
+        }
+        hjs._onWebSocketMessage(JSON.stringify(obj));
+    }
+
+    /**
+     * Emulates the Oxtel Pause/Restart Strap (Zg) command
+     * @param {Number} fieldNum 
+     * @param {Boolean} fromBeginning - true = start from beginning, false = start animation
+     */
+    restartFieldAnimation(fieldNum, fromBeginning) {
+        const obj = {
+            command: HJS.RESTART_FIELD_ANIMATION_COMMAND,
+            tickid: 0,
+            fieldNum: fieldNum,
+            fromBeginning: fromBeginning
+        }
+        hjs._onWebSocketMessage(JSON.stringify(obj));
+    }
+
+    /**
+     * Emulates the VISIBLE event.
+     * @param {Number} alpha 
+     */
+    alphaNotZero(alpha=1) {
+        const obj = {
+            command: HJS.ALPHA_NOT_ZERO_COMMAND,
+            tickid: 0,
+            alpha: alpha
+        }
+        hjs._onWebSocketMessage(JSON.stringify(obj));
+    }
+
+    /**
+     * Emulates the FULLY_VISIBLE event.
+     * @param {Number} alpha 
+     */
+    alphaAtMax(alpha=1) {
+        const obj = {
+            command: HJS.ALPHA_AT_MAX_COMMAND,
+            tickid: 0,
+            alpha: alpha
+        }
+        hjs._onWebSocketMessage(JSON.stringify(obj));
+    }
+
+    /**
+     * Emulates the transition from Preload to Load.
+     * @param {Number} alpha 
+     */
+    activate(alpha) {
+        const obj = {
+            command: HJS.ACTIVATE_COMMAND,
+            tickid: 0,
+            alpha: alpha            
+        }
+        hjs._onWebSocketMessage(JSON.stringify(obj));
+    }
+
+    /**
+     * Emulates the socket connected message.
+     * @param {String} ipAddress 
+     * @param {Number} port 
+     * @param {Number} socketType 
+     * @param {Number} socketId 
+     */
+    socketConnected(ipAddress, port, socketType, socketId) {
+        const obj = {
+            command: HJS.SOCKET_CONNECTED_COMMAND,
+            ipAddress: ipAddress,
+            port: port,
+            socketType: socketType,
+            socketId: socketId
+        };
+        hjs._onWebSocketMessage(JSON.stringify(obj));        
+    }
+
+    /**
+     * Emulates the socket disconnected message.
+     * @param {Number} socketId 
+     */
+    socketDisconnected(socketId) {
+        const obj = {
+            command: HJS.SOCKET_DISCONNECTED_COMMAND,
+            socketId: socketId
+        };
+        hjs._onWebSocketMessage(JSON.stringify(obj));        
+    }    
+    
+    /**
+     * Emulates the socket data message.
+     * @param {Number} socketId 
+     * @param {String} data 
+     */
+    socketData(socketId, data) {
+        const obj = {
+            command: HJS.SOCKET_DATA_COMMAND,
+            socketId: socketId,
+            data: data
+        };
+        hjs._onWebSocketMessage(JSON.stringify(obj));        
+    }    
+
+    /**
+     * Emulates the socket error message.
+     * @param {String} ipAddress 
+     * @param {Number} port
+     * @param {Number} socketType 
+     * @param {Number} socketId 
+     * @param {Number} errorCode 
+     */
+    socketError(ipAddress, port, socketType, socketId, errorCode) {
+        const obj = {
+            command: HJS.SOCKET_ERROR_COMMAND,
+            ipAddress: ipAddress,
+            port: port,
+            socketType: socketType,
+            socketId: socketId,
+            errorCode: errorCode
+        };
+        hjs._onWebSocketMessage(JSON.stringify(obj));        
+    }
+
+    ping() {
+        const obj = {
+            command: HJS.PING_COMMAND
+        }
+        hjs._onWebSocketMessage(JSON.stringify(obj));
+    }
+}
+
+let hjstest = new HarmonicTemplateTest();
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

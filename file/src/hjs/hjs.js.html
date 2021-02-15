@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">src/hjs/hjs.js | Harmonic Template and Widget JavaScript Library</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./" style="display: flex; align-items: center;"><img src="./image/brand_logo.png" style="width:34px;"></a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/harmonic-font-face.js~HarmonicFontFace.html">HarmonicFontFace</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/harmonic-socket.js~HarmonicSocket.html">HarmonicSocket</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/harmonic-template.js~HarmonicTemplate.html">HarmonicTemplate</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#hjs">hjs</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/hjs/hjs-test.js~HarmonicTemplateTest.html">HarmonicTemplateTest</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/hjs/hjs.js~HJS.html">HJS</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-dve">dve</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-dve0">dve0</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-dve1">dve1</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-harmonicDVE">harmonicDVE</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-harmonicLiveAVO">harmonicLiveAVO</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-harmonicTemplate">harmonicTemplate</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-hjs">hjs</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-hjsConfig">hjsConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-liveAVO">liveAVO</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-liveAVO0">liveAVO0</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-liveAVO1">liveAVO1</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-hjstest">hjstest</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#widgets">widgets</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-countdown.js~HarmonicCountdown.html">HarmonicCountdown</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-dve.js~HarmonicDVE.html">HarmonicDVE</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-label-scroll.js~HarmonicLabelScroll.html">HarmonicLabelScroll</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-label.js~HarmonicLabel.html">HarmonicLabel</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-live-avo.js~HarmonicLiveAVO.html">HarmonicLiveAVO</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-movie-clip.js~HarmonicMovieClip.html">HarmonicMovieClip</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-text-field.js~HarmonicTextField.html">HarmonicTextField</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-text-scroll.js~HarmonicTextScroll.html">HarmonicTextScroll</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-video.js~HarmonicVideo.html">HarmonicVideo</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-widget.js~HarmonicWidget.html">HarmonicWidget</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-xmlhttprequest.js~HarmonicXMLHttpRequest.html">HarmonicXMLHttpRequest</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/hjs/hjs.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/**
+ * File: hjs.js
+ * 
+ * Copyright (c) 2018 Harmonic, Inc.
+ */
+
+/**
+ * This class provides the interface to/from the HTML renderer.  It uses a 
+ * websocket connection to send and receive data from the HTML renderer.
+ * 
+ * This class provides the following capabilities:
+ * - on platform vs. desktop detection
+ * - log message functionality (to console and system log)
+ * - individual interfaces for sending information to the HTML renderer
+ * - dispatches COMMAND_RECEIVED_EVENT when valid data is received from 
+ *   the HTML renderer
+ */
+class HJS {
+
+    /**
+     * Constructor 
+     * - initializes all member variables.
+     * 
+     * @param {Object} config
+     * @param {Number} config.severity;
+     */
+    constructor(config) {
+        console.log(&quot;HJS.constructor&quot;);
+
+        /**
+         * The configuration used to construct HJS.  Reference {@link hjsConfig}
+         * @type {Object} 
+         */
+        this._config = config;
+
+        /**
+         * The severity of the Log output.
+         * @type {Number}
+         */
+        this._severity = config.severity;
+
+        /**
+         * A queue to log messages to before the websocket is ready.  Once
+         * the websocket is opened, the severity will be sent followed by
+         * the contents of the queue.
+         * @type {Object[]}
+         */
+        this._queuedLogMsgs = [];
+
+        /**
+         * Flag indicating if the code is running on the platform or desktop.
+         * @type {Boolean}
+         */
+        this._isOnPlatform = false;     
+
+        /**
+         * Flag indicating if the browser is running on the desktop and the
+         * HTML renderer is running on the platform.  Used for debug purposes.
+         * @type {Boolean}
+         */
+        this._isEmulatingPlatform = false;
+
+        /**
+         * IP address of the websocket server.
+         * @type {String}
+         */
+        this._ipAddress = undefined;
+
+        /**
+         * Port of the websocket server.
+         * @type {Number}
+         */
+        this._port = undefined;
+
+        /**
+         * The name of the loaded template.
+         * @type {String}
+         */
+        this._templateName = undefined;
+
+        /**
+         * Flag indicating if the DVE SrcPreview should be visible.
+         * @type {Boolean}
+         */
+        this._showDveSrcPreview = false;
+
+        // init using the URL
+        this._initFromURL();
+
+        /**
+         * The websocket to the HTML renderer.
+         * @type {Object}
+         */
+        this._websocket = undefined;
+    }
+
+    /**
+     * Initializes the websocket.  This must be called after the Harmonic
+     * Template is constructed or it may miss the INIT_COMMAND from 
+     * the HTML renderer.
+     */
+    init() {
+        this.debug(&quot;HJS.init&quot;);
+        this._initWebSocket();
+    }
+
+    /**
+     * When running on the platform, the URL contains the ip address
+     * and the port of the websocket to connect to.  Use this information
+     * to determine if we are running on the platform vs. desktop and
+     * to make the websocket connection.
+     */
+    _initFromURL() {
+
+        let validParams = false;
+        let urlParams = window.location.search.substring(1).split(&apos;?&apos;);
+        let searchParams = new URLSearchParams(window.location.search);
+
+        if (urlParams.length == 3) {
+            // OLD HTML Renderer code support - should be removed over time.
+            this._ipAddress = urlParams[0];
+            this._port = urlParams[1];
+            this._templateName = urlParams[2];   
+            validParams = true;
+        }
+        else {
+            // New HTML Renderer code support 
+            // - key/value pairs for parameters
+            this._ipAddress = searchParams.get(&quot;ip&quot;);
+            this._port = searchParams.get(&quot;port&quot;);
+            this._templateName = searchParams.get(&quot;template&quot;);
+            
+            if (searchParams.has(&quot;showDveSrcPreview&quot;)) {
+                this._showDveSrcPreview = searchParams.get(&quot;showDveSrcPreview&quot;) === &quot;1&quot;;
+            }
+                        
+            if ((this._ipAddress !== null) &amp;&amp;
+                (this._port !== null) &amp;&amp;
+                (this._templateName !== null))
+            {
+                validParams = true;
+            }
+        }
+
+        if (validParams !== true) {
+            this._ipAddress = undefined;
+            this._port = undefined;
+            this._templateName = window.location.pathname.substring(1);
+        }
+
+        // If the ip address and port are not specified in the URL, then
+        // assume that we&apos;re running on the desktop.
+        if ((this._ipAddress == undefined) || (this._port == undefined)) {        
+            this._isOnPlatform = false;
+            this.info(&quot;Running in a desktop browser&quot;);
+
+            // Always show the DVE SrcPreview on the desktop.
+            this._showDveSrcPreview = true;
+
+            if (this._config.remoteWebSocket.enable) {
+                this._ipAddress = this._config.remoteWebSocket.ipAddress;
+                this._port = this._config.remoteWebSocket.port;
+                this.info(&quot;Remote WebSocket configured: ipAddress: &quot; + this._ipAddress + &quot; port: &quot; + this._port);
+
+                this._isOnPlatform = true; 
+                this._isEmulatingPlatform = true;
+                this.info(&quot;Emulating platform behavior - isOnPlatform: &quot; + this._isOnPlatform);
+            }    
+        }
+        else {
+            this._isOnPlatform = true;
+            this.debug(&quot;Running on the platform&quot;);
+        }        
+    }
+
+    /**
+     * Initialize the websocket and add all event handlers local to this method.
+     * 
+     * @listens {&apos;open&apos;} - when the websocket connection is opened
+     * @listens {&apos;error&apos;} - error on the websocket
+     * @listens {&apos;close&apos;} - when the websocket connection closes
+     * @listens {&apos;message&apos;} - when a message is received from the websocket
+     */
+    _initWebSocket() {        
+        if (this.isOnPlatform()) {
+            const url = &quot;ws://&quot; + this._ipAddress + &quot;:&quot; + this._port;
+            this.debug(&quot;creating websocket: &quot; + url);
+
+            this._websocket = new WebSocket(url);
+
+            //
+            // Web socket Event Handlers
+            //
+
+            // Open
+            this._websocket.addEventListener(&apos;open&apos;, (event) =&gt; {                
+                this.debug(&quot;websocket: open&quot;);    
+
+                // Set the severity on open so that JavaScript logged messages
+                // can be seen in the log.
+                this.setLogSeverity(this._severity);
+
+                // Flush the log message queue.
+                this._flushLogMsgQueue();
+            });
+
+            // Error
+            this._websocket.addEventListener(&apos;error&apos;, (event) =&gt; {
+                this.error(&quot;websocket error: &quot; + event.target.url);
+            });
+
+            // Close
+            this._websocket.addEventListener(&apos;close&apos;, (event) =&gt; {
+                this.error(&quot;websocket: close&quot;);
+            });
+
+            // Message
+            this._websocket.addEventListener(&apos;message&apos;, (event) =&gt; {
+                this._onWebSocketMessage(event.data);
+            });
+        }
+    }
+
+    /**
+     * Handles converting the websocket message to an object and dispatching
+     * the event to the document.
+     * 
+     * @param {Object} data 
+     */
+    _onWebSocketMessage(data) {
+
+        this.debug(&quot;websocket message: &quot; + data);
+
+        // Handle JSON
+        try {
+            const obj = JSON.parse(data);
+
+            if (this._isObjectValid(obj)) {
+                this._dispatchEvent(obj);
+            }        
+            else {
+                this.error(&quot;websocket: invalid object from JSON: &quot; + data);
+            }
+        } 
+        catch(e) {
+            this.error(&quot;websocket: failed to parse JSON: &quot; + data);
+        }
+    }
+
+    //--------------------------------------------------------------------------
+    // Platform/Desktop Methods
+    //--------------------------------------------------------------------------
+
+    /**
+     * Returns true if running on the platform.
+     * 
+     * @return {Boolean}
+     */
+    isOnPlatform() { return this._isOnPlatform; }
+
+    /**
+     * Returns true if running on the desktop.
+     * 
+     * @return {Boolean}
+     */
+    isOnDesktop() { return !this._isOnPlatform; }
+
+    //--------------------------------------------------------------------------
+    // Log Methods
+    //--------------------------------------------------------------------------
+
+    /**
+     * Logs a debug message.
+     * @param {String} message 
+     */
+    debug(message) { this._logMsg(HJS.DEBUG, message); }
+
+    /**
+     * Logs an info message.
+     * @param {String} message 
+     */
+    info(message) { this._logMsg(HJS.INFO, message); }
+
+    /**
+     * Logs a notice message.
+     * @param {String} message 
+     */
+    notice(message) { this._logMsg(HJS.NOTICE, message); }    
+
+    /**
+     * Logs a warning message.
+     * @param {String} message 
+     */
+    warning(message) { this._logMsg(HJS.WARNING, message); }
+
+    /**
+     * Logs an error message.
+     * @param {String} message 
+     */
+    error(message) { this._logMsg(HJS.ERROR, message); }
+
+    /**
+     * Returns true if the severity is set to debug.
+     * 
+     * @return {Boolean}
+     */
+    isDebug() { return this._severity == HJS.DEBUG; }
+
+    /**
+     * Sets the log severity locally and on the HTML renderer.
+     * 
+     * @param {Number} severity - the level to set the severity
+     */
+    setLogSeverity(severity) {
+        this._severity = severity;
+
+        const obj = {
+            command: HJS.SET_LOG_SEVERITY,
+            severity: severity
+        };
+
+        this._sendObjToWebSocket(obj);
+    }    
+
+    /**
+     * Returns the log severity.
+     * 
+     * @return {Number} the severity
+     */
+    getLogSeverity() {
+        return this._severity;
+    }    
+
+    //--------------------------------------------------------------------------
+    // Template Control Methods
+    //--------------------------------------------------------------------------    
+
+    /**
+     * Sets the IsLive flag on the shared surface.
+     * 
+     * @param {Boolean} value - is live
+     */
+    setIsLive(value) {
+        const obj = {
+            command: HJS.SET_IS_LIVE_COMMAND,
+            value: (value) ? 1 : 0
+        };
+        this._sendObjToWebSocket(obj)
+    }
+
+    /**
+     * Sets the enable tick threshold messages flag on the shared surface.
+     * 
+     * @param {Boolean} value - enable tick threshold messages
+     */
+    enableTickThresholdMsgs(value) {
+        const obj = {
+            command: HJS.ENABLE_TICK_THRESHOLD_MSGS_COMMAND,
+            value: (value) ? 1 : 0
+        };
+        this._sendObjToWebSocket(obj);
+    }
+
+    /**
+     * Sets the enable purge ticks flags on the share surface.
+     * 
+     * @param {Boolean} value - enable purge ticks
+     */
+    enablePurgeTicks(value) {
+        const obj = {
+            command: HJS.ENABLE_PURGE_TICKS_COMMAND,
+            value: (value) ? 1 : 0
+        };
+        this._sendObjToWebSocket(obj);
+    }
+
+    /**
+     * Sets the content rect on the shared surface.
+     * 
+     * @param {Number} x
+     * @param {Number} y
+     * @param {Number} width
+     * @param {Number} height
+     */
+    setContentRect(x, y, width, height) {
+        const obj = {
+            command: HJS.SET_CONTENT_RECT_COMMAND,
+            x: x,
+            y: y,
+            width: width,
+            height: height
+        };
+        this._sendObjToWebSocket(obj);        
+    }
+
+    //--------------------------------------------------------------------------
+    // Signals
+    //--------------------------------------------------------------------------
+
+    /**
+     * Sends the Load Complete signal to the HTML renderer so that it can send
+     * the signal out template control d-bus.
+     * 
+     * @param {Boolean} success 
+     */
+    signalLoadComplete(success) {
+        const obj = {
+            command: HJS.SIGNAL_LOAD_COMPLETE_COMMAND,
+            success: (success) ? 1 : 0
+        };
+        this._sendObjToWebSocket(obj);
+    }
+
+    /**
+     * Sends the Preload Complete signal to the HTML renderer so that it can send
+     * the signal out template control d-bus.
+     * 
+     * @param {Boolean} success 
+     */
+    signalPreloadComplete(success) {
+        const obj = {
+            command: HJS.SIGNAL_PRELOAD_COMPLETE_COMMAND,
+            success: (success) ? 1 : 0
+        };
+        this._sendObjToWebSocket(obj);
+    }
+
+    /**
+     * Sends the Signal Template Playing signal to the HTML renderer so that it can send
+     * the signal out template control d-bus.
+     * 
+     * @param {Boolean} playing 
+     */
+    signalTemplatePlaying(playing) {
+        const obj = {
+            command: HJS.SIGNAL_TEMPLATE_STATE_COMMAND,
+            playing: (playing) ? 1 : 0
+        };
+        this._sendObjToWebSocket(obj);
+    }
+
+    //--------------------------------------------------------------------------
+    // Utilities
+    //--------------------------------------------------------------------------
+    /**
+     * Converts an URL to an URL that uses the graphics proxy located at
+     * GFXPROXY in the web server.  This function is useful to convert URLs
+     * to use the proxy server before performning a XMLHttpRequest.
+     * @return {String} - url converted to a proxy url (if necessary)
+     * 
+     * @param {String} url - the url to convert
+     */
+    urlToProxyUrl(url) {
+        if (this.isOnPlatform()) {
+            if (url.startsWith(&apos;http://&apos;)) {    
+                let url_minus_the_protocol = url.substring(7);
+                let new_url = this.webServerOrigin + &quot;/&quot; + this.proxyLocation + &quot;/&quot; + url_minus_the_protocol;
+                return new_url;
+            }
+            else if (url.startsWith(&apos;https://&apos;)) {    
+                let url_minus_the_protocol = url.substring(8);
+                let new_url = this.webServerOrigin + &quot;/&quot; + this.proxyLocation + &quot;/&quot; + url_minus_the_protocol;
+                return new_url;
+            }
+            else {
+                return url;
+            }
+        }
+        else {
+            return url;
+        }
+    }
+
+    //--------------------------------------------------------------------------
+    // Properties
+    //--------------------------------------------------------------------------
+    /**
+     * Returns the IP address of the web server using the window.location object.
+     * @return {String} the IP address
+     */
+    get webServerIpAddress() {
+        return window.location.hostname;
+    }
+
+    /**
+     * Returns the port of the web server using the window.location object.  If 
+     * the port is empty, then 80 is returned.
+     * @return {Number} the port
+     */
+    get webServerPort() {
+        if (window.location.port) {
+            return window.location.port;
+        }
+
+        return 80;
+    }
+
+    /**
+     * Returns the origin of the web server using the window.location object. 
+     * @return {String} the origin
+     */    
+    get webServerOrigin() {
+        return window.location.origin;
+    }
+
+    /**
+     * Returns the location of the graphic&apos;s proxy location.
+     * @return {String} the proxy location
+     */    
+    get proxyLocation() {
+        return &quot;GFXPROXY&quot;;
+    }
+
+    /**
+     * Returns the IP address of the web socket interface.
+     * @return {String} the IP address
+     */
+    get ipAddress() {
+        return this._ipAddress;
+    }
+
+    /**
+     * Returns the port of the web socket interface.
+     * @return {Number} the port
+     */
+    get port() {
+        return this._port;
+    }
+
+    /**
+     * Returns the template name.
+     * @return {String} the name of the loaded template
+     */
+    get templateName() {
+        return this._templateName;
+    }
+
+    /**
+     * Sets the Template Path property on template control d-bus.
+     * 
+     * @param {String} path 
+     */
+    setTemplatePath(path) {
+        const obj = {
+            command: HJS.SET_TEMPLATE_PATH_COMMAND,
+            path: path
+        };
+        this._sendObjToWebSocket(obj);
+    }
+
+    /**
+     * Sets the Template Description property on template control d-bus.
+     * 
+     * @param {String} description 
+     */
+    setTemplateDescription(description) {
+        const obj = {
+            command: HJS.SET_TEMPLATE_DESCRIPTION_COMMAND,
+            description: description
+        };
+        this._sendObjToWebSocket(obj);        
+    }
+
+    //--------------------------------------------------------------------------
+    // DVE
+    //--------------------------------------------------------------------------
+    /**
+     * Returns the value of the showDveSrcPreview.
+     * @return {Boolean} the value of the showDveSrcPreview URL parameter
+     */
+    get showDveSrcPreview() {
+        return this._showDveSrcPreview;
+    }
+
+    /**
+     * Sets the DVE parameters on the shared surface.
+     * 
+     * @param {Object} params 
+     */
+    setDVEParams(params) {
+	 	// The command key and value will be provided by the client
+        this._sendObjToWebSocket(params);
+    }
+
+    //--------------------------------------------------------------------------
+    // Live Audio Voice-over (AVO)
+    //--------------------------------------------------------------------------
+    /**
+     * Sets the Live AVO IsLive flag on the shared surface.
+     * 
+     * @param {Number} unit - Live AVO unit number
+     * @param {Boolean} isLive - true = is live, false = not live
+     */    
+    setLiveAVOIsLive(unit, isLive) {
+        const obj = {
+            command: HJS.SET_LIVE_AVO_IS_LIVE_COMMAND,
+            unit: unit,
+            isLive: (isLive) ? 1 : 0
+        };
+        this._sendObjToWebSocket(obj);        
+    }
+
+    /**
+     * Sets the Live AVO enable flag on the shared surface.
+     * The enable is in the shared surface flags, but it 
+     * is currently the only flag so having a dedicated
+     * function here makes sense.
+     * 
+     * @param {Number} unit - Live AVO unit number
+     * @param {Boolean} enable - true = enable Live AVO, false = disable Live AVO
+     */    
+    enableLiveAVO(unit, enable) {
+        const obj = {
+            command: HJS.SET_LIVE_AVO_FLAGS_COMMAND,
+            unit: unit,
+            flags: (enable) ? 1 : 0
+        };
+        this._sendObjToWebSocket(obj);
+    }
+
+    /**
+     * Sets the IsGraphicsLive value on the shared surface.
+     * When this flag is set to false, the graphics generated
+     * by the running template will not be composited.  This
+     * is useful for templates that contain functionality but
+     * contains no graphics (DVE-only template, Live-AVO-only
+     * template, etc).
+     * @param {Boolean} enable 
+     */
+    setIsGraphicsLive(enable) {
+        const obj = {
+            command: HJS.SET_IS_GRAPHICS_LIVE_COMMAND,
+            value: (enable) ? 1 : 0
+        };
+        this._sendObjToWebSocket(obj);
+    }
+
+    /**
+     * Sent when ping is received from the HTML renderer.  This interface
+     * is used for debug and performance purposes only.
+     */
+    pong() {
+        const obj = {
+            command: HJS.PONG_COMMAND
+        };
+        this._sendObjToWebSocket(obj);
+    }
+
+    //--------------------------------------------------------------------------
+    // Socket
+    //--------------------------------------------------------------------------
+    /**
+     * Sends the SOCKET_CONNECT command to the HTML renderer.
+     * @param {String} ipAddress 
+     * @param {Number} port 
+     * @param {Number} socketType 
+     * @param {Number} timeoutInSec
+     */
+    connectSocket(ipAddress, port, socketType, timeoutInSec) {
+        const obj = {
+            command: HJS.SOCKET_CONNECT_COMMAND,
+            ipAddress: ipAddress,
+            port: port,
+            socketType: socketType,
+            timeoutInSec: timeoutInSec
+        };
+        this._sendObjToWebSocket(obj);
+    }
+
+    /**
+     * Sends the SOCKET_DISCONNECT command to the HTML renderer.
+     * @param {Number} socketId 
+     */
+    disconnectSocket(socketId) {
+        const obj = {
+            command: HJS.SOCKET_DISCONNECT_COMMAND,
+            socketId: socketId
+        };
+        this._sendObjToWebSocket(obj);
+    }
+
+    /**
+     * Sends the SOCKET_WRITE command to the HTML renderer.
+     * @param {Number} socketId 
+     * @param {String} data
+     */
+    writeSocket(socketId, data) {
+        const obj = {
+            command: HJS.SOCKET_WRITE_COMMAND,
+            socketId: socketId,
+            data: data
+        };
+        this._sendObjToWebSocket(obj);
+    }
+
+    //--------------------------------------------------------------------------
+    // Private Methods
+    //--------------------------------------------------------------------------
+    /**
+     * Writes the message to the output if the severity is less than or equal
+     * to the current severity.
+     * 
+     * @param {Number} severity 
+     * @param {String} message 
+     */
+    _logMsg(severity, message) {
+        if (severity &lt;= this._severity) {            
+            if (this.isOnDesktop()) {
+                console.log(this._severityStr(severity) + &quot;HJS: &quot; + message);
+            }
+            else {
+                if ((this._websocket) &amp;&amp; (this._websocket.readyState === 1)) {
+                    const obj = {
+                        command: HJS.LOG_MESSAGE_COMMAND,
+                        severity: severity,
+                        message: &quot;HJS: &quot; + message
+                    };
+                    this._sendObjToWebSocket(obj);
+
+                    if (this._isEmulatingPlatform) {
+                        console.log(this._severityStr(severity) + &quot;HJS: &quot; + message);
+                    }
+                }
+                else {
+                    let q = {
+                        severity: severity,
+                        message: message
+                    };
+
+                    // Adds to the beginning of the array
+                    this._queuedLogMsgs.unshift(q);
+                }
+            }
+        }
+    }
+
+    /**
+     * Flushes the log message queue.
+     */
+    _flushLogMsgQueue() 
+    {
+        while (this._queuedLogMsgs.length &gt; 0) {
+            let obj = this._queuedLogMsgs.pop();
+            this._logMsg(obj.severity, obj.message);
+        }
+    }
+
+    /**
+     * Returns the prefix of the message to output.
+     * 
+     * @param {Number} severity 
+     * @return {String}
+     */
+    _severityStr(severity) {
+        switch(severity) {
+            case HJS.EMERGENCY:
+            case HJS.ALERT:
+            case HJS.CRITICAL:
+            case HJS.ERROR:
+                return &quot;E: &quot;;
+            case HJS.WARNING:
+                return &quot;W: &quot;;
+            case HJS.NOTICE:
+                return &quot;N: &quot;;
+            case HJS.INFO:
+                return &quot;I: &quot;;
+            case HJS.DEBUG:
+                return &quot;D: &quot;;
+            default:
+                return &quot;x: &quot;;
+        }
+    }
+
+    /**
+     * Stringifies an object and sends it to the websocket.
+     * 
+     * @param {Object} obj 
+     */
+    _sendObjToWebSocket(obj) {
+        if (this.isOnPlatform()) {
+            // If the websocket is created and OPEN (1)
+            if ((this._websocket) &amp;&amp; (this._websocket.readyState == 1)) {
+                this._websocket.send(JSON.stringify(obj));
+            }
+        }
+    }     
+
+    /**
+     * Dispatches the COMMAND_RECEIVED_EVENT on the document.
+     * 
+     * @emits {HJS.COMMAND_RECEIVED_EVENT} when a valid message is received from the HTML renderer.
+     * 
+     * @param {Object} detail 
+     */
+    _dispatchEvent(detail) {
+        let event = new CustomEvent(HJS.COMMAND_RECEIVED_EVENT,
+            {
+                detail : detail
+            }
+        );
+
+        document.dispatchEvent(event);        
+    }  
+
+    /**
+     * Returns true if the object is valid and ready for dispatch.
+     * 
+     * @param {Object} obj 
+     */
+    _isObjectValid(obj) {
+        if (obj === undefined) {
+            return false;
+        }
+
+        if (obj.command === undefined) {
+            return false;
+        }
+
+        // All commands have &apos;tickid&apos; except the INIT, PING, and SOCKET commands.
+        if ((obj.command != HJS.INIT_COMMAND) &amp;&amp;
+            (obj.command != HJS.PING_COMMAND) &amp;&amp;
+            (obj.command != HJS.SOCKET_CONNECT_COMMAND) &amp;&amp;
+            (obj.command != HJS.SOCKET_DISCONNECT_COMMAND) &amp;&amp;
+            (obj.command != HJS.SOCKET_DATA_COMMAND) &amp;&amp;
+            (obj.command != HJS.SOCKET_ERROR_COMMAND)) {
+            if (obj.tickid === undefined) {
+                return false;
+            }
+        }
+
+        switch (obj.command) {
+            case HJS.INIT_COMMAND:
+                if ((obj.alpha === undefined) ||
+                    (obj.isPreload === undefined) ||
+                    (obj.activeDimsW === undefined) ||
+                    (obj.activeDimsH === undefined) ||
+                    (obj.frameTime === undefined) ||
+                    (obj.isSecChannel === undefined) ||
+                    (obj.priChannelW === undefined) ||
+                    (obj.priChannelH === undefined)) {
+                    return false;
+                }
+                else {
+                    return true;
+                }
+            case HJS.STOP_TEMPLATE_ANIMATION_COMMAND:
+                if (obj.immediate === undefined) {
+                    return false;
+                }
+                else {
+                    return true;
+                }
+            case HJS.START_TEMPLATE_ANIMATION_COMMAND:
+            case HJS.RESTART_TEMPLATE_ANIMATION_COMMAND:
+            case HJS.RENDER_ALL_FIELDS_COMMAND:
+                return true;
+            case HJS.GOTO_FRAME_COMMAND:
+                if (obj.frame === undefined) {
+                    return false;
+                }
+                else {
+                    return true;
+                }
+            case HJS.UPDATE_TEXT_FIELD_COMMAND:
+            case HJS.APPEND_TEXT_FIELD_COMMAND:
+                if ((obj.fieldNum === undefined) || 
+                    (obj.text === undefined) || 
+                    (obj.render === undefined)) {
+                    return false;
+                }
+                else {
+                    return true;
+                }  
+            case HJS.UPDATE_IMAGE_FIELD_COMMAND:
+                if ((obj.fieldNum === undefined) || 
+                    (obj.imagePath === undefined)) {
+                    return false;
+                }
+                else {
+                    return true;
+                }  
+            case HJS.RENDER_FIELD_COMMAND:
+                if (obj.fieldNum === undefined) {
+                    return false;
+                }
+                else {
+                    return true;
+                }  
+            case HJS.STOP_FIELD_ANIMATION_COMMAND:
+                if ((obj.fieldNum === undefined) || 
+                    (obj.immediate === undefined)) {
+                    return false;
+                }
+                else {
+                    return true;
+                }  
+            case HJS.RESTART_FIELD_ANIMATION_COMMAND:
+                if ((obj.fieldNum === undefined) ||
+                    (obj.fromBeginning === undefined)) {
+                    return false;
+                }
+                else {
+                    return true;
+                }  
+            case HJS.ALPHA_NOT_ZERO_COMMAND:
+            case HJS.ALPHA_AT_MAX_COMMAND:
+                if (obj.alpha === undefined) {
+                    return false;
+                }
+                else {
+                    return true;
+                }  
+
+            case HJS.ACTIVATE_COMMAND:
+                if (obj.alpha === undefined) {
+                    return false;
+                }
+                else {
+                    return true;
+                }  
+
+            case HJS.SOCKET_CONNECTED_COMMAND:
+                if ((obj.ipAddress == undefined) ||
+                    (obj.port == undefined) ||
+                    (obj.socketType == undefined) ||
+                    (obj.socketId == undefined)) {
+                        return false;
+                }
+                else {
+                    return true;
+                }  
+
+            case HJS.SOCKET_DISCONNECTED_COMMAND:
+                if (obj.socketId === undefined) {
+                    return false;
+                }
+                else {
+                    return true;
+                }                  
+
+            case HJS.SOCKET_DATA_COMMAND:
+                if ((obj.socketId === undefined) ||
+                    (obj.data == undefined)) {
+                    return false;
+                }
+                else {
+                    return true;
+                }                  
+
+            case HJS.SOCKET_ERROR_COMMAND:
+                if ((obj.ipAddress == undefined) ||
+                    (obj.port == undefined) ||
+                    (obj.socketType == undefined) ||
+                    (obj.socketId == undefined) ||
+                    (obj.errorCode == undefined)) {
+                    return false;
+                }
+                else {
+                    return true;
+                }                  
+                    
+            case HJS.PING_COMMAND:
+                return true;
+                
+            default:
+                this.error(&quot;Invalid command: &quot; + JSON.stringify(obj));            
+                return false;
+        }
+    }
+}
+
+//------------------------------------------------------------------------------
+// Events
+//------------------------------------------------------------------------------
+
+/**
+ * Dispatched to the document when a command is received from the HTML renderer
+ */
+HJS.COMMAND_RECEIVED_EVENT = &quot;HJS.CommandReceived&quot;;
+
+//------------------------------------------------------------------------------
+// Logging Severity Constants
+//------------------------------------------------------------------------------
+HJS.EMERGENCY = 0; 
+HJS.ALERT     = 1; 
+HJS.CRITICAL  = 2;
+HJS.ERROR     = 3;
+HJS.WARNING   = 4;
+HJS.NOTICE    = 5;
+HJS.INFO      = 6;
+HJS.DEBUG     = 7;
+
+//------------------------------------------------------------------------------
+// Socket Constants
+//------------------------------------------------------------------------------
+HJS.SOCKET_TYPE_INVALID = -1;
+HJS.SOCKET_TYPE_TCP = 0;
+HJS.SOCKET_TYPE_UDP = 1;
+HJS.SOCKET_TYPE_MAX = 2;
+
+//------------------------------------------------------------------------------
+// Command Constants
+//------------------------------------------------------------------------------
+
+ // From HTML Renderer
+HJS.INIT_COMMAND = 0;
+HJS.START_TEMPLATE_ANIMATION_COMMAND = 1
+HJS.STOP_TEMPLATE_ANIMATION_COMMAND  = 2;
+HJS.RESTART_TEMPLATE_ANIMATION_COMMAND = 3;
+HJS.GOTO_FRAME_COMMAND = 4;
+HJS.UPDATE_TEXT_FIELD_COMMAND = 5;
+HJS.APPEND_TEXT_FIELD_COMMAND = 6;
+HJS.UPDATE_IMAGE_FIELD_COMMAND = 7;
+HJS.RENDER_FIELD_COMMAND = 8;
+HJS.RENDER_ALL_FIELDS_COMMAND = 9;
+HJS.STOP_FIELD_ANIMATION_COMMAND = 10;
+HJS.RESTART_FIELD_ANIMATION_COMMAND = 11;
+HJS.ALPHA_NOT_ZERO_COMMAND = 12;
+HJS.ALPHA_AT_MAX_COMMAND = 13;
+HJS.ACTIVATE_COMMAND = 14;
+HJS.SOCKET_CONNECTED_COMMAND = 30;
+HJS.SOCKET_DISCONNECTED_COMMAND = 31;
+HJS.SOCKET_DATA_COMMAND = 32;
+HJS.SOCKET_ERROR_COMMAND = 33;
+HJS.PING_COMMAND = 100;
+
+// To HTML Renderer
+HJS.SIGNAL_LOAD_COMPLETE_COMMAND = 0;
+HJS.SIGNAL_PRELOAD_COMPLETE_COMMAND = 1;
+HJS.SIGNAL_TEMPLATE_STATE_COMMAND = 2;
+HJS.SET_TEMPLATE_PATH_COMMAND = 3;
+// Not used - HJS.SET_TEMPLATE_PLAYING_COMMAND = 4;  - use the SIGNAL_TEMPLATE_STATE_COMMAND instead.
+HJS.SET_TEMPLATE_DESCRIPTION_COMMAND = 5;
+HJS.SET_IS_LIVE_COMMAND = 20;
+HJS.ENABLE_TICK_THRESHOLD_MSGS_COMMAND = 21;
+HJS.ENABLE_PURGE_TICKS_COMMAND = 22;
+HJS.SET_CONTENT_RECT_COMMAND = 23;
+HJS.SET_DVE_PARAMS_COMMAND = 24;
+HJS.SET_LIVE_AVO_IS_LIVE_COMMAND = 25;
+HJS.SET_LIVE_AVO_FLAGS_COMMAND = 26;
+HJS.SET_IS_GRAPHICS_LIVE_COMMAND = 27;
+HJS.SOCKET_CONNECT_COMMAND = 30;
+HJS.SOCKET_DISCONNECT_COMMAND = 31;
+HJS.SOCKET_WRITE_COMMAND = 32;
+HJS.SET_LOG_SEVERITY = 98;
+HJS.LOG_MESSAGE_COMMAND = 99;
+HJS.PONG_COMMAND = 100;
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

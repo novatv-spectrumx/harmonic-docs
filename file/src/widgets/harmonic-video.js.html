@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">src/widgets/harmonic-video.js | Harmonic Template and Widget JavaScript Library</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./" style="display: flex; align-items: center;"><img src="./image/brand_logo.png" style="width:34px;"></a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/harmonic-font-face.js~HarmonicFontFace.html">HarmonicFontFace</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/harmonic-socket.js~HarmonicSocket.html">HarmonicSocket</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/harmonic-template.js~HarmonicTemplate.html">HarmonicTemplate</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#hjs">hjs</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/hjs/hjs-test.js~HarmonicTemplateTest.html">HarmonicTemplateTest</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/hjs/hjs.js~HJS.html">HJS</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-dve">dve</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-dve0">dve0</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-dve1">dve1</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-harmonicDVE">harmonicDVE</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-harmonicLiveAVO">harmonicLiveAVO</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-harmonicTemplate">harmonicTemplate</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-hjs">hjs</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-hjsConfig">hjsConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-liveAVO">liveAVO</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-liveAVO0">liveAVO0</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-liveAVO1">liveAVO1</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-hjstest">hjstest</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#widgets">widgets</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-countdown.js~HarmonicCountdown.html">HarmonicCountdown</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-dve.js~HarmonicDVE.html">HarmonicDVE</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-label-scroll.js~HarmonicLabelScroll.html">HarmonicLabelScroll</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-label.js~HarmonicLabel.html">HarmonicLabel</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-live-avo.js~HarmonicLiveAVO.html">HarmonicLiveAVO</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-movie-clip.js~HarmonicMovieClip.html">HarmonicMovieClip</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-text-field.js~HarmonicTextField.html">HarmonicTextField</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-text-scroll.js~HarmonicTextScroll.html">HarmonicTextScroll</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-video.js~HarmonicVideo.html">HarmonicVideo</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-widget.js~HarmonicWidget.html">HarmonicWidget</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-xmlhttprequest.js~HarmonicXMLHttpRequest.html">HarmonicXMLHttpRequest</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/widgets/harmonic-video.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/**
+ * File: harmonic-video.js
+ *
+ * Copyright (c) 2019 Harmonic, Inc.
+ */
+
+/**
+ * The HarmonicVideo widget provides a video component that is synchronized with
+ * the Harmonic Template timeline.  Since loading an external video source
+ * takes time, this widget will hold off load complete until the video can play
+ * through without additional fetching.  This component will start the video at
+ * the correct time, but playback is controlled by Chrome so frame accuracy is
+ * not alway achievable.
+ *
+ * CAUTION:
+ * - Running fullscreen video files inside a HTML template is not recommended.
+ * - Video files should be as small as possible so that they do not impact the
+ *   template playback.
+ * - Run fullscreen video files separately on their own layer.  Not in a HTML template.
+ * - Running fullscreen video files inside a HTML template may impact playback of the
+ *   template and will most likely result in repeat or missed frames.
+ *
+ * This class implements the Harmonic Video Widget.  It derives from
+ * the {@link HarmonicWidget} class and implements necessary functions to meet the
+ * needs of this widget.
+ *
+ * The HarmonicVideo widget requires that the registered createdjs object have
+ * the following structure:
+ *
+ * - The createjsObj must be a createjs.MovieClip named correctly (reference
+ *   {@link HarmonicWidget}).
+ * - The createjs.MovieClip must contain a video component with the class parameter
+ *   set to a unique name.  This name is used to locate the video element in the DOM
+ *   once it is created by the Adobe code.
+ *
+ * In order for video element to be located in the DOM, the value specified in
+ * the Component Parameter class text box in Adobe Animate must be passed to the
+ * register function.  This is required since there is no way to identify the
+ * video element that the Adobe component code creates.
+ *
+ * This class defines functions for:
+ *
+ * - updateTextField - allows changes to &apos;src&apos; and &apos;currentTime&apos;
+ *   - Syntax:
+ *     - src:&lt;name of src&gt;
+ *     - currentTime:&lt;float&gt;
+ *       - if the render parameter = true, play after set, else pause after set
+ * - restartFieldAnimation - restarts/resumes video playback
+ * - stopFieldAnimation - pauses video playback (immediate parameter ignored)
+ *
+ * To use this class, register the createjs object using the
+ * static register function.  The video Component Parameter class name must
+ * be specified as the second parameter (&quot;myVideo&quot; below). The created
+ * HarmonicVideo object is returned from the register function.  If there is an
+ * error, then &apos;undefined&apos; is returned and an error will be logged.
+ *
+ * @example
+ * // &apos;myVideo&apos; is the name specified in the video Component Parameter class text box
+ * // true = remove the poster attribute from the video element (default = true)
+ * let harmonicVideo = HarmonicVideo.register(this, &quot;myVideo&quot;, true);
+ *
+ * // The Harmonic Video widget will dispatch the VIDEO_ELEMENT_STATE_EVENT when the
+ * // video element property is determined.  Ues isVideoElementValid() to
+ * // determine if it is valid.
+ * document.addEventListener(HarmonicVideo.VIDEO_ELEMENT_STATUS_EVENT, onVideoElementStatus.bind(this));
+ *
+ * function onVideoElementStatus(event) {
+ *     hjs.info(&quot;onVideoElementStatus: valid: &quot; + event.detail.isVideoElementValid() + &quot; class: &quot; + event.detail.class);
+ * }
+ */
+class HarmonicVideo extends HarmonicWidget {
+
+    /**
+     * Constructor
+     * - initializes all member variables
+     *
+     * @param {String} widgetType - reference HarmonicTemplate.WIDGET_TYPE_&lt;type&gt;
+     * @param {Number} fieldNum - field number used to uniquely identify the widget
+     * @param {String} name - the name of the widget
+     * @param {Object} createjsObj - the createjs object associated with this widget
+     * @param {String} className - as specified in the Adobe Animate video component
+     * @param {Boolean} removePoster - if true, removes the poster attribute on the video element
+     */
+    constructor(widgetType, fieldNum, name, createjsObj, className, removePoster ) {
+        super(widgetType, fieldNum, name, createjsObj, true);  // include in the template description
+
+        hjs.debug(&quot;HarmonicVideo.constructor&quot;);
+
+        /**
+         * Name of the class parameter in the Adobe Animate video component parameters
+         * @type {String}
+         */
+        this._class = className;
+
+        /**
+         * Flag indicating whether to remove the poster attribute on the video element.
+         * If the poster is not removed and the image is blank, then the first frame
+         * of video may be blank.
+         * @type {Boolean}
+         */
+        this._removePoster = removePoster;
+
+        /**
+         * The video element - found in the DOM identified by the class name.
+         * @type {Object}
+         */
+        this._video = null;
+
+        /**
+         * Flag indicating if the load processing is complete.
+         * @type {Boolean}
+         */
+        this._loadComplete = false;
+
+        /**
+         * Counter used to determine if the load is taking too long.
+         * @type {Number}
+         */
+        this._loadCounter = 0;
+
+        /**
+         * Tracks the state of the load processing.
+         * @type {Number}
+         */
+        this._loadState = HarmonicVideo.STATE_WAITING_FOR_HAVE_ENOUGH_DATA;
+
+        /**
+         * Flag used to perform special processing on the first restartFieldAnimation.
+         * @type {Boolean}
+         */
+        this._firstRestartFieldAnimation = true;
+
+        requestAnimationFrame(() =&gt; {
+
+            this._video = document.getElementById(this._class);
+            if (this._video) {
+                if (this._removePoster) {
+                    this._video.removeAttribute(&quot;poster&quot;);
+                }
+            }
+            else {
+                hjs.error(&quot;Unable to locate the video element in the DOM: class: &quot; + this._class);
+            }
+
+            this._dispatchEvent();
+        });
+    }
+
+    /**
+     * Registers a createjs object with the widget.  The className parameter must
+     * match the Adobe Animate Component Parameter class value.  A new HarmonicVideo object
+     * will be created in this function.
+     *
+     * @param {Object} createjsObj - the createjs object to associate with this widget
+     * @param {String} className - the Adobe Component Parameter class value
+     * @param {Boolean} removePoster - if true, removes the poster attribute on the video element
+     *
+     * @return {Object} the newly created HarmonicVideo instance, or undefined if there is an error
+     */
+    static register(createjsObj, className, removePoster = true) {
+        let result = HarmonicWidget.validate(&quot;HarmonicVideo&quot;, createjsObj, false);
+        if (result) {
+            return new HarmonicVideo(HarmonicTemplate.WIDGET_TYPE_VIDEO, result.fieldNum, result.name, createjsObj, className, removePoster);
+        }
+        else {
+            return undefined;
+        }
+    }
+
+    /**
+     * Returns true if the video element is valid, else false
+     * @returns {Boolean}
+     */
+    isVideoElementValid() {
+        if (this._video) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
+    /**
+     * Queried by the Harmonic Template to verify that the widget is loaded
+     * before sending the load complete signal.
+     *
+     * Waits for the video element to report a readyState of HAVE_ENOUGH_DATA.
+     * Once this is determined, an asynchronous play is invoked and the promise
+     * is examined next.  If successful, video is paused and the loading process
+     * is complete.
+     *
+     * @returns {Boolean}
+     */
+    isLoaded() {
+
+        if (!this._video) {
+            return false;
+        }
+
+        // Once the load processing is complete, exit without running the below logic.
+        if (this._loadComplete) {
+            return true;
+        }
+
+        this._loadCounter++;
+
+        switch (this._loadState) {
+
+            case HarmonicVideo.STATE_WAITING_FOR_HAVE_ENOUGH_DATA:
+
+                // Wait for the readyState to be HAVE_ENOUGH_DATA before continuing.
+                if (this._video.readyState == this._video.HAVE_ENOUGH_DATA) {
+                    this._loadState = HarmonicVideo.STATE_WAITING_FOR_PLAY_PROMISE;
+
+                    hjs.info(&quot;class: &quot; + this._class + &quot; event: HAVE_ENOUGH_DATA readyState: &quot; + this._video.readyState + &quot; counter: &quot; + this._loadCounter);
+
+                    // The play() is an asynchronous call that returns a promise.
+                    // Update the state in the promise result.
+                    let playPromise = this._video.play();
+                    if (playPromise !== undefined) {
+                        playPromise.then(function(result) {
+                            this._video.pause();        // Pause video
+                            this._loadState = HarmonicVideo.STATE_LOAD_COMPLETE;
+                        }.bind(this),
+                        function(err) {
+                            hjs.error(&quot;Play was prevented: error: &quot; + err);
+                            this._loadState = HarmonicVideo.STATE_LOAD_COMPLETE;
+                        }.bind(this));
+                    }
+                }
+                break;
+
+            case HarmonicVideo.STATE_WAITING_FOR_PLAY_PROMISE:
+                // Waiting for the promise to return
+                break;
+
+            case HarmonicVideo.STATE_LOAD_COMPLETE:
+                hjs.info(&quot;class: &quot; + this._class + &quot; event: LOAD_COMPLETE readyState: &quot; + this._video.readyState + &quot; counter: &quot; + this._loadCounter);
+                this._loadState = true;
+                return true;
+
+            default:
+                return false;
+        }
+    }
+
+    /**
+     * Handles the updateTextField request from the Harmonic Template.
+     *
+     * @param {String} text - the text to display
+     * @param {Boolean} render - flag indicating if the field should be rendered
+     */
+    updateTextField(text, render) {
+        if (!this._video) {
+            hjs.error(&quot;HarmonicVideo.updateTextField failed: this._video is undefined&quot;);
+            return;
+        }
+
+        if (text.startsWith(&quot;src:&quot;)) {
+            this._video.setAttribute(&quot;src&quot;, text.slice(4));
+        }
+        else if (text.startsWith(&quot;currentTime:&quot;)) {
+            let value = Number(text.slice(12));
+            if (!Number.isNaN(value)) {
+                this._video.currentTime = value;
+            }
+            else {
+                hjs.error(&quot;HarmonicVideo.updateTextField failed: invalid number: &quot; + value);
+            }
+        }
+        else {
+            hjs.error(&quot;HarmonicVideo.updateTextField failed: invalid command: &quot; + text);
+        }
+    }
+
+    /**
+     * Handles the restartFieldAnimation request from the Harmonic Template.
+     *
+     * @param {Boolean} fromBeginning - flag indicating if the widget should restart animation from the beginning
+     */
+    restartFieldAnimation(fromBeginning) {
+        hjs.debug(&quot;restartFieldAnimation fromBeginning: &quot; + fromBeginning);
+
+        if (!this._video) {
+            return;
+        }
+
+        if (fromBeginning) {
+            if (this._firstRestartFieldAnimation) {
+                this._firstRestartFieldAnimation = false;
+                let autoplay = this._video.getAttribute(&quot;autoplay&quot;);
+
+                // Only start playing if autoplay is specified
+                if (autoplay != null) {
+                    this._video.currentTime = 0.0;
+                    this._video.play();
+                }
+            }
+            else {
+                this._video.pause();
+                this._video.currentTime = 0.0;
+                this._video.play();
+            }
+        }
+        else {
+            this._video.play();
+        }
+    }
+
+    /**
+     * Handles the stopFieldAnimation request from the Harmonic Template.
+     *
+     * @param {Boolean} immediate - flag indicating if the widget should stop immediately or at the end of the animation
+     */
+    stopFieldAnimation(immediate) {
+        hjs.debug(&quot;stopFieldAnimation immediate: &quot; + immediate);
+
+        if (!this._video) {
+            return;
+        }
+
+        this._video.pause();
+    }
+
+    //--------------------------------------------------------------------------
+    // Private Methods
+    //--------------------------------------------------------------------------
+
+    /**
+     * Dispatches the VIDEO_ELEMENT_STATE_EVENT.
+     */
+    _dispatchEvent() {
+        // Dispatch the video element status event.
+        let event = new CustomEvent(HarmonicVideo.VIDEO_ELEMENT_STATUS_EVENT,
+            {
+                detail : this
+            }
+        );
+
+        document.dispatchEvent(event);
+    }
+
+    //--------------------------------------------------------------------------
+    // Properties
+    //--------------------------------------------------------------------------
+    /**
+     * Gets the video element.
+     */
+    get video() {
+        return this._video;
+    }
+
+    /**
+     * Gets the class name specified at construction.
+     */
+    get class() {
+        return this._class;
+    }
+}
+
+//------------------------------------------------------------------------------
+// Events
+//------------------------------------------------------------------------------
+HarmonicVideo.VIDEO_ELEMENT_STATUS_EVENT = &quot;VideoElementStatusEvent&quot;;
+
+//------------------------------------------------------------------------------
+// Constants
+//------------------------------------------------------------------------------
+
+//
+// State
+//
+HarmonicVideo.STATE_WAITING_FOR_HAVE_ENOUGH_DATA = 0;
+HarmonicVideo.STATE_WAITING_FOR_PLAY_PROMISE = 1;
+HarmonicVideo.STATE_LOAD_COMPLETE = 2;
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

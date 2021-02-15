@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">src/widgets/harmonic-text-scroll.js | Harmonic Template and Widget JavaScript Library</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./" style="display: flex; align-items: center;"><img src="./image/brand_logo.png" style="width:34px;"></a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/harmonic-font-face.js~HarmonicFontFace.html">HarmonicFontFace</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/harmonic-socket.js~HarmonicSocket.html">HarmonicSocket</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/harmonic-template.js~HarmonicTemplate.html">HarmonicTemplate</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#hjs">hjs</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/hjs/hjs-test.js~HarmonicTemplateTest.html">HarmonicTemplateTest</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/hjs/hjs.js~HJS.html">HJS</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-dve">dve</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-dve0">dve0</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-dve1">dve1</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-harmonicDVE">harmonicDVE</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-harmonicLiveAVO">harmonicLiveAVO</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-harmonicTemplate">harmonicTemplate</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-hjs">hjs</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-hjsConfig">hjsConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-liveAVO">liveAVO</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-liveAVO0">liveAVO0</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-liveAVO1">liveAVO1</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-hjstest">hjstest</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#widgets">widgets</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-countdown.js~HarmonicCountdown.html">HarmonicCountdown</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-dve.js~HarmonicDVE.html">HarmonicDVE</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-label-scroll.js~HarmonicLabelScroll.html">HarmonicLabelScroll</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-label.js~HarmonicLabel.html">HarmonicLabel</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-live-avo.js~HarmonicLiveAVO.html">HarmonicLiveAVO</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-movie-clip.js~HarmonicMovieClip.html">HarmonicMovieClip</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-text-field.js~HarmonicTextField.html">HarmonicTextField</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-text-scroll.js~HarmonicTextScroll.html">HarmonicTextScroll</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-video.js~HarmonicVideo.html">HarmonicVideo</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-widget.js~HarmonicWidget.html">HarmonicWidget</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/widgets/harmonic-xmlhttprequest.js~HarmonicXMLHttpRequest.html">HarmonicXMLHttpRequest</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/widgets/harmonic-text-scroll.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/**
+ * File: harmonic-text-scroll.js
+ *
+ * Copyright (c) 2018 Harmonic, Inc.
+ */
+
+
+/**
+ * The HarmonicTextScroll widget provides a dynamic scrolling text field that can
+ * be controlled with the widget controls.
+ *
+ * This class implements the Harmonic HarmonicTextScroll Widget.  It derives from
+ * the {@link HarmonicWidget} class and implements necessary functions to meet the
+ * needs of this widget.
+ *
+ * The HarmonicTextField widget requires that the registered createdjs
+ * object have the following structure:
+ *
+ * - The createjsObj must be a createjs.MovieClip named correctly (reference
+ *   {@link HarmonicWidget}).
+ * - The createjs.MovieClip must contain a createjs.Text child named &apos;harmonicField&apos;.
+ *   This text object represents the dynamic text field.
+ * - The createjs.MovieClip must also contain a createjs.Bitmap child named
+ *   &apos;harmonicScrollBounds&apos;.  This bitmap represents the bounding region
+ *   of the scroll.  It will start to the right of the bounding region
+ *   and scroll to the left.  When the last of the text reaches the left
+ *   of the bounding region, the HarmonicTextScroll.TEXT_SCROLL_FINISHED_EVENT
+ *   event will be dispatched on the document.
+ *
+ * NOTE:  It is the responsibility of the client to mask the bounding region
+ *        using the standard Adobe Animate CC mask layer.
+ *
+ * This class defines functions for:
+ *
+ * - updateTextField - updates and renders the text
+ * - appendTextField - appends text to the scroll texts and renders
+ * - restartFieldAnimation - starts and restarts the scroll
+ * - stopFieldAnimation - stops the scroll
+ *
+ * To use this class, simply register the createjs object using the
+ * static register function.  The created HarmonicTextScroll object is
+ * returned from the register function.  If there is a error, then
+ * &apos;undefined&apos; is returned and an error will be logged.
+ *
+  * There are also 2 properties that can be used:
+ * - textArray - an array of text to be scrolled
+ * - separatorArray - an array of createjs.MovieClips that can be used
+ *   as a graphical separator between the text.  If the separatorArray
+ *   is not used, then a text bullet will be used to separate the text*
+ *
+ * @example
+ * let scroll = HarmonicTextScroll.register(this);
+ * scroll.updateTextField(&quot;scrolling text&quot;, true);
+ * scroll.speed = 3;
+ *
+ * document.addEventListener(HarmonicTextScroll.TEXT_SCROLL_FINISHED_EVENT, (event) =&gt; {
+ *     hjs.info(&quot;the scroll is complete&quot;);
+ *     scroll.restartFieldAnimation(true);
+ * });
+ */
+class HarmonicTextScroll extends HarmonicWidget {
+
+    /**
+     * Constructor
+     * - initializes all member variables
+     *
+     * @listen {HarmonicTemplate.VISIBLE_EVENT} used to determine if the template is visible
+     * @listen {&apos;tick&apos;} used to move the scroll
+     *
+     * @param {String} widgetType - reference HarmonicTemplate.WIDGET_TYPE_&lt;type&gt;
+     * @param {Number} fieldNum - field number used to uniquely identify the widget
+     * @param {String} name - the name of the widget
+     * @param {Object} createjsObj - the createjs object associated with this widget
+     */
+    constructor(widgetType, fieldNum, name, createjsObj) {
+        super(widgetType, fieldNum, name, createjsObj, true);  // include in the template description
+
+        hjs.debug(&quot;HarmonicTextScroll.constructor&quot;);
+
+        /**
+         * Speed of the scroll.
+         * @type {Number}
+         */
+        this._speed = 3;
+
+        /**
+         * Array of text to be displayed on the scroll.stringify
+         * @type {String[]}
+         */
+        this._textArray = new Array();
+
+        /**
+         * Array of MovieClips used as the separators between the text (optional)
+         * @type {Object[]}
+         */
+        this._separatorArray = new Array();
+
+        /**
+         * If a separatorArray is not set, this will be the separator between the text
+         * @type {String}
+         */
+        this._separator = &quot;  &#x2022;  &quot;;
+
+        /**
+         * The createjs.Text object in the createjs object.  This will be used
+         * to clone the Text when building the container.
+         * @type {createjs.Text}
+         */
+        this._textField = this._createjsObj.harmonicField;
+        this._textField.lineWidth = null;       // single line mode
+        this._textField.visible = false;        // hide
+
+        /**
+         * The bounds of the scroll.  This is defined by the harmonicScrollBounds
+         * object located in the createjs object.
+         * @type {createjs.Rectangle}
+         */
+        this._scrollBounds = this._createjsObj.harmonicScrollBounds.getTransformedBounds();
+        this._createjsObj.harmonicScrollBounds.visible = false;
+
+        /**
+         * A createjs.Container to hold all of the createjs.Text objects and separators.
+         * @type {createjs.Container}
+         */
+        this._container = new createjs.Container();
+        this._container.x = this._scrollBounds.width;   // Initialize the container x location to be at the edge of the scroll bounds
+
+        /**
+         * A createjs.Rectangle that defines the bounds of the container.
+         * @type {createjs.Rectangle}
+         */
+        this._containerBounds = new createjs.Rectangle(0, 0, 0, 0);
+        this._createjsObj.addChild(this._container);
+
+        /**
+         * Flag to indicate if the scroll is visible.  The scroll won&apos;t start until
+         * it is visible.
+         * @type {Boolean}
+         */
+        this._isVisible = false;
+
+        /**
+         * Flag to keep track if the scroll has been started.
+         * @type {Boolean}
+         */
+        this._started = false;
+
+        /**
+         * Flag used to determine if the text needs updating when restarted.
+         * @type {Boolean}
+         */
+        this._textNeedsUpdate = false;
+
+        /**
+         * Flag that tracks the active state of the scroll.
+         * @type {Boolean}
+         */
+        this._scrollActive = false;
+
+        /**
+         * Flag to indicate if the scroll should stop at the end.
+         * @type {Boolean}
+         */
+        this._stopAtEnd = false;
+
+        // Listen for the VISIBLE_EVENT - the scroll won&apos;t start until received.
+        document.addEventListener(HarmonicTemplate.VISIBLE_EVENT, (event) =&gt; {
+            this._onVisible();
+        });
+
+        // Listen for the &apos;tick&apos; event on the object.  This will move the scroll.
+        createjsObj.addEventListener(&quot;tick&quot;, (event) =&gt; {
+            this._onTick();
+        });
+    }
+
+    /**
+     * Registers a createjs object with the widget.  A new
+     * HarmonicTextScroll will be created in this function.
+     *
+     * NOTE:  The createjs object must have a property called
+     * &apos;harmonicScrollBounds&apos;.  This object will be used to
+     * identify the bounds of the text scroll.
+     *
+     * @param {Object} createjsObj - the createjs object to associate with this widget
+     *
+     * @return {Object} the newly created HarmonicTextScroll instance, or undefined if there is an error
+     */
+    static register(createjsObj) {
+        let result = HarmonicWidget.validate(&quot;HarmonicTextScroll&quot;, createjsObj, true);
+        if (result) {
+
+            if (!createjsObj.hasOwnProperty(&quot;harmonicScrollBounds&quot;)) {
+                hjs.error(&quot;HarmonicTextScroll.register: the createjs object must contain a MovieClip named harmonicScrollBounds&quot;);
+                return undefined;
+            }
+
+            return new HarmonicTextScroll(HarmonicTemplate.WIDGET_TYPE_TEXT, result.fieldNum, result.name, createjsObj);
+        }
+        else {
+            return undefined;
+        }
+    }
+
+    /**
+     * Handles the updateTextField request from the Harmonic Template.
+     * Delete all elements in the text array and add the new text.
+     *
+     * @param {String} text - the text to display
+     * @param {Boolean} render - flag indicating if the field should be rendered
+     */
+    updateTextField(text, render) {
+        this._textArray.splice(0, this._textArray.length, text);
+        this._textUpdated(render);
+    }
+
+    /**
+     * Handles the appendTextField request from the Harmonic Template.
+     *
+     * @param {String} text - the text to append to the display
+     * @param {Boolean} render - flag indicating if the field should be rendered
+     */
+    appendTextField(text, render) {
+        // Append the text to the text array
+        this._textArray.push(text);
+        this._textUpdated(render);
+    }
+
+    /**
+     * Handles the restartFieldAnimation request from the Harmonic Template.
+     *
+     * @param {Boolean} fromBeginning - flag indicating if the widget should restart animation from the beginning
+     */
+    restartFieldAnimation(fromBeginning) {
+        this._startScroll();
+
+        if (this._started) {
+            this._scrollActive = true;
+
+            if (fromBeginning) {
+                this._restartScroll();
+            }
+        }
+    }
+
+    /**
+     * Handles the stopFieldAnimation request from the Harmonic Template.
+     *
+     * @param {Boolean} immediate - flag indicating if the widget should stop immediately or at the end of the animation
+     */
+    stopFieldAnimation(immediate) {
+        if (immediate) {
+            this._scrollActive = false;
+        }
+        else {
+            this._stopAtEnd = true;
+        }
+    }
+
+    //--------------------------------------------------------------------------
+    // Private Methods
+    //--------------------------------------------------------------------------
+
+    /**
+     * Places the container at the start position.
+     */
+    _restartScroll() {
+        if (this._speed &gt;= 0) {
+            this._container.x = this._scrollBounds.x + this._scrollBounds.width;
+        }
+        else {
+            this._container.x = this._scrollBounds.x - this._containerBounds.width;
+        }
+    }
+
+    /**
+     * Handler for the VISIBLE_EVENT.
+     */
+    _onVisible() {
+        this._isVisible = true;     // update the state
+        this._startScroll();        // attempt to start the scroll
+    }
+
+    /**
+     * Starts the scroll.
+     */
+    _startScroll() {
+        // If the text array is empty, don&apos;t start.
+        if (this._textArray.length == 0) {
+            return;
+        }
+
+        // If the template is not visible yet, don&apos;t start.
+        if (!this._isVisible) {
+            return;
+        }
+
+        // Only start once
+        if (!this._started) {
+            this._started = true;
+
+            // Render the text scroll and position
+            this._renderTextScroll();
+            this._restartScroll();
+
+            // Mark the scroll active and make the container visible
+            this._scrollActive = true;
+            this._container.visible = true;
+        }
+    }
+
+    /**
+     * Anytime the text is updated, this function should be called.  It
+     * will start the scroll if it hasn&apos;t been started.  It will
+     * also determine if and when to update the text scroll.
+     *
+     * @param {Boolean} render - flag indicating if the text should be rendered
+     */
+    _textUpdated(render) {
+
+        this._startScroll();    // start the scroll
+
+        if (this._started) {
+
+            // If the scroll is not active and the render flag
+            // is true, then render the text scroll.  Otherwise,
+            // set the _textNeedsUpdate flag.
+            if ((!this._scrollActive) &amp;&amp; render) {
+                this._renderTextScroll();
+            }
+            else {
+                this._textNeedsUpdate = true;
+            }
+        }
+    }
+
+    /**
+     * This function renders the text scroll.
+     */
+    _renderTextScroll() {
+        let bounds;
+
+        this._textNeedsUpdate = false;
+
+        this._container.visible = false;
+        this._container.removeAllChildren();
+
+        const numTextElements = this._textArray.length;
+        const numSeparators = this._separatorArray.length;
+        let separatorIndex = 0;
+
+        this._containerBounds.width = 0;
+        this._containerBounds.height = 0;
+
+        // Create a sub-container and add it to the container.
+        let subcontainer = new createjs.Container();
+        this._container.addChild(subcontainer);
+        subcontainer.x = 0;
+
+        let container_x = 0;
+        let subcontainer_x = 0;
+
+        for (let i = 0; i &lt; numTextElements; i++) {
+
+            // Clone the text field, set the text, and make it visible.
+            let textField = this._textField.clone();
+            textField.text = this._textArray[i];
+            textField.visible = true;
+
+            // If the separatorArray is empty, then use the default text
+            // separator.
+            if ((i &lt; numTextElements - 1) &amp;&amp; (numSeparators == 0)) {
+                textField.text += this._separator;
+            }
+
+            // Get the bounds of the text field
+            bounds = textField.getBounds();
+
+            // Add the text field to the sub-container
+            subcontainer.addChild(textField);
+
+            // Place the textField in the sub-container at the correct
+            // horizontal position and increment x;
+            textField.x = subcontainer_x;
+            subcontainer_x += bounds.width;
+
+            // Update the container bounds
+            this._containerBounds.width += bounds.width;
+            this._containerBounds.height = bounds.height;
+
+            // Update the width of the sub-container
+            subcontainer.width = subcontainer_x;
+
+            // If separators have been specified, then add them here
+            if ((i &lt; numTextElements - 1) &amp;&amp; (numSeparators &gt; 0)) {
+                // Clone the separator
+                let separator = this._separatorArray[separatorIndex].clone();
+                separatorIndex = (separatorIndex + 1) % numSeparators;
+
+                // Get the bounds
+                bounds = separator.getTransformedBounds();
+
+                // Add it to the sub-container
+                subcontainer.addChild(separator);
+
+                // Place the separator in the sub-container at the correct
+                // horizontal position and increment x;
+                separator.x = subcontainer_x;
+                separator.y = 0;
+
+                subcontainer_x += bounds.width;
+                subcontainer.width = subcontainer_x;
+
+                // Update the container bounds
+                this._containerBounds.width += bounds.width;
+            }
+
+            // If the sub-container grows beyond 32000, then cache it, and
+            // create a new subcontainer.
+            if (subcontainer.width &gt; 32000) {
+
+                // Increment the container.x with the sub-container width
+                container_x += subcontainer.width;
+
+                // Cache the current sub-container
+                bounds = subcontainer.getBounds();
+                subcontainer.cache(bounds.x, bounds.y, bounds.width, bounds.height);
+
+                // Create a new sub-container, add it to the container, and
+                // place at the correct horizontal position
+                subcontainer = new createjs.Container();
+                this._container.addChild(subcontainer);
+                subcontainer.x = container_x;
+
+                // Reset the sub-container x value
+                subcontainer_x = 0;
+            }
+        }
+
+        // If the subcontainer is not empty, then cache it.
+        bounds = subcontainer.getBounds();
+        if (bounds) {
+            subcontainer.cache(bounds.x, bounds.y, bounds.width, bounds.height);
+        }
+
+        this._container.visible = true;
+    }
+
+    /**
+     * This is the &apos;tick&apos; handler.  It moves the container and
+     * handles when the scroll finishes.
+     *
+     * @emits {HarmonicTextScroll.TEXT_SCROLL_FINISHED_EVENT} dispatched when the scroll finishes
+     */
+    _onTick() {
+        if (!this._scrollActive) {
+            return;
+        }
+
+        this._container.x -= this._speed;
+
+        let endReached = false;
+
+        if (this._speed &gt;= 0) {
+            if (this._container.x &lt;= this._scrollBounds.x - this._containerBounds.width) {
+                endReached = true;
+                this._container.x = this._scrollBounds.x + this._scrollBounds.width;
+            }
+        }
+        else {
+            if (this._container.x &gt;= this._scrollBounds.x + this._scrollBounds.width) {
+                endReached = true;
+                this._container.x = this._scrollBounds.x - this._containerBounds.width;
+            }
+        }
+
+        if (endReached) {
+
+            // Dispatch the complete event when the countdown finishes.
+            let event = new CustomEvent(HarmonicTextScroll.TEXT_SCROLL_FINISHED_EVENT,
+                {
+                    detail : this
+                }
+            );
+
+            document.dispatchEvent(event);
+
+            if (this._textNeedsUpdate) {
+                this._renderTextScroll();
+            }
+
+            if (this._stopAtEnd) {
+                this._scrollActive = false;
+            }
+            else {
+                this._restartScroll();
+            }
+        }
+    }
+
+    //--------------------------------------------------------------------------
+    // Properties
+    //--------------------------------------------------------------------------
+
+    /**
+     * Returns the current start state of the text scroll. true = started.
+     * @return {Boolean}
+     */
+    get started() {
+        return this._started;
+    }
+
+    /**
+     * Returns the current active state of the text scroll. true = active.
+     * @return {Boolean}
+     */
+    get active() {
+        return this._scrollActive;
+    }
+
+    /**
+     * Sets the speed of the scroll.
+     * @param {Number} value - number of pixels to move the scroll
+     */
+    set speed(value) {
+        this._speed = value;
+    }
+
+    /**
+     * Gets the speed of the scroll.
+     * @return {Number}
+     */
+    get speed() {
+        return this._speed;
+    }
+
+    /**
+     * Sets the array of text to display in the text scroll.
+     * @param {String[]} value - an array of text to display
+     */
+    set textArray(value) {
+        if (Array.isArray(value)) {
+            this._textArray = value;
+            this._textUpdated(true);
+        }
+        else {
+            hjs.error(&quot;HarmonicTextScroll.textArray: value is not an array&quot;);
+        }
+    }
+
+    /**
+     * Gets the array of text that is being displayed.
+     * @return {Array}
+     */
+    get textArray() {
+        return this._textArray;
+    }
+
+    /**
+     * Sets the text-based separator.
+     * @param {String} value - the string to place between the text items.
+     */
+    set separator(value) {
+        this._separator = value;
+        this._textUpdated(true);
+    }
+
+    /**
+     * Gets the text-based separator.
+     * @return {String}
+     */
+    get separator() {
+        return this._separator;
+    }
+
+    /**
+     * Sets the array of separators to use between the text.  This should be
+     * an array of createjs.DisplayObjects.
+     * @param {createjs.DisplayObject[]} value - array of objects to display between text items
+     */
+    set separatorArray(value) {
+        if (Array.isArray(value)) {
+            this._separatorArray = value;
+            this._textUpdated(true);
+        }
+        else {
+            hjs.error(&quot;HarmonicTextScroll.separatorImageArray: value is not an array&quot;);
+        }
+    }
+
+    /**
+     * Gets the array of separators.
+     * @return {Array}
+     */
+    get separatorArray() {
+        return this._separatorArray;
+    }
+
+    /**
+     * Sets the stop at end flag.  When true, the scroll will stop at the
+     * end of the scroll; otherwise, it will restart automatically.
+     * @param {Boolean} value - true = stop at end, false = restart
+     */
+    set stopAtEnd(value) {
+        this._stopAtEnd = value;
+    }
+
+    /**
+     * Gets the stop at end flag.
+     * @return {Boolean}
+     */
+    get stopAtEnd() {
+        return this._stopAtEnd;
+    }
+}
+
+//--------------------------------------------------------------------------
+// Events
+//--------------------------------------------------------------------------
+HarmonicTextScroll.TEXT_SCROLL_FINISHED_EVENT = &quot;TextScrollFinished&quot;;
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>
